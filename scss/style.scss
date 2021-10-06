@@ -265,15 +265,15 @@ body{
             transition: transform 1s, opacity 1s;
 
             &--first{
-                background-image: $background-gradient, url('../img/cameraSmall.jpg');
+                background-image: $background-gradient, url(../img/cameraSmall.jpg);
             }
 
             &--second{
-                background-image: $background-gradient, url('../img/cameraSmall2.jpg');
+                background-image: $background-gradient, url(../img/cameraSmall2.jpg);
             }
 
             &--third{
-                background-image: $background-gradient, url('../img/cameraSmall3.jpg');
+                background-image: $background-gradient, url(../img/cameraSmall3.jpg);
             }
 
             &-title{
@@ -373,15 +373,15 @@ body{
             }
 
             &--first{
-                background-image: url('../img/sistersSession.jpg');
+                background-image: url(../img/sistersSession.jpg);
             }
 
             &--second{
-                background-image: url('../img/familySession.jpg');
+                background-image: url(../img/familySession.jpg);
             }
             
             &--third{
-                background-image: url('../img/pregnantSession.jpg');
+                background-image: url(../img/pregnantSession.jpg);
             }
         }   
 
