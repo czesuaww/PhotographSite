@@ -144,7 +144,7 @@ body{
     height: 75vh;
     text-align: center;
     color: $pure-white;
-    @include heroImages("./img/photographerSmall.jpg");
+    @include heroImages("../img/photographerSmall.jpg");
     background-attachment: scroll;
 
     &__heading{
@@ -215,7 +215,7 @@ body{
 .hero-img{
     position: relative;
     padding: 10em 2em;
-    @include heroImages("./img/photographerBigMain.jpg");
+    @include heroImages("../img/photographerBigMain.jpg");
     text-align: center;
     color: $pure-white;
     overflow: hidden;
@@ -265,15 +265,15 @@ body{
             transition: transform 1s, opacity 1s;
 
             &--first{
-                background-image: $background-gradient, url(./img/cameraSmall.jpg);
+                background-image: $background-gradient, url(../img/cameraSmall.jpg);
             }
 
             &--second{
-                background-image: $background-gradient, url(./img/cameraSmall2.jpg);
+                background-image: $background-gradient, url(../img/cameraSmall2.jpg);
             }
 
             &--third{
-                background-image: $background-gradient, url(./img/cameraSmall3.jpg);
+                background-image: $background-gradient, url(../img/cameraSmall3.jpg);
             }
 
             &-title{
@@ -349,7 +349,7 @@ body{
 
 .offers{
     position: relative;
-    @include heroImages(".img/photo-studio-gcc6c072e0_640.jpg");
+    @include heroImages("..img/photo-studio-gcc6c072e0_640.jpg");
     color: $pure-white;
     padding: 1.5em;
     margin-top: 100px;
@@ -373,15 +373,15 @@ body{
             }
 
             &--first{
-                background-image: url(./img/sistersSession.jpg);
+                background-image: url(../img/sistersSession.jpg);
             }
 
             &--second{
-                background-image: url(./img/familySession.jpg);
+                background-image: url(../img/familySession.jpg);
             }
             
             &--third{
-                background-image: url(./img/pregnantSession.jpg);
+                background-image: url(../img/pregnantSession.jpg);
             }
         }   
 
@@ -501,7 +501,7 @@ body{
     }
 
     .offers{
-        @include heroImages("./img/photo-studio-gba5e13ec7_1920.jpg");
+        @include heroImages("../img/photo-studio-gba5e13ec7_1920.jpg");
 
         .section-heading{
             margin-top: 50px;
@@ -551,7 +551,7 @@ body{
 }
 @media(min-width:992px){
     .header{
-        background-image: $background-gradient, url(./img/photographerBig.jpg);
+        background-image: $background-gradient, url(../img/photographerBig.jpg);
         &__btn{
             margin-top: 2em;
         }
