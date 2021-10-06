@@ -144,7 +144,7 @@ body{
     height: 75vh;
     text-align: center;
     color: $pure-white;
-    @include heroImages('/img/photographerSmall.jpg');
+    @include heroImages('../img/photographerSmall.jpg');
     background-attachment: scroll;
 
     &__heading{

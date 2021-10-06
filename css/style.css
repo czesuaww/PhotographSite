@@ -228,7 +228,7 @@ body {
   height: 75vh;
   text-align: center;
   color: #fff;
-  background-image: linear-gradient(45deg, rgba(125, 138, 158, 0.75), rgba(102, 89, 161, 0.75)), url("/img/photographerSmall.jpg");
+  background-image: linear-gradient(45deg, rgba(125, 138, 158, 0.75), rgba(102, 89, 161, 0.75)), url("../img/photographerSmall.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
