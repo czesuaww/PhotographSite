@@ -1,0 +1,598 @@
+@import './colors';
+@import './components';
+@import './mixins';
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+body{
+    font-family: 'KoHo', sans-serif;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+.section-heading{
+    position: relative;
+    padding: 2em;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: $main-color;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+//NAV 
+
+.burger-btn{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 1em;
+    background: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    z-index: 1000;
+
+   &:focus{
+       outline: none;
+       border: 1px solid rgba(255,255,255,.5);
+       border-radius: 8px;
+   }
+
+   &:hover{
+       .burger-btn__bars::before,.burger-btn__bars::after{
+           width: 100%;
+       }
+   }
+
+   &__box{
+       position: relative;
+       width: 40px;
+       height: 30px;
+   }
+
+   &__bars, &__bars::before, &__bars::after{
+       @include burgerBtn;
+   }
+
+   &__bars{
+       width: 100%;
+
+       &::after{
+           top: 13px;
+           width: 60%;
+       }
+
+       &::before{
+           top: 27px;
+           width: 30%;
+           transition-delay: .1s;
+       }
+   }
+}
+
+.nav{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 50%;
+    background-image: $nav-purple-gradient;
+    z-index: 100;
+    transition: .5s;
+
+    &--active{
+        left: 0;
+    }
+
+    &__item{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        font-size: 2.8rem;
+        color: $pure-white;
+        text-align: center;
+        padding: .5em 2em;
+
+        &::before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background-color: $pure-white;
+            transform: scaleY(0);
+            transition: transform .4s;
+        }
+
+        &:hover::before{
+            transform: scaleY(1);
+        }
+    }
+
+    .nav-items-animation{
+        animation: navItemsAnimation 1s both;
+    }
+}
+
+//HEADER
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    height: 75vh;
+    text-align: center;
+    color: $pure-white;
+    @include heroImages('../img/photographerSmall.jpg');
+    background-attachment: scroll;
+
+    &__heading{
+        text-transform: uppercase;
+        padding: .2em;
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+    &__text{
+        font-size: 1.4rem;
+    }
+
+    &__btn{
+        margin-top: .5em;
+        padding: 0.8em 1.6em;
+        font-size: 1.4rem;
+        background: $pure-white;
+        border: none;
+        border-radius: 8px;
+        color: $dark;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+    
+        &::before{
+            background-color: $animation-button;
+        }
+    }
+}
+
+
+
+//MAIN
+//ABOUT ME
+
+.aboutme{
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        margin: 2em;
+    }
+
+    &__img{
+        border: 1px solid black;
+        width: 100%;
+        margin-bottom: 1em;
+        border-radius: 3em;
+    }
+
+    &__title{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    &__text{
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1em;
+    }
+    
+  
+}
+
+//HERO-IMG
+
+.hero-img{
+    position: relative;
+    padding: 10em 2em;
+    @include heroImages('../img/photographerBigMain.jpg');
+    text-align: center;
+    color: $pure-white;
+    overflow: hidden;
+    margin-top: 100px;
+
+
+    &__title{
+        font-family: 'KoHo', sans-serif;
+        font-size: 4.8rem;
+    }
+
+    &__text{
+        padding: 1em 0;
+    }
+
+}
+
+
+//Cameras
+
+.cameras{
+    &__card{
+        position: relative;
+        margin: 2em;
+        height: 450px;
+        color: $pure-white;
+        text-align: center;
+        perspective: 1000px;
+
+        &:hover{
+            .cameras__card-img{
+                transform: rotateY(-180deg);
+                opacity: 0;
+            }
+            .cameras__card-info{
+                transform: rotateY(0);
+                opacity: 1;
+            }
+        }
+
+        &-img{
+            padding: 2em;
+            height: 100%;
+            border-radius: 8px;
+            background-size: cover;
+            
+            transition: transform 1s, opacity 1s;
+
+            &--first{
+                background-image: $background-gradient, url(/img/cameraSmall.jpg);
+            }
+
+            &--second{
+                background-image: $background-gradient, url(/img/cameraSmall2.jpg);
+            }
+
+            &--third{
+                background-image: $background-gradient, url(/img/cameraSmall3.jpg);
+            }
+
+            &-title{
+                font-size: 2.8rem;
+            }
+            &-info{
+                position: absolute;
+                bottom: 30px;
+                right: 30px;
+                font-size: 1.8rem;
+
+                i{
+                    margin-right: 0.3em;
+                }
+            }
+        }
+
+        &-info{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: $light-purple-gradient-solid;
+            border-radius: 8px;
+            opacity: 0;
+            transform: rotateY(180deg);
+            transition: transform 1s,opacity 1s;
+
+            &-title{
+                @include camerasCardStyles;
+                top: 1.2em;
+                font-size: 2.8rem;
+            }
+
+            &-list{
+                margin: 0 auto;
+                width: 70%;
+                list-style: none;
+
+                &-item{
+                    padding: 1em;
+                    font-size: 1.4rem;
+                    border-bottom: 1px solid $pure-white;
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            &-btn{
+                @include camerasCardStyles;
+                bottom: 2em;
+                padding: 1em;
+                border-radius: 8px;
+                width: 80%;
+                border: none;
+                background-color: $pink-color;
+                cursor: pointer;
+
+                &::before{
+                    background-color: $pink-color-hover;
+                }
+            }
+        }
+    }
+}
+
+//oferty
+
+.offers{
+    position: relative;
+    @include heroImages('../img/photo-studio-gcc6c072e0_640.jpg');
+    color: $pure-white;
+    padding: 1.5em;
+    margin-top: 100px;
+    .section-heading{
+        color: $pure-white;
+    }
+    
+    &__option{
+        text-align: center;
+        border-radius: 8px;
+
+        &-img{
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            transition: transform .4s;
+            
+            &:hover{
+                transform: scale(1.025);
+            }
+
+            &--first{
+                background-image: url(/img/sistersSession.jpg);
+            }
+
+            &--second{
+                background-image: url(/img/familySession.jpg);
+            }
+            
+            &--third{
+                background-image: url(/img/pregnantSession.jpg);
+            }
+        }   
+
+        &-info{
+            color: $pure-white;
+            margin-top: 50px;
+        }
+
+        &-heading{
+            font-size: 2.5rem;
+            margin: 0 0 25px 0;
+        }
+
+        &-text{
+            font-size: 1.1em;
+        }
+
+        &-btn{
+            padding: .5em;
+            margin-top: 25px;
+            margin-bottom: 55px;
+            border-radius: 8px;
+            width: 60%;
+            border: none;;
+            background-color: $pink-color;
+            cursor: pointer;
+        
+            &::before{
+                background-color: $pink-color-hover;
+            }
+        }
+
+        
+    }
+}
+
+
+//MEDIA
+
+@media(min-width:320px) and (orientation: landscape){
+    .header{
+        height: 95vh;
+    }
+
+    .nav{
+        width: 30%;
+        &__items{
+            margin-top: 60px;
+        }
+        &__item{
+            font-size: 2rem;
+        }
+    }
+}
+
+@media(min-width: 414px) and (orientation: landscape){
+    .nav{
+        width: 40%;
+        &__item{
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@media(min-width: 768px){
+    .white-block{
+        height: 50px;
+    }
+    .aboutme{
+        &__box{
+            flex-direction: row;
+            justify-content: space-between;
+            
+            &-text{
+                width: 55%;
+
+                &--right{
+                    text-align: right;
+                }
+            }
+
+            &-img{
+                width: 40%;
+                
+                &--right{
+                    order: 1;
+                }
+            }
+        }
+
+        &__img{
+            margin-bottom: 0;
+            max-height: 300px;
+        }
+
+        &__title{
+            text-align:unset;
+        }
+
+        &__text{
+            text-align: unset;
+            padding: 0;
+        }
+    }
+
+    .cameras{
+        &__cards{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &__card{
+            margin: 1em;
+            width: 45%;
+        }
+    }
+
+    .offers{
+        @include heroImages('/img/photo-studio-gba5e13ec7_1920.jpg');
+
+        .section-heading{
+            margin-top: 50px;
+        }
+
+        &__option{
+            display: flex;
+            width: 100%;
+                margin: 3em 0;
+            
+            &-img{                
+                margin-bottom: 2em;
+                width: 75%;
+                height: auto;
+                &--right{
+                    order: 1;
+                }
+            }
+
+            &-info{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 3em;
+            }
+
+            &-heading{
+                font-size: 5.6rem;
+            }
+
+
+        }
+
+       
+    }
+}
+
+
+
+@media(min-width: 768px) and (orientation: landscape){
+    .nav{
+        &__item{
+            font-size: 3rem;
+        }
+    }
+}
+@media(min-width:992px){
+    .header{
+        background-image: $background-gradient, url(../img/photographerBig.jpg);
+        &__btn{
+            margin-top: 2em;
+        }
+    }
+
+    .aboutme{
+        &__box{
+            margin: 5em 0;
+
+            &-text{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                margin-bottom: 2.5em;
+            }
+        }
+
+        &__title{
+            font-size: 3.6rem;
+        }
+
+        &__text{
+            font-size: 2.2rem;
+        }
+    }
+
+    .cameras{
+        &__card{
+            // margin: 1em;
+            width: 30%;
+        }
+    }
+}
+
+//Animations
+
+@keyframes navItemsAnimation{
+    from{
+        transform: translateX(-200%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
