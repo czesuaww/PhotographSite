@@ -348,15 +348,15 @@ body {
 }
 
 .cameras__card-img--first {
-  background-image: linear-gradient(45deg, rgba(125, 138, 158, 0.75), rgba(102, 89, 161, 0.75)), url(/img/cameraSmall.jpg);
+  background-image: linear-gradient(45deg, rgba(125, 138, 158, 0.75), rgba(102, 89, 161, 0.75)), url("/img/cameraSmall.jpg");
 }
 
 .cameras__card-img--second {
-  background-image: linear-gradient(45deg, rgba(125, 138, 158, 0.75), rgba(102, 89, 161, 0.75)), url(/img/cameraSmall2.jpg);
+  background-image: linear-gradient(45deg, rgba(125, 138, 158, 0.75), rgba(102, 89, 161, 0.75)), url("/img/cameraSmall2.jpg");
 }
 
 .cameras__card-img--third {
-  background-image: linear-gradient(45deg, rgba(125, 138, 158, 0.75), rgba(102, 89, 161, 0.75)), url(/img/cameraSmall3.jpg);
+  background-image: linear-gradient(45deg, rgba(125, 138, 158, 0.75), rgba(102, 89, 161, 0.75)), url("/img/cameraSmall3.jpg");
 }
 
 .cameras__card-img-title {
@@ -481,15 +481,15 @@ body {
 }
 
 .offers__option-img--first {
-  background-image: url(/img/sistersSession.jpg);
+  background-image: url("/img/sistersSession.jpg");
 }
 
 .offers__option-img--second {
-  background-image: url(/img/familySession.jpg);
+  background-image: url("/img/familySession.jpg");
 }
 
 .offers__option-img--third {
-  background-image: url(/img/pregnantSession.jpg);
+  background-image: url("/img/pregnantSession.jpg");
 }
 
 .offers__option-info {
@@ -652,7 +652,7 @@ body {
 
 @media (min-width: 992px) {
   .header {
-    background-image: linear-gradient(45deg, rgba(125, 138, 158, 0.75), rgba(102, 89, 161, 0.75)), url(/img/photographerBig.jpg);
+    background-image: linear-gradient(45deg, rgba(125, 138, 158, 0.75), rgba(102, 89, 161, 0.75)), url("/img/photographerBig.jpg");
   }
   .header__btn {
     margin-top: 2em;
