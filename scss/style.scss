@@ -353,23 +353,23 @@ body{
     color: $pure-white;
     padding: 1.5em;
     margin-top: 100px;
+    
     .section-heading{
         color: $pure-white;
     }
     
     &__option{
         text-align: center;
-        border-radius: 8px;
-
+        box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.18);
+        
         &-img{
             height: 400px;
             background-size: cover;
             background-position: center;
-            border-radius: 15px;
             transition: transform .4s;
             
             &:hover{
-                transform: scale(1.025);
+                transform: scale(1.05);
             }
 
             &--first{
@@ -378,6 +378,7 @@ body{
 
             &--second{
                 background-image: url(../img/familySession.jpg);
+                background-position: top;
             }
             
             &--third{
@@ -388,6 +389,7 @@ body{
         &-info{
             color: $pure-white;
             margin-top: 50px;
+            z-index: 10;
         }
 
         &-heading{
@@ -513,7 +515,6 @@ body{
                 margin: 3em 0;
             
             &-img{                
-                margin-bottom: 2em;
                 width: 75%;
                 height: auto;
                 &--right{

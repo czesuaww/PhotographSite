@@ -461,14 +461,14 @@ body {
 
 .offers__option {
   text-align: center;
-  border-radius: 8px;
+  -webkit-box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.18);
+          box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.18);
 }
 
 .offers__option-img {
   height: 400px;
   background-size: cover;
   background-position: center;
-  border-radius: 15px;
   -webkit-transition: -webkit-transform .4s;
   transition: -webkit-transform .4s;
   transition: transform .4s;
@@ -476,8 +476,8 @@ body {
 }
 
 .offers__option-img:hover {
-  -webkit-transform: scale(1.025);
-          transform: scale(1.025);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .offers__option-img--first {
@@ -486,6 +486,7 @@ body {
 
 .offers__option-img--second {
   background-image: url(../img/familySession.jpg);
+  background-position: top;
 }
 
 .offers__option-img--third {
@@ -495,6 +496,7 @@ body {
 .offers__option-info {
   color: #fff;
   margin-top: 50px;
+  z-index: 10;
 }
 
 .offers__option-heading {
@@ -614,7 +616,6 @@ body {
     margin: 3em 0;
   }
   .offers__option-img {
-    margin-bottom: 2em;
     width: 75%;
     height: auto;
   }
