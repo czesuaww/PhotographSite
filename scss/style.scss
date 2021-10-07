@@ -420,7 +420,103 @@ body{
     }
 }
 
+//REVIEWS
 
+.reviews{
+    &__box{
+        position: relative;
+        margin: 2em;
+        padding: 2em;
+        border-radius: 8px;
+        box-shadow: 3px 3px 3px #2e2e2e2e;
+        transition: transform .3s;
+      
+        
+        &-img{
+            position: absolute;
+            top: 8%;
+            left: 75%;
+            transform: translate(-50%,-50%);
+
+            img{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+        }
+
+        &-quote{
+            margin-bottom: 1em;
+            font-size: 3rem;
+            color: $main-color;
+        }
+
+        &-text{
+            margin-bottom: 1em;
+            font-size: 1.4rem;
+            color: $dark;
+        }
+
+          
+        &:hover{
+            transform: scale(.95);
+        }
+    }
+
+}
+
+//Contact
+
+.contact{
+    position: relative;
+    background-color: $pink-color;
+
+    .white-block-left{
+        background-color: $dark;
+    }
+    &__form{
+        padding: 5em;
+        display: flex;
+        flex-direction: column;
+        
+        &-top{
+            display: flex;
+            flex-direction: column;
+        }
+        &-label{
+            margin-bottom: 0.5em;
+            text-transform: uppercase;
+        }
+
+        &-input{
+            @include contactForm;
+        }
+
+        &-textarea{
+            @include contactForm;
+
+            max-width: 100%;
+            width: 100%;
+            min-height: 150px;
+        }
+
+        &-btn{
+            align-self: flex-end;
+            padding:1em;
+            width: 100%;
+            max-width: 300px;
+            color: $pure-white;
+            border:none;
+            border-radius: 8px;
+            background-color: $main-color;
+            cursor: pointer;
+
+            &::before{
+                background-color: $pink-color-hover;
+            }
+        }
+    }
+}
 //MEDIA
 
 @media(min-width:320px) and (orientation: landscape){

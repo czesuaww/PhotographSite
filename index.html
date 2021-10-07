@@ -152,11 +152,8 @@
             <div class="white-block white-block-right"></div>
             <div class="white-block white-block-left"></div>
             <h2 class="section-heading">Oferty</h2>
-            <div class="wrapper">
-                <!-- <div class="offers__box"> -->
-               
-                    <div class="offers__option">
-                        
+            <div class="wrapper">               
+                    <div class="offers__option">  
                         <div class="offers__option-img offers__option-img--first"> </div>
                         <div class="offers__option-info">
                             <h3 class="offers__option-heading">Siostrowa sesja</h3>
@@ -164,14 +161,7 @@
                             <p class="offers__option-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <button class="offers__option-btn btn-special-animation">Wybierz</button>
                         </div> 
-                    <!-- <div class="offers__option-info">
-                        <h3 class="offers__option-heading">Siostrowa sesja</h3>
-                        <p class="offers__option-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ipsa quidem odio libero veritatis! Quidem veniam iure hic odit a.</p>
-                        <p class="offers__option-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="offers__option-btn btn-special-animation">Wybierz</button>
-                    </div>  -->
                 </div>
-                
                 <div class="offers__option">
                     <div class="offers__option-img offers__option-img--second offers__option-img--right"></div>
                     <div class="offers__option-info">
@@ -190,12 +180,92 @@
                         <button class="offers__option-btn btn-special-animation">Wybierz</button>
                     </div> 
                 </div>
-            <!-- </div> -->
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <h2 class="section-heading">Opinie</h2>
+            <div class="wrapper">
+                <div class="reviews__boxes">
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="/img/womanBlondeBig.jpg" alt="Anna Nowak">
+                        </div>
+                        <!-- <div class="reviews__box-img reviews__box-img--first"></div> -->
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum iste tempore excepturi. Accusantium, voluptatem esse!</p>
+                            <strong>Anna Nowak</strong>
+                        </div>
+                    </div>
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="/img/girBigRedHead.jpg" alt="Janina Kowalska">
+                        </div>
+                        <!-- <div class="reviews__box-img reviews__box-img--second"></div> -->
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum iste tempore excepturi. Accusantium, voluptatem esse!</p>
+                            <strong>Janina Kowalska</strong>
+                        </div>
+                    </div>
+                    <div class="reviews__box">
+                        <div class="reviews__box-img">
+                            <img src="/img/manBig.jpg" alt="Michał Kroczy">
+                        </div>
+                
+                        <!-- <div class="reviews__box-img reviews__box-img--third"></div> -->
+                        <div class="reviews__box-info">
+                            <div class="reviews__box-quote"><i class="fas fa-quote-right"></i></div>
+                            <p class="reviews__box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum iste tempore excepturi. Accusantium, voluptatem esse!</p>
+                            <strong>Michał Kroczy</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="white-block white-block-right"></div>
+            <div class="white-block white-block-left"></div>
+            <h2 class="section-heading">Kontakt</h2>
+            <div class="wrapper">
+
+                <form class="contact__form">
+                    <div class="contact__form-top">
+                        <label for="name" class="contact__form-label">Imie i nazwisko:</label>
+                        <input type="text" class="contact__form-input" id="name">
+                        
+                        <label for="email" class="contact__form-label">Adres e-mail:</label>
+                        <input type="text" class="contact__form-input" id="email">
+                    </div>
+
+                    <label for="message" class="contact__form-label">Wiadomość:</label>
+                    <textarea id="message" class="contact__form-textarea"></textarea>
+
+                    <button type="submit" class="contact__form-btn btn-special-animation">Wyślij</button>
+                </form>
+                <!-- <div class="contact__nameSurname">
+                    <p class="contact__name">Imie i nazwisko</p>
+                    <input type="text" id="name" name="name" requiredminlength="6" maxlength="8" size="100">
+                </div>
+                <div class="contact__email">
+                    <p class="contact__name">Adres Email</p>
+                    <input type="text" id="name" name="name" requiredminlength="6" maxlength="8" size="100">
+                </div>
+                <div class="contact__message">
+                    <p class="contact__name">Wiadomość</p>
+                    <input type="text" id="name" name="name" requiredminlength="6" maxlength="8" size="100">
+                </div> -->
             </div>
         </section>
     </main>
     
     <script src="js/aos.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
 
     
