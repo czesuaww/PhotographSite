@@ -7,22 +7,22 @@
 .white-block {
   position: absolute;
   height: 40px;
-  width: 60%;
+  width: 40%;
   background-color: #fff;
 }
 
 .white-block-left {
-  bottom: 0;
+  top: 0;
   left: -50px;
-  -webkit-transform: skew(45deg);
-          transform: skew(45deg);
+  -webkit-transform: skew(-45deg);
+          transform: skew(-45deg);
 }
 
 .white-block-right {
-  top: 0;
+  bottom: 0;
   right: -50px;
-  -webkit-transform: skew(45deg);
-          transform: skew(45deg);
+  -webkit-transform: skew(-45deg);
+          transform: skew(-45deg);
 }
 
 .btn-special-animation {
@@ -207,6 +207,12 @@ body {
 .nav .nav-items-animation {
   -webkit-animation: navItemsAnimation 1s both;
           animation: navItemsAnimation 1s both;
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: #2e2e2e;
 }
 
 .header {
@@ -572,7 +578,7 @@ body {
   background-color: rgba(138, 73, 212, 0.75);
 }
 
-.contact .white-block-left {
+.contact .white-block-right {
   background-color: #2e2e2e;
 }
 
@@ -636,6 +642,55 @@ body {
 
 .contact__form-btn::before {
   background-color: rgba(123, 54, 202, 0.75);
+}
+
+.footer {
+  color: #fff;
+  background-color: #2e2e2e;
+}
+
+.footer .wrapper {
+  padding: 6em 2em 2em;
+}
+
+.footer__box {
+  font-size: 1.4rem;
+}
+
+.footer__box-title {
+  margin-bottom: 1em;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.footer__box-social {
+  margin: 2em 0 1em;
+}
+
+.footer__box-link {
+  color: azure;
+  font-size: 3.6rem;
+  padding: 0 .3rem;
+  text-decoration: none;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.footer__box-link:first-child {
+  padding-left: 0;
+}
+
+.footer__box-link:hover {
+  color: #a530d3;
+}
+
+.footer__box-desktop {
+  display: none;
+}
+
+.footer__bottom-text {
+  padding: 2em;
+  text-align: center;
 }
 
 @media (min-width: 320px) and (orientation: landscape) {
@@ -757,6 +812,37 @@ body {
   }
   .offers__option-heading {
     font-size: 5.6rem;
+  }
+  .footer__boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__box {
+    margin: 0 2em;
+    width: 25%;
+  }
+  .footer__box:first-child {
+    width: 50%;
+  }
+  .footer__box-title {
+    font-size: 2.4rem;
+  }
+  .footer__box-list {
+    list-style: none;
+  }
+  .footer__box-list-item {
+    margin-bottom: 1em;
+  }
+  .footer__box-list-item a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer__box-desktop {
+    display: block;
   }
 }
 

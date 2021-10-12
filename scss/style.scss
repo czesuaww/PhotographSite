@@ -33,6 +33,8 @@ body{
     letter-spacing: 2px;
 }
 
+
+
 //NAV 
 
 .burger-btn{
@@ -132,6 +134,11 @@ body{
     }
 }
 
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before{
+    background-color: $dark;
+}
 //HEADER
 
 .header{
@@ -471,7 +478,7 @@ body{
     position: relative;
     background-color: $pink-color;
 
-    .white-block-left{
+    .white-block-right{
         background-color: $dark;
     }
     &__form{
@@ -516,6 +523,61 @@ body{
             }
         }
     }
+}
+
+
+
+//FOOTER
+
+.footer{
+    color: $pure-white;
+    background-color: $dark;
+
+
+    .wrapper{
+        padding: 6em 2em 2em;
+    }
+
+    &__box{
+        font-size: 1.4rem;
+
+        &-title{
+            margin-bottom: 1em;
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+
+        &-social{
+            margin: 2em 0 1em;
+        }
+        &-link{
+            color: azure;
+            font-size: 3.6rem;
+            padding: 0 .3rem;
+            text-decoration: none;
+            transition: color .3s;
+
+            &:first-child{
+                padding-left: 0;
+            }
+
+            &:hover{
+                color: $main-color;
+            }
+        }
+
+
+        &-desktop{
+            display: none;
+        }
+    }
+
+    &__bottom-text{
+        padding: 2em;
+        text-align: center;
+    }
+
+    
 }
 //MEDIA
 
@@ -635,6 +697,44 @@ body{
 
        
     }
+
+    .footer{
+
+        &__boxes{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__box{   
+            margin: 0 2em;
+            width: 25%;  
+            
+            &:first-child{
+                width: 50%;
+            }
+
+            &-title{
+                font-size: 2.4rem;
+            }
+            
+            &-list{
+                list-style: none;
+                
+                &-item{
+                    margin-bottom: 1em;
+
+                    a{
+                        color: $pure-white;
+                        text-decoration: none;
+                    }
+                }
+            }
+            
+            &-desktop{         
+                display: block;     
+            }    
+        }
+      }
 }
 
 
