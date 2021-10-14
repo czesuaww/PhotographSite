@@ -1017,6 +1017,18 @@ body {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .header .fa-chevron-down {
+    margin-top: 8em;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .header .fa-chevron-down {
+    font-size: 5rem;
+  }
+}
+
 @-webkit-keyframes navItemsAnimation {
   from {
     -webkit-transform: translateX(-200%);
