@@ -84,6 +84,13 @@ body{
    }
 }
 
+.white-bars-color,
+.white-bars-color::after,
+.white-bars-color::before{
+    background-color: $pure-white;
+    animation-delay: .3s;
+}
+
 .nav{
     position: fixed;
     display: flex;
@@ -138,6 +145,8 @@ body{
 .black-bars-color::before{
     background-color: $dark;
 }
+
+
 //HEADER
 
 .header{
@@ -149,7 +158,7 @@ body{
         align-items: center;
         flex-direction: column;
         height: 100vh;
-        color: $pure-green;
+        // color: $pure-green;
         @include heroImages("../img/LOGO.png");
         background-attachment: scroll;
         background-size:contain;
@@ -210,7 +219,7 @@ body{
     padding: 10em 2em;
     @include heroImages("../img/photographerBigMain.jpg");
     text-align: center;
-    color: $pure-green;
+    // color: $pure-green;
     overflow: hidden;
     margin-top: 100px;
 
@@ -234,7 +243,7 @@ body{
         position: relative;
         margin: 2em;
         height: 450px;
-        color: $pure-green;
+        color: $pure-pink;
         text-align: center;
         perspective: 1000px;
 
@@ -313,7 +322,7 @@ body{
                 &-item{
                     padding: 1em;
                     font-size: 1.4rem;
-                    border-bottom: 1px solid $pure-green;
+                    border-bottom: 1px solid $pure-pink;
                     &:last-child{
                         border-bottom: none;
                     }
@@ -343,12 +352,12 @@ body{
 .offers{
     position: relative;
     @include heroImages("..img/photo-studio-gcc6c072e0_640.jpg");
-    color: $pure-green;
+    color: $pure-pink;
     padding: 1.5em;
     margin-top: 100px;
     
     .section-heading{
-        color: $pure-green;
+        color: $pure-pink;
     }
     
     &__option{
@@ -380,7 +389,7 @@ body{
         }   
 
         &-info{
-            color: $pure-green;
+            color: $pure-pink;
             margin-top: 50px;
             z-index: 10;
         }
@@ -498,7 +507,7 @@ body{
             padding:1em;
             width: 100%;
             max-width: 300px;
-            color: $pure-green;
+            color: $pure-pink;
             border:none;
             border-radius: 8px;
             background-color: $main-color;
@@ -516,7 +525,7 @@ body{
 //FOOTER
 
 .footer{
-    color: $pure-green;
+    color: $pure-pink;
     background-color: $dark;
 
 
@@ -708,7 +717,7 @@ body{
                     margin-bottom: 1em;
 
                     a{
-                        color: $pure-green;
+                        color: $pure-pink;
                         text-decoration: none;
                     }
                 }
@@ -786,7 +795,7 @@ body{
     }
 
     .nav{
-        width: 40%;
+        width: 25%;
 
         &__item{
             font-size: 4rem;

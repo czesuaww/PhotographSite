@@ -8,7 +8,6 @@
   position: absolute;
   height: 40px;
   width: 40%;
-  background-color: #1e7743;
 }
 
 .white-block-left {
@@ -244,7 +243,7 @@ body {
   content: '';
   height: 3px;
   left: 0;
-  background-color: #1e7743;
+  background-color: #f9b2d3;
   -webkit-transition: width .3s;
   transition: width .3s;
 }
@@ -263,6 +262,14 @@ body {
   width: 30%;
   -webkit-transition-delay: .1s;
           transition-delay: .1s;
+}
+
+.white-bars-color,
+.white-bars-color::after,
+.white-bars-color::before {
+  background-color: #ffffff;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 
 .nav {
@@ -357,7 +364,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100vh;
-  color: #1e7743;
   background-image: url("../img/LOGO.png");
   background-size: cover;
   background-position: center;
@@ -425,7 +431,6 @@ body {
   background-position: center;
   background-attachment: fixed;
   text-align: center;
-  color: #1e7743;
   overflow: hidden;
   margin-top: 100px;
 }
@@ -443,7 +448,7 @@ body {
   position: relative;
   margin: 2em;
   height: 450px;
-  color: #1e7743;
+  color: #f9b2d3;
   text-align: center;
   -webkit-perspective: 1000px;
           perspective: 1000px;
@@ -544,7 +549,7 @@ body {
 .cameras__card-info-list-item {
   padding: 1em;
   font-size: 1.4rem;
-  border-bottom: 1px solid #1e7743;
+  border-bottom: 1px solid #f9b2d3;
 }
 
 .cameras__card-info-list-item:last-child {
@@ -575,13 +580,13 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: #1e7743;
+  color: #f9b2d3;
   padding: 1.5em;
   margin-top: 100px;
 }
 
 .offers .section-heading {
-  color: #1e7743;
+  color: #f9b2d3;
 }
 
 .offers__option {
@@ -619,7 +624,7 @@ body {
 }
 
 .offers__option-info {
-  color: #1e7743;
+  color: #f9b2d3;
   margin-top: 50px;
   z-index: 10;
 }
@@ -752,7 +757,7 @@ body {
   padding: 1em;
   width: 100%;
   max-width: 300px;
-  color: #1e7743;
+  color: #f9b2d3;
   border: none;
   border-radius: 8px;
   background-color: #a530d3;
@@ -764,7 +769,7 @@ body {
 }
 
 .footer {
-  color: #1e7743;
+  color: #f9b2d3;
   background-color: #2e2e2e;
 }
 
@@ -949,7 +954,7 @@ body {
     margin-bottom: 1em;
   }
   .footer__box-list-item a {
-    color: #1e7743;
+    color: #f9b2d3;
     text-decoration: none;
   }
   .footer__box-desktop {
@@ -1000,7 +1005,7 @@ body {
     margin-top: 8em;
   }
   .nav {
-    width: 40%;
+    width: 25%;
   }
   .nav__item {
     font-size: 4rem;
