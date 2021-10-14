@@ -1002,9 +1002,6 @@ body {
   .nav {
     width: 40%;
   }
-  .nav__items {
-    margin-top: 60px;
-  }
   .nav__item {
     font-size: 4rem;
   }
@@ -1043,17 +1040,38 @@ body {
     margin-top: 6em;
     font-size: 4rem;
   }
+  .burger-btn__bars {
+    height: 4px;
+  }
+}
+
+@media only screen and (min-width: 2202px) {
+  .burger-btn__bars::after {
+    height: 4px;
+  }
 }
 
 @media only screen and (min-width: 2478px) {
   .header .fa-chevron-down {
     margin-top: 7em;
   }
+  .nav__item {
+    font-size: 5rem;
+  }
+  .burger-btn__bars::after {
+    height: 5px;
+  }
+  .burger-btn__bars::before {
+    height: 5px;
+  }
 }
 
 @media only screen and (min-width: 3304px) {
   .header .fa-chevron-down {
     margin-top: 6em;
+    font-size: 6rem;
+  }
+  .nav__item {
     font-size: 6rem;
   }
 }

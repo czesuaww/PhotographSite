@@ -787,10 +787,7 @@ body{
 
     .nav{
         width: 40%;
-       
-        &__items{
-            margin-top: 60px;
-        }
+
         &__item{
             font-size: 4rem;
         }
@@ -836,12 +833,48 @@ body{
             font-size: 4rem;
         }
     }
+
+    .burger-btn{
+       &__bars{
+           height: 4px;
+        }
+    }
+}
+
+@media only screen and (min-width: 2202px){
+   
+    .burger-btn{
+        &__bars{
+            &::after{
+                height: 4px;
+            }
+        }
+    }
+    
 }
 
 @media only screen and (min-width: 2478px){
     .header{
         .fa-chevron-down{
             margin-top: 7em;
+        }
+    }
+
+    .nav{       
+        &__item{
+            font-size: 5rem;
+        }
+    }
+
+    .burger-btn{
+        &__bars{
+            &::after{
+                height: 5px;
+            }
+ 
+            &::before{
+                height: 5px;
+            }
         }
     }
 }
@@ -853,6 +886,13 @@ body{
             font-size: 6rem;
         }
     }
+
+    .nav{       
+        &__item{
+            font-size: 6rem;
+        }
+    }
+    
 }
 //Animations
 
