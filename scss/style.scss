@@ -1,6 +1,7 @@
 @import './colors';
 @import './components';
 @import './mixins';
+@import './animation';
 
 *,
 *::before,
@@ -32,8 +33,6 @@ body{
     text-align: center;
     letter-spacing: 2px;
 }
-
-
 
 //NAV 
 
@@ -94,10 +93,10 @@ body{
     left: -100%;
     height: 100vh;
     width: 50%;
-    background-image: $nav-purple-gradient;
+    background-image: $nav-green-gradient;
     z-index: 100;
     transition: .5s;
-
+    
     &--active{
         left: 0;
     }
@@ -143,43 +142,30 @@ body{
 
 .header{
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 2em;
-    height: 75vh;
-    text-align: center;
-    color: $pure-white;
-    @include heroImages("../img/photographerSmall.jpg");
-    background-attachment: scroll;
-
-    &__heading{
-        text-transform: uppercase;
-        padding: .2em;
-        font-size: 2.5rem;
-        font-weight: 300;
-    }
-
-    &__text{
-        font-size: 1.4rem;
-    }
-
-    &__btn{
-        margin-top: .5em;
-        padding: 0.8em 1.6em;
-        font-size: 1.4rem;
-        background: $pure-white;
-        border: none;
-        border-radius: 8px;
-        color: $dark;
-        text-decoration: none;
-        text-transform: uppercase;
-        cursor: pointer;
     
-        &::before{
-            background-color: $animation-button;
-        }
+    &__img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        color: $pure-green;
+        @include heroImages("../img/LOGO.png");
+        background-attachment: scroll;
+        background-size:contain;
+        background-repeat: no-repeat;  
+
+    }
+    .fa-chevron-down{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%,-50%);
+        margin-top: 4em;
+        font-size: 20px;
+        color: $button-green;
     }
 }
 
@@ -189,7 +175,7 @@ body{
 //ABOUT ME
 
 .aboutme{
-
+    background-color: aqua;
     &__box{
         display: flex;
         flex-direction: column;
@@ -224,7 +210,7 @@ body{
     padding: 10em 2em;
     @include heroImages("../img/photographerBigMain.jpg");
     text-align: center;
-    color: $pure-white;
+    color: $pure-green;
     overflow: hidden;
     margin-top: 100px;
 
@@ -248,7 +234,7 @@ body{
         position: relative;
         margin: 2em;
         height: 450px;
-        color: $pure-white;
+        color: $pure-green;
         text-align: center;
         perspective: 1000px;
 
@@ -327,7 +313,7 @@ body{
                 &-item{
                     padding: 1em;
                     font-size: 1.4rem;
-                    border-bottom: 1px solid $pure-white;
+                    border-bottom: 1px solid $pure-green;
                     &:last-child{
                         border-bottom: none;
                     }
@@ -357,12 +343,12 @@ body{
 .offers{
     position: relative;
     @include heroImages("..img/photo-studio-gcc6c072e0_640.jpg");
-    color: $pure-white;
+    color: $pure-green;
     padding: 1.5em;
     margin-top: 100px;
     
     .section-heading{
-        color: $pure-white;
+        color: $pure-green;
     }
     
     &__option{
@@ -394,7 +380,7 @@ body{
         }   
 
         &-info{
-            color: $pure-white;
+            color: $pure-green;
             margin-top: 50px;
             z-index: 10;
         }
@@ -512,7 +498,7 @@ body{
             padding:1em;
             width: 100%;
             max-width: 300px;
-            color: $pure-white;
+            color: $pure-green;
             border:none;
             border-radius: 8px;
             background-color: $main-color;
@@ -530,7 +516,7 @@ body{
 //FOOTER
 
 .footer{
-    color: $pure-white;
+    color: $pure-green;
     background-color: $dark;
 
 
@@ -581,11 +567,8 @@ body{
 }
 //MEDIA
 
-@media(min-width:320px) and (orientation: landscape){
-    .header{
-        height: 95vh;
-    }
-
+@media(min-width:360px) and (orientation: landscape){
+    
     .nav{
         width: 30%;
         &__items{
@@ -597,14 +580,8 @@ body{
     }
 }
 
-@media(min-width: 414px) and (orientation: landscape){
-    .nav{
-        width: 40%;
-        &__item{
-            font-size: 2.5rem;
-        }
-    }
-}
+
+
 
 @media(min-width: 768px){
     .white-block{
@@ -724,7 +701,7 @@ body{
                     margin-bottom: 1em;
 
                     a{
-                        color: $pure-white;
+                        color: $pure-green;
                         text-decoration: none;
                     }
                 }
@@ -737,21 +714,45 @@ body{
       }
 }
 
+@media(min-width: 768px){
+    .header{
+        .fa-chevron-down{
+            margin-top: 5em;
+             font-size: 3.5rem;
+        }
+    }
+}
+@media(min-width: 768px) and (max-height: 1024){
 
-
-@media(min-width: 768px) and (orientation: landscape){
     .nav{
         &__item{
             font-size: 3rem;
         }
     }
 }
+
+@media(min-width:540px){
+    
+    .header{
+        .fa-chevron-down{
+            margin-top: 5.5em;
+        }
+    }
+}
+@media(min-width:375px) and (orientation: landscape){
+    
+    .header{
+        .fa-chevron-down{
+            margin-top: 3.3em;
+            font-size: 2.5rem;
+        }
+    }
+}
+
+
 @media(min-width:992px){
     .header{
-        background-image: $background-gradient, url(../img/photographerBig.jpg);
-        &__btn{
-            margin-top: 2em;
-        }
+        background-image:  url(../img/LOGO.png);
     }
 
     .aboutme{
@@ -783,6 +784,14 @@ body{
     }
 }
 
+@media(min-width:1024px){
+    .header{
+        .fa-chevron-down{
+            margin-top: 5em;
+            font-size: 3.5rem;
+        }
+    }
+}
 //Animations
 
 @keyframes navItemsAnimation{
