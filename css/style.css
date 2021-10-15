@@ -390,10 +390,6 @@ body {
   color: #41bcac;
 }
 
-.aboutme {
-  padding-bottom: 5em;
-}
-
 .aboutme__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,7 +403,7 @@ body {
 }
 
 .aboutme__img {
-  background-image: url(/img/girBigRedHead.jpg);
+  background-image: url("../img/girBigRedHead.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -1253,37 +1249,37 @@ body {
 
 @-webkit-keyframes slidePicture {
   0% {
-    background-image: url("/img/girBigRedHead.jpg");
+    background-image: url("../img/girBigRedHead.jpg");
   }
   25% {
-    background-image: url("/img/womanBlondeBig.jpg");
+    background-image: url("../img/womanBlondeBig.jpg");
   }
   50% {
-    background-image: url("/img/photographerBigMain.jpg");
+    background-image: url("../img/photographerBigMain.jpg");
   }
   75% {
-    background-image: url("/img/pregnantSession.jpg");
+    background-image: url("../img/pregnantSession.jpg");
   }
   100% {
-    background-image: url("/img/girBigRedHead.jpg");
+    background-image: url("../img/girBigRedHead.jpg");
   }
 }
 
 @keyframes slidePicture {
   0% {
-    background-image: url("/img/girBigRedHead.jpg");
+    background-image: url("../img/girBigRedHead.jpg");
   }
   25% {
-    background-image: url("/img/womanBlondeBig.jpg");
+    background-image: url("../img/womanBlondeBig.jpg");
   }
   50% {
-    background-image: url("/img/photographerBigMain.jpg");
+    background-image: url("../img/photographerBigMain.jpg");
   }
   75% {
-    background-image: url("/img/pregnantSession.jpg");
+    background-image: url("../img/pregnantSession.jpg");
   }
   100% {
-    background-image: url("/img/girBigRedHead.jpg");
+    background-image: url("../img/girBigRedHead.jpg");
   }
 }
 
