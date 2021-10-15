@@ -286,7 +286,7 @@ body {
   padding: 2em;
   font-size: 3rem;
   text-transform: uppercase;
-  color: #a530d3;
+  color: #d59c41;
   text-align: center;
   letter-spacing: 2px;
 }
@@ -769,7 +769,7 @@ body {
 .reviews__box-quote {
   margin-bottom: 1em;
   font-size: 3rem;
-  color: #a530d3;
+  color: #d59c41;
 }
 
 .reviews__box-text {
@@ -846,7 +846,7 @@ body {
   color: #f9b2d3;
   border: none;
   border-radius: 8px;
-  background-color: #a530d3;
+  background-color: #d59c41;
   cursor: pointer;
 }
 
@@ -891,7 +891,7 @@ body {
 }
 
 .footer__box-link:hover {
-  color: #a530d3;
+  color: #d59c41;
 }
 
 .footer__box-desktop {
