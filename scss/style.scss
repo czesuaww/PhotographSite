@@ -27,7 +27,7 @@ body{
 .section-heading{
     position: relative;
     padding: 2em;
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: uppercase;
     color: $main-color;
     text-align: center;
@@ -184,32 +184,44 @@ body{
 //ABOUT ME
 
 .aboutme{
-    background-color: aqua;
+
+    padding-bottom: 5em;
     &__box{
         display: flex;
         flex-direction: column;
-        margin: 2em;
+        margin: 1em;
+        // border: 4px solid #d59c41;
+        // opacity: 0;
+        height: 550px;
+        // overflow: hidden;  
+        // animation: borderShow 3s forwards 1.5s;
     }
 
     &__img{
-        border: 1px solid black;
+        background-image: url(/img/girBigRedHead.jpg);
+        background-size: cover;
+        background-position: center;
         width: 100%;
-        margin-bottom: 1em;
-        border-radius: 3em;
+        height: 250px;
+        min-height: 50%;
+        animation: slidePicture 25s linear infinite 0s;
+        animation-timing-function: ease-in-out;
     }
-
+    
     &__title{
         text-align: center;
         font-size: 2rem;
+        margin-bottom: 1em;
+        margin-top: .5em;
+        margin: .5em 1em .5em 1em;
+
     }
 
     &__text{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-align: center;
-        padding: 1em;
-    }
-    
-  
+        margin: -.4em 1em  1em;
+    } 
 }
 
 //HERO-IMG
@@ -574,9 +586,33 @@ body{
 
     
 }
-//MEDIA
 
-@media(min-width:360px) and (orientation: landscape){
+//MEDIA
+@media(min-width:320px){
+    
+    .aboutme{
+        &__box{
+            height: 400px;        
+        }
+        
+        &__img{
+            height: 200px;
+        }
+                
+        &__title{
+            font-size: 1.5rem;
+            margin-top: -1em;
+        
+        }
+        
+        &__text{
+            font-size: 1rem;
+            margin-top: 0em;
+        } 
+    }
+}
+
+@media(min-width:360px){
     
     .nav{
         width: 30%;
@@ -587,59 +623,224 @@ body{
             font-size: 2rem;
         }
     }
+
+    .aboutme{
+        &__box{
+            height: 300px;        
+        }
+        
+        &__img{
+            height: 150px;
+        }
+                
+        &__title{
+            margin-top: -1em;
+        
+        }
+        
+        &__text{
+            margin-top: 0em;
+        } 
+    }
+}
+
+@media (min-width: 411px){
+
+    .header{
+        .fa-chevron-down{
+            margin-top: 5.5em;
+        }
+    }
+    
+}
+
+@media (min-width: 540px){
+
+    .header{
+        .fa-chevron-down{
+            margin-top: 5.5em;
+        }
+    }
+    
+    .aboutme{
+        &__box{
+            margin: 2em;
+            flex-direction: row;
+            height: 250px;        
+        }
+        
+        &__img{
+            width: 220px;
+            height: 100%;
+        }
+                
+        &__title{
+            margin-top: 1.5em;
+        
+        }
+        
+        &__text{
+            font-size: 1.1rem;
+            margin-top: 3.5em;
+        } 
+    }
+    
 }
 
 
+@media (min-width: 568px){
 
+    .header{
+        .fa-chevron-down{
+            margin-top: 3.5em;
+        }
+    }
+    .aboutme{
+        &__img{
+            width: 260px;
+        }
+                
+        &__title{
+            margin-top: .5em;
+        
+        }
+    }
+    
+}
 
-@media(min-width: 768px){
+@media (min-width: 640px){
+
+    .header{
+        .fa-chevron-down{
+            margin-top: 4em;
+        }
+    }
+    .aboutme{
+        &__img{
+            width: 300px;
+            height: 100%;
+        }
+                
+        &__title{
+            font-size: 1.5rem;
+            margin-top: 1.5em;
+        
+        }
+        
+        &__text{
+            font-size: 1.1rem;
+            margin-top: 3.5em;
+        } 
+    }
+    
+}
+
+@media (min-width: 667px){
+
     .header{
         .fa-chevron-down{
             margin-top: 5em;
-             font-size: 3.5rem;
+            font-size: 1.5rem;
+        }
+    }
+
+
+    .aboutme{
+        &__img{
+            width: 310px;
+        }
+                
+        &__title{
+            font-size: 1.8rem        
+        }
+        
+        &__text{
+            margin-top: 4em;
+        } 
+    }
+    
+}
+
+@media (min-width: 720px){
+
+    .header{
+        .fa-chevron-down{
+            margin-top: 5.5em;
+            font-size: 2rem;
+        }
+    }
+}
+@media (min-width: 731px){
+
+    .header{
+        .fa-chevron-down{
+            font-size: 2rem;
+        }
+    }
+
+    .aboutme{
+        &__img{
+            width: 350px;
+        }
+                
+        &__title{
+            font-size: 1.7rem;
+        
+        }
+        
+        &__text{
+            margin-top: 4.5em;
+        } 
+    }
+    
+}
+
+@media(min-width:751px){
+    .header{
+        .fa-chevron-down{
+            margin-top: 5em;
+            font-size: 3rem;
+        }
+    }
+}
+
+@media (min-width: 768px){
+
+    .header{
+        .fa-chevron-down{
+            margin-top: 5em;
+            font-size: 3.5rem;
         }
     }
     
     .white-block{
         height: 50px;
     }
+
     .aboutme{
         &__box{
+            margin: 5em;
             flex-direction: row;
-            justify-content: space-between;
-            
-            &-text{
-                width: 55%;
-
-                &--right{
-                    text-align: right;
-                }
-            }
-
-            &-img{
-                width: 40%;
-                
-                &--right{
-                    order: 1;
-                }
-            }
+            height: 350px;        
         }
-
+        
         &__img{
-            margin-bottom: 0;
-            max-height: 300px;
+            width: 320px;
+            height: 100%;
         }
-
+                
         &__title{
-            text-align:unset;
+            font-size: 2rem;
+            margin-top: 1.5em;
+        
         }
-
+        
         &__text{
-            text-align: unset;
-            padding: 0;
-        }
+            font-size: 1.2rem;
+            margin-top: 7.5em;
+        } 
     }
-
+    
     .cameras{
         &__cards{
             display: flex;
@@ -730,58 +931,28 @@ body{
       }
 }
 
-@media(min-width: 768px) and (max-height: 1024){
-
-    .nav{
-        &__item{
-            font-size: 3rem;
-        }
-    }
-}
-
-@media(min-width:540px){
-    
+@media (min-width: 812px){
     .header{
         .fa-chevron-down{
-            margin-top: 5.5em;
+            margin-top: 4.5em;
+            font-size: 2rem;
         }
     }
+    .aboutme{
+        &__text{
+            margin-top: 10em;
+        } 
+    }
+    
 }
 
-@media(min-width:645px){
-    
-    .header{
-        .fa-chevron-down{
-            margin-top: 7em;
-        }
-    }
-}
 
-@media(min-width:751px){
-    
-    .header{
-        .fa-chevron-down{
-            margin-top: 5em;
-            font-size: 3rem;
-        }
-    }
-}
 
 @media(min-width:880px){
     
     .header{
         .fa-chevron-down{
             margin-top: 6em;
-        }
-    }
-}
-
-@media(min-width:375px) and (orientation: landscape){
-    
-    .header{
-        .fa-chevron-down{
-            margin-top: 3.3em;
-            font-size: 2.5rem;
         }
     }
 }
@@ -803,49 +974,108 @@ body{
     }
 }
 
+
 @media(min-width:992px){
-
-    .aboutme{
-        &__box{
-            margin: 5em 0;
-
-            &-text{
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                margin-bottom: 2.5em;
-            }
-        }
-
-        &__title{
-            font-size: 3.6rem;
-        }
-
-        &__text{
-            font-size: 2.2rem;
-        }
-    }
 
     .cameras{
         &__card{
-            // margin: 1em;
             width: 30%;
         }
     }
 }
 
+@media (min-width: 1024px){
+    
+    .section-heading{
+        font-size: 5rem;
+    }
+    .header{
+        .fa-chevron-down{
+            margin-top: 5em;
+            font-size: 4rem;
+        }
+    }
+
+    .aboutme{
+        &__img{
+            width: 420px;
+        }
+                
+        &__title{
+            font-size: 3rem;
+            margin-top: 1.5em;
+        
+        }
+        
+        &__text{
+            font-size: 1.3rem;
+            margin-top: 7.5em;
+        } 
+    }
+    
+}
+
+
+@media (min-width: 1280px){
+    .aboutme{ 
+        &__img{
+            width: 500px;
+        }
+    }
+    
+}
+
+@media (min-width: 1366px){
+    .header{
+        .fa-chevron-down{
+            margin-top: 5.5em;
+            font-size: 3.5rem;
+        }
+    }
+    .aboutme{
+        &__img{
+            width: 470px;
+        }
+
+        
+        &__text{
+            font-size: 1.5rem;
+            margin-top: 4.5em;
+        }
+    }
+    
+}
 
 @media only screen and (min-width: 2065px){
+    
+    .section-heading{
+        font-size: 6rem;
+    }
     .header{
         .fa-chevron-down{
             margin-top: 6em;
             font-size: 4rem;
         }
     }
-
     .burger-btn{
        &__bars{
            height: 4px;
+        }
+    }
+
+    .aboutme{
+
+        &__box{
+            margin: 1em;
+            height: 500px;
+        }
+        &__img{
+            width: 520px;
+        }
+
+        &__text{
+            font-size: 2rem;
+            margin-top: 10em;
         }
     }
 }
@@ -886,13 +1116,27 @@ body{
             }
         }
     }
+
+    .aboutme{
+        &__box{
+            margin: 0em;
+        }
+        &__img{
+            width: 620px;
+        }
+
+        &__text{
+            margin-top: 8em;
+            font-size: 2rem;
+        }
+    }
 }
 
 @media only screen and (min-width: 3304px){
     .header{
         .fa-chevron-down{
-            margin-top: 6em;
-            font-size: 6rem;
+            // margin-top: 6em;
+            // font-size: 6rem;
         }
     }
 
@@ -903,6 +1147,10 @@ body{
     }
     
 }
+///////////////////////////////////////////////////
+
+
+
 //Animations
 
 @keyframes navItemsAnimation{
@@ -911,5 +1159,38 @@ body{
     }
     to{
         transform: translateX(0);
+    }
+}
+
+@keyframes slidePicture {
+    0%{
+        background-image: url('/img/girBigRedHead.jpg');
+    }
+    
+    25%{
+        background-image: url('/img/womanBlondeBig.jpg');
+    }
+
+    50%{
+        background-image: url('/img/photographerBigMain.jpg');
+    }
+
+    75%{
+        background-image: url('/img/pregnantSession.jpg');
+    }
+    100%{
+        background-image: url('/img/girBigRedHead.jpg');
+    }
+}
+
+@keyframes borderShow {
+    from{
+        opacity: 0;
+        border: 0px solid #d59c41;
+    }
+
+    to{
+        opacity: 1;  
+        border: 4px solid #d59c41;  
     }
 }
