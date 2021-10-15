@@ -832,7 +832,6 @@ body {
   }
   .aboutme__title {
     font-size: 1.5rem;
-    margin-top: -1em;
   }
   .aboutme__text {
     font-size: 1rem;
@@ -857,7 +856,7 @@ body {
     height: 150px;
   }
   .aboutme__title {
-    margin-top: -1em;
+    margin-top: 1em;
   }
   .aboutme__text {
     margin-top: 0em;

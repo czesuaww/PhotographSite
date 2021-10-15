@@ -588,6 +588,7 @@ body{
 }
 
 //MEDIA
+
 @media(min-width:320px){
     
     .aboutme{
@@ -600,9 +601,7 @@ body{
         }
                 
         &__title{
-            font-size: 1.5rem;
-            margin-top: -1em;
-        
+            font-size: 1.5rem;        
         }
         
         &__text{
@@ -634,7 +633,8 @@ body{
         }
                 
         &__title{
-            margin-top: -1em;
+            
+            margin-top: 1em;
         
         }
         
@@ -653,6 +653,7 @@ body{
     }
     
 }
+
 
 @media (min-width: 540px){
 
