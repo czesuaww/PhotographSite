@@ -1134,64 +1134,10 @@ body{
 }
 
 @media only screen and (min-width: 3304px){
-    .header{
-        .fa-chevron-down{
-            // margin-top: 6em;
-            // font-size: 6rem;
-        }
-    }
-
     .nav{       
         &__item{
             font-size: 6rem;
         }
     }
     
-}
-///////////////////////////////////////////////////
-
-
-
-//Animations
-
-@keyframes navItemsAnimation{
-    from{
-        transform: translateX(-200%);
-    }
-    to{
-        transform: translateX(0);
-    }
-}
-
-@keyframes slidePicture {
-    0%{
-        background-image: url("../img/girBigRedHead.jpg");
-    }
-    
-    25%{
-        background-image: url("../img/womanBlondeBig.jpg");
-    }
-
-    50%{
-        background-image: url("../img/photographerBigMain.jpg");
-    }
-
-    75%{
-        background-image: url("../img/pregnantSession.jpg");
-    }
-    100%{
-        background-image: url("../img/girBigRedHead.jpg");
-    }
-}
-
-@keyframes borderShow {
-    from{
-        opacity: 0;
-        border: 0px solid #d59c41;
-    }
-
-    to{
-        opacity: 1;  
-        border: 4px solid #d59c41;  
-    }
 }
