@@ -8,8 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!--W przypadku gdy aos nie zadziała-->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/ce1ab2aef5.js" crossorigin="anonymous"></script>
 </head>
@@ -41,27 +42,14 @@
     <main class="main">
         <section class="aboutme section white-section" id="aboutme">
             <div class="wrapper">
-                <h2 class="section-heading">Troche o mnie</h2>
-                <div class="aboutme__box" >
-                    <div class="aboutme__box-img"  >
-                        <img src="img/photographerBigMain.jpg" alt="pani z aparatem" class="aboutme__img">
-                    </div>
-                    <div class="aboutme__box-text" >
-                        <h3 class="aboutme__title">Lorem ipsum dolor sit amet.</h3>
-                        <p class="aboutme__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias provident fugit quasi vitae aperiam nisi magnam eveniet. Sequi quam placeat magnam deleniti dolore optio, veniam fuga culpa, obcaecati, aut fugiat!
-                        </p>
-                    </div>
-                </div>
+                <h2 data-aos="fade-down" data-aos-delay="300" class="section-heading" >Troche o mnie</h2>
                 <div class="aboutme__box">
-                    <div class="aboutme__box-img aboutme__box-img--right">
-                        <img src="img/photographerBig2Main.jpg" alt="pani z aparatem" class="aboutme__img">
+                    <div class="aboutme__box-img">
+                        <div data-aos="fade-right" data-aos-delay="800" class="aboutme__img" ></div>
                     </div>
-                    <div class="aboutme__box-text aboutme__box-text--right "  >
-                        <h3 class="aboutme__title">Lorem ipsum dolor sit amet.</h3>
-                        <p class="aboutme__text" >
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias provident fugit quasi vitae aperiam nisi magnam eveniet. Sequi quam placeat magnam deleniti dolore optio, veniam fuga culpa, obcaecati, aut fugiat!
-                        </p>
+                    <div class="aboutme_box-text">
+                        <h3 data-aos="fade-left" data-aos-delay="1000" class="aboutme__title">Lorem ipsum dolor sit amet consectetur.</h3>
+                        <p data-aos="fade-left" data-aos-delay="1300" class="aboutme__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam incidunt, nemo sed dignissimos natus perferendis perspiciatis placeat autem exercitationem quasi odio soluta tenetur expedita, a, similique ad voluptates odit ipsam aliquam rem. Voluptas nisi sapiente nihil? Saepe culpa eos nobis cupiditate quod esse quos labore, iste laudantium. Sed, tenetur neque.</p>
                     </div>
                 </div>
             </div>
@@ -286,11 +274,11 @@
         <p class="footer__bottom-text">&copy; <span class="footer__year"></span> Photograph Services</p>
     </footer>
     
-    <script src="js/aos.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/slick.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 
     
