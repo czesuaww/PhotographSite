@@ -57,19 +57,19 @@ const prepareDOMEvents = () => {
         });
     }
 
-    const colorChangeBurger = () =>{
-        //  $nav.classList.toggle('nav--active');
-        if($nav.classList.contains('nav--active')){
-            $navBtnBars.classList.remove('white-bars-color');
-        }else{
-            $navBtnBars.classList.add('white-bars-color');
+    // const colorChangeBurger = () =>{
+    //     //  $nav.classList.toggle('nav--active');
+    //     if($nav.classList.contains('nav--active')){
+    //         $navBtnBars.classList.remove('white-bars-color');
+    //     }else{
+    //         $navBtnBars.classList.add('white-bars-color');
 
-        }
-    }
+    //     }
+    // }
 
     handleCurrentYear();
     window.addEventListener('scroll',handleObserver);
-    $burgerBtn.addEventListener('click',colorChangeBurger);
+    // $burgerBtn.addEventListener('click',colorChangeBurger);
     $burgerBtn.addEventListener('click', handleNav);
     window.addEventListener('load', AOS.refresh);
    
