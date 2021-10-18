@@ -266,19 +266,21 @@ body{
         margin: 2em;
         &:hover{
             .offers__img{
-                animation: cardHoverLeft 1s both ease-in-out ; 
-                transition: cardHoverLeft 1s;
+                left: -50%;
             }
         }
 
         &:hover{
             .offers__title, .offers__text{
-                animation: cardHoverRight 1s linear both; 
+                right: -50%;
+                opacity: 1;
             }
         }
 
-        &-info{
-            transition: right .5s;
+        &:hover{
+            .offers__img--right{
+                right: 0%;
+            }
         }
     }
 
@@ -287,7 +289,7 @@ body{
         background-image: url("../img/girBigRedHead.jpg");
         background-size: cover;
         background-position: center;
-        left: 0;
+        left: -30%;
         right: 0;
         margin: auto;
         width: 50%;
@@ -295,8 +297,8 @@ body{
         min-height: 50%;
         animation: slidePicture 25s linear infinite 0s;
         animation-timing-function: ease-in-out;
-        
-        // transition: left .5s;
+        transition: left 1s;
+
     }
 
 
@@ -313,6 +315,8 @@ body{
         z-index: -10;
         transition: right .5s ;
         transition-delay: 2s;
+        transition: all 1s;
+
     }
 
     &__text{
@@ -323,10 +327,14 @@ body{
         bottom: 55px;
         opacity: 0;
         z-index: -10;
-    
+        transition: all 1s;
     }
 
+    .offers__img--right{
+        right:-70%;
+        transition: all 1s;
 
+    }
     // position: relative;
     // @include heroImages("..img/photo-studio-gcc6c072e0_640.jpg");
     // color: $pure-pink;

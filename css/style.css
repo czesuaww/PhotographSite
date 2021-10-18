@@ -137,46 +137,6 @@
   }
 }
 
-@-webkit-keyframes cardHoverLeft {
-  form {
-    left: 0;
-  }
-  to {
-    left: -50%;
-  }
-}
-
-@keyframes cardHoverLeft {
-  form {
-    left: 0;
-  }
-  to {
-    left: -50%;
-  }
-}
-
-@-webkit-keyframes cardHoverRight {
-  form {
-    opacity: 0;
-    right: 0;
-  }
-  to {
-    right: -50%;
-    opacity: 1;
-  }
-}
-
-@keyframes cardHoverRight {
-  form {
-    opacity: 0;
-    right: 0;
-  }
-  to {
-    right: -50%;
-    opacity: 1;
-  }
-}
-
 .bounce-top {
   display: block;
   -webkit-animation: bounce-top 2s infinite both;
@@ -588,20 +548,16 @@ body {
 }
 
 .offers__boxes:hover .offers__img {
-  -webkit-animation: cardHoverLeft 1s both ease-in-out;
-          animation: cardHoverLeft 1s both ease-in-out;
-  -webkit-transition: cardHoverLeft 1s;
-  transition: cardHoverLeft 1s;
+  left: -50%;
 }
 
 .offers__boxes:hover .offers__title, .offers__boxes:hover .offers__text {
-  -webkit-animation: cardHoverRight 1s linear both;
-          animation: cardHoverRight 1s linear both;
+  right: -50%;
+  opacity: 1;
 }
 
-.offers__boxes-info {
-  -webkit-transition: right .5s;
-  transition: right .5s;
+.offers__boxes:hover .offers__img--right {
+  right: 0%;
 }
 
 .offers__img {
@@ -609,7 +565,7 @@ body {
   background-image: url("../img/girBigRedHead.jpg");
   background-size: cover;
   background-position: center;
-  left: 0;
+  left: -30%;
   right: 0;
   margin: auto;
   width: 50%;
@@ -619,6 +575,8 @@ body {
           animation: slidePicture 25s linear infinite 0s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+  -webkit-transition: left 1s;
+  transition: left 1s;
 }
 
 .offers__title {
@@ -635,6 +593,8 @@ body {
   transition: right .5s;
   -webkit-transition-delay: 2s;
           transition-delay: 2s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .offers__text {
@@ -645,6 +605,14 @@ body {
   bottom: 55px;
   opacity: 0;
   z-index: -10;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.offers .offers__img--right {
+  right: -70%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .cameras__card {
