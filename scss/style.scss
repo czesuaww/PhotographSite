@@ -185,6 +185,7 @@ body{
 
 .aboutme{
     background-color: $background-colorr;
+    padding-bottom: 2em;
     &__box{
         display: flex;
         flex-direction: column;
