@@ -283,7 +283,7 @@ body {
 
 .section-heading {
   position: relative;
-  padding: 1em;
+  padding: 1.5em;
   font-size: 3rem;
   text-transform: uppercase;
   color: #d59c41;
@@ -472,7 +472,6 @@ body {
 
 .aboutme {
   background-color: #e0dbde;
-  padding-bottom: 2em;
 }
 
 .aboutme__box {
@@ -540,162 +539,34 @@ body {
   color: #f9b2d3;
 }
 
-.offers {
-  padding-top: 1px;
-  z-index: 1;
-}
-
-.offers__boxes {
-  position: relative;
-  height: 400px;
-  margin: 5em;
-}
-
-.offers__boxes:hover .offers__img {
-  left: -50%;
-  border-radius: 20px;
-}
-
-.offers__boxes:hover .offers__box-info {
-  opacity: 1;
-  right: 0%;
-}
-
-.offers__boxes:hover .offers__box-info--right {
-  opacity: 1;
-  left: 0%;
-}
-
-.offers__boxes:hover .offers__img--right {
-  right: -100%;
-}
-
-.offers__boxes:hover .offers__text--right, .offers__boxes:hover .offers__title--right {
-  right: 50%;
-}
-
-.offers__img {
-  position: absolute;
-  background-image: url("../img/girBigRedHead.jpg");
-  background-size: cover;
-  background-position: center;
-  border: 1px solid black;
-  left: -30%;
-  right: 0;
-  margin: auto;
-  width: 50%;
-  height: 100%;
-  min-height: 50%;
-  -webkit-animation: slidePicture 25s linear infinite 0s;
-          animation: slidePicture 25s linear infinite 0s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  z-index: 10;
-}
-
-.offers__img--right {
-  right: -60%;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.offers__box-info {
-  position: absolute;
-  width: 50%;
-  right: 10%;
-  opacity: 0;
-  height: 100%;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.offers__box-info--right {
-  position: absolute;
-  width: 50%;
-  left: 10%;
-  opacity: 0;
-  height: 100%;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.offers__box-title {
-  position: absolute;
-  color: #41bcac;
-  font-size: 4rem;
-  text-align: center;
-  left: 0;
-  right: 0;
-  top: 25px;
-}
-
-.offers__box-text {
-  position: absolute;
-  bottom: 155px;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-
-.offers__box-faceInfo {
-  position: absolute;
-  padding: 25px;
-  font-size: 1.2rem;
-  text-align: center;
-  left: 0;
-  right: 0;
-  bottom: 45px;
-  font-weight: bold;
-}
-
-.offers__box-icons {
-  position: absolute;
-  left: 0;
-  right: 0;
-  text-align: center;
-  width: 50%;
-  margin: 2em auto;
-  bottom: -60px;
-  font-size: 3.5rem;
-}
-
-.offers__box-facebook {
-  color: #d59c41;
-}
-
-.offers__box-instagram {
-  color: #f9b2d3;
-}
-
-.cameras__card {
+.offers__card {
   position: relative;
   margin: 2em;
-  height: 450px;
+  height: 400px;
   color: #ffffff;
   text-align: center;
   -webkit-perspective: 1000px;
           perspective: 1000px;
 }
 
-.cameras__card:hover .cameras__card-img {
+.offers__card:hover .offers__card-img {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
   opacity: 0;
 }
 
-.cameras__card:hover .cameras__card-info {
+.offers__card:hover .offers__card-info {
   -webkit-transform: rotateY(0);
           transform: rotateY(0);
   opacity: 1;
 }
 
-.cameras__card-img {
+.offers__card-img {
   padding: 2em;
   height: 100%;
   border-radius: 8px;
   background-size: cover;
+  background-position: center;
   -webkit-animation: slidePicture 25s linear infinite 0s;
           animation: slidePicture 25s linear infinite 0s;
   -webkit-animation-timing-function: ease-in-out;
@@ -706,22 +577,22 @@ body {
   transition: transform 1s, opacity 1s, -webkit-transform 1s;
 }
 
-.cameras__card-img-title {
-  font-size: 4.8rem;
+.offers__card-img-title {
+  font-size: 4.3rem;
 }
 
-.cameras__card-img-info {
+.offers__card-img-info {
   position: absolute;
   bottom: 30px;
   right: 30px;
   font-size: 1.8rem;
 }
 
-.cameras__card-img-info i {
+.offers__card-img-info i {
   margin-right: 0.3em;
 }
 
-.cameras__card-info {
+.offers__card-info {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -749,36 +620,44 @@ body {
   color: #2e2e2e;
 }
 
-.cameras__card-info-title {
+.offers__card-info-title {
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   color: #41bcac;
-  top: 1.2em;
-  font-size: 3.8rem;
+  top: .5em;
+  font-size: 3rem;
   font-weight: bold;
 }
 
-.cameras__card-info-text {
-  padding: 2em;
-  margin-top: 8em;
+.offers__card-info-text {
+  padding: 1em;
+  margin-top: 10em;
+  font-size: 1.5rem;
 }
 
-.cameras__card-info-faceInfo {
-  margin-top: 4em;
+.offers__card-info-faceInfo {
+  margin-bottom: 1.3em;
+  padding: 1em;
   font-weight: bold;
+  font-size: 1rem;
 }
 
-.cameras__card-icons {
-  font-size: 4rem;
+.offers__card-icons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 3rem;
+  margin-top: -.5em;
 }
 
-.cameras__card-icons-facebook {
+.offers__card-icons-facebook {
   color: #d59c41;
 }
 
-.cameras__card-icons-instagram {
+.offers__card-icons-instagram {
   color: rgba(138, 73, 212, 0.75);
 }
 
@@ -960,6 +839,16 @@ body {
     font-size: 1rem;
     margin-top: 0em;
   }
+  .offers__card-info-text {
+    margin-top: 5em;
+  }
+  .offers__card-info-faceInfo {
+    margin-top: 0em;
+    font-size: 1.3rem;
+  }
+  .offers__card-icons {
+    font-size: 3.5rem;
+  }
 }
 
 @media (min-width: 360px) {
@@ -984,11 +873,26 @@ body {
   .aboutme__text {
     margin-top: 0em;
   }
+  .offers__card-info {
+    font-size: 4rem;
+  }
 }
 
 @media (min-width: 411px) {
   .header .fa-chevron-down {
     margin-top: 5.5em;
+  }
+  .offers__card {
+    margin: 4em;
+  }
+  .offers__card-info-title {
+    font-size: 4rem;
+  }
+  .offers__card-info-faceInfo {
+    font-size: 1.3rem;
+  }
+  .offers__card-icons {
+    font-size: 4.5rem;
   }
 }
 
@@ -1015,6 +919,26 @@ body {
     font-size: 1.1rem;
     margin-top: 3.5em;
   }
+  .offers__card {
+    margin: 5em;
+  }
+  .offers__card-info-title {
+    font-size: 4rem;
+  }
+  .offers__card-info-text {
+    margin-top: 7em;
+    font-size: 1.6rem;
+  }
+  .offers__card-info-faceInfo {
+    margin-bottom: 1.4em;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .offers__card-icons {
+    bottom: 10px;
+    font-size: 4rem;
+  }
 }
 
 @media (min-width: 568px) {
@@ -1026,6 +950,9 @@ body {
   }
   .aboutme__title {
     margin-top: .5em;
+  }
+  .offers__card-title {
+    font-size: 4rem;
   }
 }
 
@@ -1045,6 +972,20 @@ body {
     font-size: 1.1rem;
     margin-top: 3.5em;
   }
+  .offers__card {
+    margin: 6em;
+  }
+  .offers__card-info-title {
+    font-size: 4rem;
+  }
+  .offers__card-info-text {
+    margin-top: 5em;
+    font-size: 1.8rem;
+  }
+  .offers__card-info-faceInfo {
+    margin-bottom: 1.3em;
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 667px) {
@@ -1060,6 +1001,16 @@ body {
   }
   .aboutme__text {
     margin-top: 4em;
+  }
+}
+
+@media (min-width: 717px) {
+  .offers__card-info-title {
+    top: 1em;
+    font-size: 4rem;
+  }
+  .offers__card-info-text {
+    margin-top: 5em;
   }
 }
 
@@ -1089,6 +1040,13 @@ body {
   .header .fa-chevron-down {
     margin-top: 5em;
     font-size: 3rem;
+  }
+  .offers__card-info-title {
+    top: .5em;
+  }
+  .offers__card-info-faceInfo {
+    margin-bottom: 3.5em;
+    font-size: 1.2rem;
   }
 }
 
@@ -1120,7 +1078,7 @@ body {
     font-size: 1.2rem;
     margin-top: 7.5em;
   }
-  .cameras__cards {
+  .offers__cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1130,47 +1088,9 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .cameras__card {
+  .offers__card {
     margin: 1em;
     width: 45%;
-  }
-  .offers .section-heading {
-    margin-top: 50px;
-  }
-  .offers__option {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    margin: 3em 0;
-  }
-  .offers__option-img {
-    width: 75%;
-    height: auto;
-  }
-  .offers__option-img--right {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .offers__option-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 3em;
-  }
-  .offers__option-heading {
-    font-size: 5.6rem;
   }
   .footer__boxes {
     display: -webkit-box;
@@ -1234,7 +1154,7 @@ body {
 }
 
 @media (min-width: 992px) {
-  .cameras__card {
+  .offers__card {
     width: 30%;
   }
 }
