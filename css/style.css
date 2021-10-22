@@ -1071,7 +1071,7 @@ body {
     height: 100%;
   }
   .contact__box-map-boxmap--img {
-    background-image: url("/img/building.PNG");
+    background-image: url("../img/building.PNG");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

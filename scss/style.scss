@@ -916,7 +916,7 @@ body{
                     height: 100%;
 
                     &--img{
-                        @include heroImages("/img/building.PNG");
+                        @include heroImages("../img/building.PNG");
                         position: absolute;
                         width: 80%;
                         height: 70%;
