@@ -472,6 +472,7 @@ body {
 
 .aboutme {
   background-color: #e0dbde;
+  font-family: 'Cinzel', serif;
 }
 
 .aboutme__box {
@@ -505,6 +506,7 @@ body {
   position: absolute;
   text-align: center;
   font-size: 2rem;
+  text-transform: uppercase;
   left: 0;
   right: 0;
   top: 25px;
