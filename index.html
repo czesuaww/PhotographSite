@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!--W przypadku gdy aos nie zadziała-->
@@ -41,18 +44,18 @@
 
     <main class="main">
         <section class="aboutme section white-section" id="aboutme">
-            <div class="wrapper">
-                <h2 data-aos="fade-down" data-aos-delay="300" class="section-heading" >Troche o mnie</h2>
+            <!-- <div class="wrapper"> -->
+                <!-- <h2 data-aos="fade-down" data-aos-delay="300" class="section-heading" >Troche o mnie</h2> -->
                 <div class="aboutme__box">
-                    <div class="aboutme__box-img">
-                        <div data-aos="fade-right" data-aos-delay="800" class="aboutme__img" ></div>
-                    </div>
-                    <div class="aboutme_box-text">
-                        <h3 data-aos="fade-left" data-aos-delay="1000" class="aboutme__title">Lorem ipsum dolor sit amet consectetur.</h3>
-                        <p data-aos="fade-left" data-aos-delay="1300" class="aboutme__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam incidunt, nemo sed dignissimos natus perferendis perspiciatis placeat autem exercitationem quasi odio soluta tenetur expedita, a, similique ad voluptates odit ipsam aliquam rem. Voluptas nisi sapiente nihil? Saepe culpa eos nobis cupiditate quod esse quos labore, iste laudantium. Sed, tenetur neque.</p>
+                    <div data-aos="fade-right" data-aos-delay="500" class="aboutme__box-img"></div>
+                    <div class="aboutme__box-info">
+                        <!-- <h2 data-aos="fade-down" data-aos-delay="300" class="section-heading" >Troche o mnie</h2> -->
+                        <h3 data-aos="fade-left" data-aos-delay="1000" class="aboutme__box-info-heading">Lorem ipsum dolor sit amet consectetur.</h3>
+                        <p data-aos="fade-left" data-aos-delay="1100" class="aboutme__box-info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam incidunt, nemo sed dignissimos natus perferendis perspiciatis placeat autem exercitationem quasi odio soluta tenetur expedita, a, similique ad voluptates odit ipsam aliquam rem. Voluptas nisi sapiente nihil? Saepe culpa eos nobis cupiditate quod esse quos labore, iste laudantium. Sed, tenetur neque.</p>
+                        <p data-aos="fade-left" data-aos-delay="500" class="aboutme__box-info-signature">Kinga Grygiel</p>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </section>
 
 
@@ -200,25 +203,17 @@
         </section>
 
         <section class="contact section white-section" id="contact">
-            <div class="white-block white-block-left"></div>
             <div class="white-block white-block-right"></div>
-            <h2 class="section-heading">Kontakt</h2>
+            <h2 class="section-heading">Gdzie można mnie znaleźć?</h2>
             <div class="wrapper">
-
-                <form class="contact__form">
-                    <div class="contact__form-top">
-                        <label for="name" class="contact__form-label">Imie i nazwisko:</label>
-                        <input type="text" class="contact__form-input" id="name">
-                        
-                        <label for="email" class="contact__form-label">Adres e-mail:</label>
-                        <input type="text" class="contact__form-input" id="email">
+                <div class="contact__box">
+                    <div class="contact__box-map">
+                        <iframe class="contact__box-map-frame" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10284.14068072484!2d21.4116325!3d49.8793661!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x80efc176bc6fad4c!2sStudio%20fotografii%20Uchwycone%20-%20Kinga%20Grygiel!5e0!3m2!1spl!2spl!4v1634814081755!5m2!1spl!2spl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="contact__box-map-boxmap">
+                            <div data-aos="fade-left" data-aos-delay="1000" class="contact__box-map-boxmap--img"></div>
+                        </div>
                     </div>
-
-                    <label for="message" class="contact__form-label">Wiadomość:</label>
-                    <textarea id="message" class="contact__form-textarea"></textarea>
-
-                    <button type="submit" class="contact__form-btn btn-special-animation">Wyślij</button>
-                </form>
+                </div>
             </div>
         </section>
     </main>
@@ -262,6 +257,7 @@
         <p class="footer__bottom-text">&copy; <span class="footer__year"></span> Photograph Services</p>
     </footer>
     
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key:=AIzaSyBozwGkOxQ0_hwyuapemywmaLbWKpS9BNU&callback=initMap"></script> -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

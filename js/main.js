@@ -56,23 +56,25 @@ const prepareDOMEvents = () => {
             }
         });
     }
-
-    // const colorChangeBurger = () =>{
-    //     //  $nav.classList.toggle('nav--active');
-    //     if($nav.classList.contains('nav--active')){
-    //         $navBtnBars.classList.remove('white-bars-color');
-    //     }else{
-    //         $navBtnBars.classList.add('white-bars-color');
-
-    //     }
+    //I was trying to do it with API, but it is not working, 
+    //because google maps is only for developers, and I did with iframe.
+    // const initMap = () => {  
+    //     let location = {lat: 49.879350, lng: 21.411597};
+    //     let map = new google.maps.Map(document.getElementById("map"),{
+    //         zoom: 14,
+    //         center: location
+    //     });
+    //     let marker = new google.maps.Marker({
+    //         position: location,
+    //         map: map
+    //     })
     // }
-
+    
     handleCurrentYear();
     window.addEventListener('scroll',handleObserver);
-    // $burgerBtn.addEventListener('click',colorChangeBurger);
     $burgerBtn.addEventListener('click', handleNav);
     window.addEventListener('load', AOS.refresh);
-   
+    // initMap();
 };
 
 

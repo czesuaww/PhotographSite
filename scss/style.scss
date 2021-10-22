@@ -185,82 +185,103 @@ body{
 
 .aboutme{
     background-color: $background-colorr;
-    padding-bottom: 2em;
+    // padding-bottom: 1em;
     &__box{
         display: flex;
         flex-direction: column;
-        margin: 1em;
-        // border: 4px solid #d59c41;
-        // opacity: 0;
-        height: 550px;
-        // overflow: hidden;  
-        // animation: borderShow 3s forwards 1.5s;
-    }
+        position: relative;
+        height: 500px;
+        // border: 1px solid black;
 
-    &__img{
-        background-image: url("../img/girBigRedHead.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 250px;
-        min-height: 50%;
-        animation: slidePicture 25s linear infinite 0s;
-        animation-timing-function: ease-in-out;
-    }
+        &-img{
+            background-image: url("../img/photographerBig2Main.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 40%;
+            // border: 1px solid black;
+            // min-height: 50%;
+            // animation: slidePicture 25s linear infinite 0s;
+            // animation-timing-function: ease-in-out;
+        }
     
-    &__title{
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 1em;
-        margin-top: .5em;
-        margin: .5em 1em .5em 1em;
+        &-info{
+            position: absolute;
+            // border: 1px solid black;
+            width: 100%;
+            bottom: 0;
+            height: 60%;
+            &-heading{
+                position: absolute;
+                text-align: center;
+                font-size: 2rem;
+                left: 0;
+                right: 0;
+                top: 25px;
+                color: $main-color;
+            }
 
+            &-text{
+                position: absolute;
+                text-align: center;
+                font-size: 1.1rem;
+                top: 70px;
+                padding: 2em;
+            }
+            
+            &-signature{
+                position: absolute;
+                font-family: 'Dancing Script', cursive;
+                color: $button-green;
+                font-size: 2rem;
+                bottom: 5%;
+                right: 10%;
+            }
+        }
     }
-
-    &__text{
-        font-size: 1.2rem;
-        text-align: center;
-        margin: -.4em 1em  1em;
-    } 
+ 
 }
 
 //HERO-IMG
 
 .hero-img{
     position: relative;
-    padding: 10em 2em;
+    padding: 7em;
     @include heroImages("../img/photographerBig.jpg");
     text-align: center;
-    // color: $pure-green;
-    overflow: hidden;
-    // margin-top: 200px;
+    // overflow: hidden;
     background-attachment: unset;
     background-position: top;
+    // height: 100%;
 
     &__title{
-        font-family: 'KoHo', sans-serif;
-        font-size: 5.8rem;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
+        font-size: 2.5rem;
         color: $main-color;
+        font-weight: bold;
     }
 
     &__text{
+        position: absolute;
+        left: 0;
+        right: 0;
         padding: 1em 0;
-        font-size: 3.8rem;
-        font-weight: bold;
+        font-size: 1.3rem;
         color: #f9b2d3;
 
     }
 
 }
-
-
 //Offers
 
 //oferty 2
 .offers{
     &__card{
         position: relative;
-        margin: 2em;
+        margin-bottom: 2em;
         height: 400px;
         color: $pure-white;
         text-align: center;
@@ -280,7 +301,6 @@ body{
         &-img{
             padding: 2em;
             height: 100%;
-            border-radius: 8px;
             background-size: cover;
             background-position: center;
             animation: slidePicture 25s linear infinite 0s;
@@ -408,58 +428,30 @@ body{
 
 //Contact
 
-.contact{
+.contact{   
     position: relative;
-    background-color: $pink-color;
-
+    padding-bottom: 5em;
+    background-color: $background-colorr;   
+    
     .white-block-right{
         background-color: $dark;
     }
-    &__form{
-        padding: 5em;
-        display: flex;
-        flex-direction: column;
+
+    &__box{
+        position: relative;
+        padding-bottom: 115px;
+        height: 400px;
+        margin: 2em;
+
+        &-map{
+            width: 100%;
+            height: 400px;
+            border: 2px solid $main-color;
+        }
+
         
-        &-top{
-            display: flex;
-            flex-direction: column;
-        }
-        &-label{
-            margin-bottom: 0.5em;
-            text-transform: uppercase;
-        }
-
-        &-input{
-            @include contactForm;
-        }
-
-        &-textarea{
-            @include contactForm;
-
-            max-width: 100%;
-            width: 100%;
-            min-height: 150px;
-        }
-
-        &-btn{
-            align-self: flex-end;
-            padding:1em;
-            width: 100%;
-            max-width: 300px;
-            color: $pure-pink;
-            border:none;
-            border-radius: 8px;
-            background-color: $main-color;
-            cursor: pointer;
-
-            &::before{
-                background-color: $pink-color-hover;
-            }
-        }
     }
 }
-
-
 
 //FOOTER
 
@@ -518,25 +510,18 @@ body{
 
 @media(min-width:320px){
     
-    .aboutme{
-        &__box{
-            height: 400px;        
-        }
-        
-        &__img{
-            height: 200px;
-        }
-                
+    .hero-img{    
+     
         &__title{
-            font-size: 1.5rem;        
+            padding: .3em;
         }
-        
         &__text{
-            font-size: 1rem;
-            margin-top: 0em;
-        } 
+            padding: 1em;
+            // font-size: 1.6rem;
+            bottom: 30px;
+        }
+    
     }
-
     .offers{
         &__card{    
             &-info{
@@ -554,6 +539,8 @@ body{
             }
         }
     }
+
+    
 }
 @media(min-width:360px){
     
@@ -569,22 +556,31 @@ body{
 
     .aboutme{
         &__box{
-            height: 300px;        
+            height: 400px;
+
+            &-info{
+
+                &-heading{
+                    padding: .5em;
+                    top: 15px;
+                }
+                &-signature{
+                    bottom: 2%;
+                }
+            }
         }
-        
-        &__img{
-            height: 150px;
-        }
-                
+     
+    }
+
+    .hero-img{    
         &__title{
-            
-            margin-top: 1em;
-        
+            padding: 1em;
         }
-        
         &__text{
-            margin-top: 0em;
-        } 
+            padding: 2em;
+            font-size: 1.6rem;
+            bottom: 30px;
+        }
     }
 
     .offers{
@@ -595,6 +591,13 @@ body{
     
         }
     }
+
+    .contact{
+        &__map{
+            margin: 2em;
+        }
+    }
+    
 }
 
 @media (min-width: 411px){
@@ -605,6 +608,51 @@ body{
         }
     }
     
+    .aboutme{
+        &__box{
+            
+                &-img{
+                    width: 40%;
+                    height: 140vh;
+                }
+        
+                &-info{
+                    width: 60%;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+        
+                    &-heading{
+                        font-size: 2.5rem;
+                    }
+        
+                    &-text{
+                        font-size: 1.1rem;
+                        padding: 2em;
+                        top: 30%;
+                    }
+        
+                    &-signature{
+                        bottom: 5%;
+                        font-size: 2.5rem;
+                    }
+                }        
+            }  
+        }
+
+    .hero-img{   
+        padding: 6em;
+        &__title{
+            top: 0;
+            padding: 1em;
+        }
+        &__text{
+            padding: 2em;
+            font-size: 1.6rem;
+            bottom: 0px;
+        }
+    }
+
     .offers{
         &__card{
             margin: 4em;
@@ -622,6 +670,13 @@ body{
             }
         }
     }  
+
+    .contact{ 
+        &__map{
+            margin: 3em;
+        }
+    }
+    
 }
 
 
@@ -631,29 +686,6 @@ body{
         .fa-chevron-down{
             margin-top: 5.5em;
         }
-    }
-    
-    .aboutme{
-        &__box{
-            margin: 2em;
-            flex-direction: row;
-            height: 250px;        
-        }
-        
-        &__img{
-            width: 220px;
-            height: 100%;
-        }
-                
-        &__title{
-            margin-top: 1.5em;
-        
-        }
-        
-        &__text{
-            font-size: 1.1rem;
-            margin-top: 3.5em;
-        } 
     }
     
     .offers{
@@ -692,16 +724,6 @@ body{
             margin-top: 3.5em;
         }
     }
-    .aboutme{
-        &__img{
-            width: 260px;
-        }
-                
-        &__title{
-            margin-top: .5em;
-        
-        }
-    }
 
     .offers{
         &__card{
@@ -719,23 +741,6 @@ body{
         .fa-chevron-down{
             margin-top: 4em;
         }
-    }
-    .aboutme{
-        &__img{
-            width: 300px;
-            height: 100%;
-        }
-                
-        &__title{
-            font-size: 1.5rem;
-            margin-top: 1.5em;
-        
-        }
-        
-        &__text{
-            font-size: 1.1rem;
-            margin-top: 3.5em;
-        } 
     }
 
     .offers{
@@ -769,20 +774,6 @@ body{
         }
     }
 
-
-    .aboutme{
-        &__img{
-            width: 310px;
-        }
-                
-        &__title{
-            font-size: 1.8rem        
-        }
-        
-        &__text{
-            margin-top: 4em;
-        } 
-    }
     
 }
 
@@ -818,23 +809,7 @@ body{
             font-size: 2rem;
         }
     }
-
-    .aboutme{
-        &__img{
-            width: 350px;
-        }
-                
-        &__title{
-            font-size: 1.7rem;
-        
-        }
-        
-        &__text{
-            margin-top: 4.5em;
-        } 
-    }
     
-
 }
 
 @media(min-width:751px){
@@ -876,26 +851,33 @@ body{
 
     .aboutme{
         &__box{
-            margin: 5em;
-            flex-direction: row;
-            height: 350px;        
-        }
+            height: 60vh;
+            &-info{
+                &-heading{
+                    font-size: 2.5rem;
+                }
         
-        &__img{
-            width: 320px;
-            height: 100%;
-        }
-                
+                &-text{
+                    font-size: 1.5rem;
+                    top: 25%;
+                }
+        
+                &-signature{
+                    font-size: 3rem;
+                }
+            }        
+        }     
+    }
+
+    .hero-img{    
+        padding: 8em;
+        
         &__title{
-            font-size: 2rem;
-            margin-top: 1.5em;
-        
+            font-size: 4rem;
         }
-        
         &__text{
-            font-size: 1.2rem;
-            margin-top: 7.5em;
-        } 
+            font-size: 2rem;
+        }
     }
     
     .offers{
@@ -910,6 +892,45 @@ body{
             width: 45%;
         }
     }
+
+    .contact{   
+        height: 100%;     
+        &__box{
+            position: relative;
+            padding-bottom: 115px;
+            height: 400px;
+            // contact__box-map-boxmap--img"
+            &-map{
+            
+                width: 50%;
+                height: 400px;
+
+                &-boxmap{
+                    position: absolute;
+                    display: inline-block;
+                    width: 50%;
+                    height: 100%;
+
+                    &--img{
+                        @include heroImages("/img/building.PNG");
+                        position: absolute;
+                        width: 80%;
+                        height: 70%;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        margin: auto;
+                        border-radius: 6px;
+                        background-attachment: unset;
+                    }
+                }
+            }
+
+            
+        }
+    }
+    
 
     .footer{
 
@@ -958,9 +979,23 @@ body{
         }
     }
     .aboutme{
-        &__text{
-            margin-top: 10em;
-        } 
+        &__box{
+            height: 100vh;
+            &-info{
+                &-heading{
+                    font-size: 3.5rem;
+                }
+        
+                &-text{
+                    font-size: 2.5rem;
+                    top: 25%;
+                }
+        
+                &-signature{
+                    font-size: 4rem;
+                }
+            }        
+        }     
     }
     
 }
@@ -1003,11 +1038,13 @@ body{
     }
 }
 
+
 @media (min-width: 1024px){
     
     .section-heading{
         font-size: 5rem;
     }
+    
     .header{
         .fa-chevron-down{
             margin-top: 5em;
@@ -1016,29 +1053,59 @@ body{
     }
 
     .aboutme{
-        &__img{
-            width: 420px;
-        }
-                
-        &__title{
-            font-size: 3rem;
-            margin-top: 1.5em;
+        &__box{
+            height: 80vh;
+            &-info{
+                &-heading{
+                    font-size: 4.5rem;
+                }
         
-        }
+                &-text{
+                    font-size: 2.7rem;
+                }
         
-        &__text{
-            font-size: 1.3rem;
-            margin-top: 7.5em;
-        } 
+                &-signature{
+                    font-size: 5.5rem;
+                }
+            }        
+        }     
     }
     
 }
 
+@media (min-width: 1024px) and (orientation: landscape){
+
+    .aboutme{
+        &__box{
+            height: 120vh;   
+            &-info{
+                &-text{
+                    font-size: 2.2rem;
+                }
+        
+                &-signature{
+                    font-size: 5.5rem;
+                }
+            }      
+        }     
+    }
+    
+} 
 
 @media (min-width: 1280px){
-    .aboutme{ 
-        &__img{
-            width: 500px;
+    // .aboutme{ 
+    //     &__img{
+    //         width: 500px;
+    //     }
+    // }
+
+    .hero-img{
+        padding: 13em;    
+        &__title{
+            font-size: 4.5rem;
+        }
+        &__text{
+            font-size: 2.2rem;
         }
     }
     
@@ -1052,14 +1119,29 @@ body{
         }
     }
     .aboutme{
-        &__img{
-            width: 470px;
-        }
-
+        &__box{  
+            &-info{
+                &-heading{
+                    font-size: 5rem;
+                }
+                &-text{
+                    font-size: 2.7rem;
+                }
         
+                &-signature{
+                    font-size: 6rem;
+                }
+            }      
+        }     
+    }
+
+    .hero-img{    
+        padding: 15em;
+        &__title{
+            font-size: 5rem;
+        }
         &__text{
-            font-size: 1.5rem;
-            margin-top: 4.5em;
+            font-size: 3rem;
         }
     }
     
@@ -1083,19 +1165,22 @@ body{
     }
 
     .aboutme{
-
         &__box{
-            margin: 1em;
-            height: 500px;
-        }
-        &__img{
-            width: 520px;
-        }
-
-        &__text{
-            font-size: 2rem;
-            margin-top: 10em;
-        }
+            height: 100vh;
+            &-info{
+                &-heading{
+                    font-size: 6.5rem;
+                }
+        
+                &-text{
+                    font-size: 3.5rem;
+                }
+        
+                &-signature{
+                    font-size: 8rem;
+                }
+            }        
+        }     
     }
 }
 
@@ -1136,17 +1221,13 @@ body{
         }
     }
 
-    .aboutme{
-        &__box{
-            margin: 0em;
+    .hero-img{    
+        padding: 20em;
+        &__title{
+            font-size: 6rem;
         }
-        &__img{
-            width: 620px;
-        }
-
         &__text{
-            margin-top: 8em;
-            font-size: 2rem;
+            font-size: 4rem;
         }
     }
 }
