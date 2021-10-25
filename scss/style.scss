@@ -390,6 +390,7 @@ body{
 
 .reviews{
     // padding:;
+    // margin: 3em;
     &__box{
         position: relative;
         margin: 2em;
@@ -397,39 +398,27 @@ body{
         border-radius: 8px;
         box-shadow: 3px 3px 3px #2e2e2e2e;
         transition: transform .3s;
-      
-        
-        &-img{
-            position: absolute;
-            top: 8%;
-            left: 75%;
-            transform: translate(-50%,-50%);
 
-            img{
-                width: 80px;
-                height: 80px;
-                border-radius: 50%;
+        &-info{
+            &-quote{
+                margin-bottom: 1em;
+                font-size: 3rem;
+                color: $main-color;
+            }
+    
+            &-text{
+                margin-bottom: 1em;
+                font-size: 1.4rem;
+                color: $dark;
             }
         }
-
-        &-quote{
-            margin-bottom: 1em;
-            font-size: 3rem;
-            color: $main-color;
-        }
-
-        &-text{
-            margin-bottom: 1em;
-            font-size: 1.4rem;
-            color: $dark;
-        }
+        
 
           
         &:hover{
             transform: scale(.95);
         }
     }
-
 }
 
 //Contact
@@ -698,22 +687,6 @@ body{
     
 }
 
-@media (min-width: 717px){
-    // .offers{
-    //     &__card{
-    //         &-info{
-    //             &-title{
-    //                 top: 1em;
-    //                 font-size: 4rem;
-    //             }
-    //             &-text{
-    //                 margin-top: 5em;
-    //             }
-    //         }
-    //     }
-    // }
-}
-
 @media (min-width: 720px){
 
     .header{
@@ -840,6 +813,94 @@ body{
             }  
         }
     }
+
+    .reviews{
+        margin-top: 15em;
+        margin-bottom: 8em;
+        &__box{
+            height: 100vh;
+            margin: 0em;
+            padding: 0em;
+            border-radius: 0;
+            box-shadow: 5px 5px 5px #2e2e2e2e;
+            // border: 1px solid black;
+
+            &-img{
+                position: absolute;
+                @include heroImages('../img/photographerBig.jpg');
+                color: $main-color;
+                // border: 3px solid green;
+                background-attachment: unset;
+                right: 0;
+                width: 60%;
+                height: 100%;
+
+                &-info{
+                    position: absolute;
+                    width: 100%;
+                    font-size: 2rem;
+                    // border: 1px solid black;
+                    height: 100%;
+
+                    &-text{
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 10%;
+                        padding: 1em;
+                        font-weight: bold;
+                        text-align: center;
+                        font-size: 4rem;
+                    }
+
+                    &-more{
+                        position: absolute;
+                        bottom: 7%;
+                        left: 5%;
+                        font-size: 3rem;
+                        text-decoration: none;
+                        color: $pure-pink;
+                    }
+                }
+            }
+            &-info{
+                position: relative;
+                width: 40%;
+                height: 100%;
+                // box-shadow: 5px 5px 5px #2e2e2e2e;
+                // border: 1px solid black;
+
+                &-quote{
+                    position: absolute;
+                    top: 0;
+                    padding: 1em;
+                    margin-bottom: 1em;
+                    font-size: 5rem;
+                    color: $main-color;
+                }
+                &-text{
+                    position: absolute;
+                    font-weight: bold;
+                    // border: 1px solid black;
+                    padding: 2em;
+                    top: 15%;
+                    font-size: 1.5rem;
+                }
+
+                &-signature{
+                    position: absolute;
+                    bottom: 5%;
+                    font-size: 4.5rem;
+                    right: 10%;
+                    color: $button-green;
+                    font-family: 'Dancing Script', cursive;
+                }
+            }
+            &:hover{
+                transform: scale(1);
+            }
+        }
+    }
     
     .footer{
         &__boxes{
@@ -879,6 +940,36 @@ body{
       }
 }
 
+// @media (min-width: 812px){
+//     .reviews{
+//         &__box{
+//             &-img{
+//                 &-info{
+//                     &-text{
+//                         font-size: 3rem;
+//                     }
+
+//                     &-more{
+//                         font-size: 2.5rem;
+//                     }
+//                 }
+//             }
+//             &-info{
+//                 &-quote{
+//                     font-size: 2.5rem;
+//                 }
+//                 &-text{
+//                     top: 15%;
+//                     font-size: 12.5rem;
+//                 }
+//                 &-signature{
+//                     font-size: 3rem;
+//                 }
+//             }
+//         }
+//     }
+// }
+
 @media (min-width: 812px){
     .header{
         .fa-chevron-down{
@@ -905,7 +996,89 @@ body{
             }        
         }     
     }
+    .reviews{
+        &__box{
+            &-img{
+                &-info{
+                    &-text{
+                        font-size: 3rem;
+                    }
+
+                    &-more{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+            &-info{
+                &-quote{
+                    font-size: 2.5rem;
+                }
+                &-text{
+                    top: 16%;
+                    font-size: 1.6rem;
+                }
+                &-signature{
+                    bottom: 1%;
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
     
+}
+
+@media screen and (min-width: 812px){
+    .reviews{
+        &__box{
+            &-img{
+                &-info{
+                    &-text{
+                        font-size: 3rem;
+                    }
+
+                    &-more{
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+            &-info{
+                &-quote{
+                    font-size: 2.5rem;
+                }
+                &-text{
+                    top: 16%;
+                    font-size: 1rem;
+                }
+                &-signature{
+                    bottom: 1%;
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+@media (min-width:823px) and (orientation: landscape) {
+    .reviews{
+        &__box{
+            &-img{
+                &-info{
+                    &-more{
+                        font-size: 2rem;
+                    }
+                }
+            }
+            &-info{
+                &-text{
+                    top: 20%;
+                    font-size: 1rem;
+                }
+                &-signature{
+                    font-size: 3rem;
+                }
+            }
+            
+        }
+    }
 }
 
 
@@ -934,16 +1107,16 @@ body{
             font-size: 4rem;
         }
     }
-}
 
-
-@media(min-width:992px){
-
-    // .offers{
-    //     &__card{
-    //         width: 30%;
-    //     }
-    // }
+    .reviews{
+        &__box{
+            &-info{
+                &-text{
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
 }
 
 
@@ -1017,9 +1190,25 @@ body{
                 }  
             }  
         }
-    }   
+    }
+    
+    .reviews{
+        &__box{
+            &-info{
+                &-quote{
+                    font-size: 5rem;
+                }
+                &-text{
+                    top: 12%;
+                    font-size: 2.1rem;
+                }
+                &-signature{
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
 }
-
 @media (min-width: 1024px) and (orientation: landscape){
 
     .aboutme{
@@ -1051,7 +1240,22 @@ body{
                 }  
             }  
         }
-    }   
+    } 
+    
+    .reviews{
+        &__box{
+            &-info{
+                &-text{
+                    top: 20%;
+                    font-size: 1.3rem;
+                }
+                &-signature{
+                    font-size: 3.5rem;
+                }
+            }
+            
+        }
+    }
 } 
 
 @media (min-width: 1280px){
@@ -1086,6 +1290,20 @@ body{
                 }  
             }
          } 
+    }
+
+    .reviews{
+        &__box{
+            &-info{
+                &-text{
+                    font-size: 1.6rem;
+                }
+                &-signature{
+                    font-size: 4.5rem;
+                }
+            }
+            
+        }
     }
 }
 
@@ -1122,6 +1340,23 @@ body{
             font-size: 3rem;
         }
     } 
+    
+    .reviews{
+        &__box{
+            &-info{
+                &-quote{
+                    font-size: 5rem;
+                }
+                &-text{
+                    top: 12%;
+                    font-size: 2.1rem;
+                }
+                &-signature{
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 2065px){
@@ -1181,6 +1416,31 @@ body{
             }  
         }
     }
+
+    .reviews{
+        &__box{
+            &-img{
+                &-info{
+                    &-text{
+                        font-size: 5.5rem;
+                    }
+
+                    &-more{
+                        font-size: 4rem;
+                    }
+                }
+            }
+            &-info{
+                &-text{
+                    font-size: 2.8rem;
+                }
+                &-signature{
+                    font-size: 5.5rem;
+                }
+            }
+            
+        }
+    }
 }
 
 @media only screen and (min-width: 2202px){
@@ -1228,6 +1488,30 @@ body{
             font-size: 4rem;
         }
     }
+
+    .reviews{
+        &__box{
+            &-img{
+                &-info{
+                    &-text{
+                        font-size: 6rem;
+                    }
+                }
+            }
+            &-info{
+                &-quote{
+                    font-size: 6rem;
+                }
+                &-text{
+                    font-size: 3.5rem;
+                }
+                &-signature{
+                    font-size: 7.5rem;
+                }
+            }
+            
+        }
+    }
 }
 
 @media only screen and (min-width: 3304px){
@@ -1239,128 +1523,86 @@ body{
     
 }
 
-// .offers{
-
-//     &__card{
-//         // height: 90vh;
-//         // width: 100vw;
-//         // border: 2px solid pink;
-//         // overflow: hidden;
+// .reviews{
+//     margin-top: 15em;
+//     margin-bottom: 8em;
+//     &__boxPhone{
+//         height: 100vh;
+//         // border: 1px solid black;
 //         position: relative;
-//         padding-bottom: 4em;
-        
-        
-//         &-img{   
-//             position: relative;
-//             height: 100vh;
-//             &:hover{
-//                 .offers__card-img-info{
-//                     clip-path: circle(120% at 50% 90%);
-//                 }
-//             }
+//         &-img{
+//             position: absolute;
+//             @include heroImages('../img/photographerBig.jpg');
+//             color: $main-color;
+//             // border: 1px solid yellow;
+//             background-attachment:unset;
+//             right: 0px;
+//             width: 60%;
+//             height: 100%;
 
-//             &--first{
-//                 width: 40%;
-//                 @include heroImages('/img/photographerBig.jpg');
-//                 background-attachment: unset;  
-//                 overflow: hidden;
-//             }
-
-//             &--second{
-//                 position: absolute;
-//                 @include heroImages('/img/photographerBig2Main.jpg'); 
-//                 background-attachment: unset;  
-//                 right: 0;
-//                 top: 0;
-//                 width: 50%;
-//                 right: 50px;
-//             }
-//             &--third{
-//                 // position: absolute;
-//                 width: 60%;
-//                 @include heroImages('/img/photographerBig.jpg');
-//                 background-attachment: unset;  
-//                 overflow: hidden;  
-//             }
-
-//             &--fourth{
-//                 position: absolute;
-//                 @include heroImages('/img/photographerBig2Main.jpg'); 
-//                 background-attachment: unset;  
-//                 right: 0;
-//                 top: 0;
-//                 width: 30%; 
-//                 right: 100px;
-//             }
-
-
-//             &-question{
-//                 position: absolute;
-//                 top: 10px;
-//                 right: 10px;
-//                 padding: 10px;
-//                 background: none;
-//                 border: none;
-//                 color:white;
-//                 font-size: 36px;
-//                 text-shadow: 2px 2px 5px rgb(0, 0, 0);     
-//                 z-index: 1;
-//             } 
-
-//             &-title{
-//                 position: absolute;
-//                 color: $main-color;
-//                 font-size: 5rem;
-//                 font-weight: bold;
-//                 text-transform: uppercase;
-//                 bottom: 35px;
-//                 left: 0;
-//                 right: 0;
-//                 text-align: center;
-//                 z-index: 1;
-//             }
-
-          
 //             &-info{
-//                 display: flex;
-//                 flex-direction: column;
-//                 justify-content: flex-end;
 //                 position: absolute;
-//                 top: 0;
-//                 bottom: 0;
-//                 left: 0;
-//                 right: 0;
-//                 padding: 80px 30px;
-//                 background-color: rgba(0,0,0,.85);
-//                 clip-path: circle(0 at 50% 10%);
-//                 transition: clip-path .8s;
-            
+//                 width: 100%;
+//                 font-size: 2rem;
+//                 // border: 1px solid black;
+//                 height: 100%;
+
 //                 &-text{
 //                     position: absolute;
-//                     top: 10%;
 //                     left: 0;
 //                     right: 0;
-//                     text-align: center;
-//                     font-size: 3.4rem;
+//                     top: 10%;
 //                     padding: 1em;
-//                     text-transform: uppercase;
-//                     color: $button-green;
+//                     font-weight: bold;
+//                     text-align: center;
+//                     font-size: 4rem;
 //                 }
 
 //                 &-more{
 //                     position: absolute;
-//                     bottom: 30%;
-//                     font-size: 2.5rem;
-//                     right: 0;
-//                     left: 0;
-//                     text-align: center;
+//                     bottom: 7%;
+//                     left: 5%;
+//                     font-size: 3rem;
 //                     text-decoration: none;
-//                     // z-index: 1;
-//                     color: pink;
+//                     color: $pure-pink;
 //                 }
 //             }
-            
-//         }  
+//         }
+
+//         &-info{
+//             position: relative;
+//             // border: 1px solid black;
+//             width: 40%;
+//             height: 100%;
+//             box-shadow: 5px 5px 5px #2e2e2e2e;
+
+//             &-text{
+//                 position: absolute;
+//                 border: 1px solid black;
+//                 padding: 3em;
+//                 top: 10%;
+//                 font-size: 2.3rem;
+//             }
+
+//             &-signature{
+//                 position: absolute;
+//                 bottom: 5%;
+//                 font-size: 5rem;
+//                 right: 10%;
+//                 color: $button-green;
+//                 font-family: 'Dancing Script', cursive;
+//             }
+//             &-quote{
+//                 position: absolute;
+//                 top: 0;
+//                 padding: 1em;
+//                 margin-bottom: 1em;
+//                 font-size: 5rem;
+//                 color: $main-color;
+//             }
+//         }
+
 //     }
-    
 // }
+
+

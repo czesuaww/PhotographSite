@@ -700,27 +700,13 @@ body {
   transition: transform .3s, -webkit-transform .3s;
 }
 
-.reviews__box-img {
-  position: absolute;
-  top: 8%;
-  left: 75%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.reviews__box-img img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-}
-
-.reviews__box-quote {
+.reviews__box-info-quote {
   margin-bottom: 1em;
   font-size: 3rem;
   color: #d59c41;
 }
 
-.reviews__box-text {
+.reviews__box-info-text {
   margin-bottom: 1em;
   font-size: 1.4rem;
   color: #2e2e2e;
@@ -1013,6 +999,86 @@ body {
   .offers__card-img-info-more {
     font-size: 3.5rem;
   }
+  .reviews {
+    margin-top: 15em;
+    margin-bottom: 8em;
+  }
+  .reviews__box {
+    height: 100vh;
+    margin: 0em;
+    padding: 0em;
+    border-radius: 0;
+    -webkit-box-shadow: 5px 5px 5px #2e2e2e2e;
+            box-shadow: 5px 5px 5px #2e2e2e2e;
+  }
+  .reviews__box-img {
+    position: absolute;
+    background-image: url("../img/photographerBig.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #d59c41;
+    background-attachment: unset;
+    right: 0;
+    width: 60%;
+    height: 100%;
+  }
+  .reviews__box-img-info {
+    position: absolute;
+    width: 100%;
+    font-size: 2rem;
+    height: 100%;
+  }
+  .reviews__box-img-info-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%;
+    padding: 1em;
+    font-weight: bold;
+    text-align: center;
+    font-size: 4rem;
+  }
+  .reviews__box-img-info-more {
+    position: absolute;
+    bottom: 7%;
+    left: 5%;
+    font-size: 3rem;
+    text-decoration: none;
+    color: #f9b2d3;
+  }
+  .reviews__box-info {
+    position: relative;
+    width: 40%;
+    height: 100%;
+  }
+  .reviews__box-info-quote {
+    position: absolute;
+    top: 0;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-size: 5rem;
+    color: #d59c41;
+  }
+  .reviews__box-info-text {
+    position: absolute;
+    font-weight: bold;
+    padding: 2em;
+    top: 15%;
+    font-size: 1.5rem;
+  }
+  .reviews__box-info-signature {
+    position: absolute;
+    bottom: 5%;
+    font-size: 4.5rem;
+    right: 10%;
+    color: #41bcac;
+    font-family: 'Dancing Script', cursive;
+  }
+  .reviews__box:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
   .footer__boxes {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1064,6 +1130,56 @@ body {
   .aboutme__box-info-signature {
     font-size: 4rem;
   }
+  .reviews__box-img-info-text {
+    font-size: 3rem;
+  }
+  .reviews__box-img-info-more {
+    font-size: 2.5rem;
+  }
+  .reviews__box-info-quote {
+    font-size: 2.5rem;
+  }
+  .reviews__box-info-text {
+    top: 16%;
+    font-size: 1.6rem;
+  }
+  .reviews__box-info-signature {
+    bottom: 1%;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 812px) {
+  .reviews__box-img-info-text {
+    font-size: 3rem;
+  }
+  .reviews__box-img-info-more {
+    font-size: 2.5rem;
+  }
+  .reviews__box-info-quote {
+    font-size: 2.5rem;
+  }
+  .reviews__box-info-text {
+    top: 16%;
+    font-size: 1rem;
+  }
+  .reviews__box-info-signature {
+    bottom: 1%;
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 823px) and (orientation: landscape) {
+  .reviews__box-img-info-more {
+    font-size: 2rem;
+  }
+  .reviews__box-info-text {
+    top: 20%;
+    font-size: 1rem;
+  }
+  .reviews__box-info-signature {
+    font-size: 3rem;
+  }
 }
 
 @media (min-width: 880px) {
@@ -1081,6 +1197,9 @@ body {
   }
   .nav__item {
     font-size: 4rem;
+  }
+  .reviews__box-info-text {
+    font-size: 1.7rem;
   }
 }
 
@@ -1131,6 +1250,16 @@ body {
   .offers__card-img-info-more {
     font-size: 3.5rem;
   }
+  .reviews__box-info-quote {
+    font-size: 5rem;
+  }
+  .reviews__box-info-text {
+    top: 12%;
+    font-size: 2.1rem;
+  }
+  .reviews__box-info-signature {
+    font-size: 5rem;
+  }
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
@@ -1148,6 +1277,13 @@ body {
   }
   .offers__card-img-info-more {
     font-size: 2.5rem;
+  }
+  .reviews__box-info-text {
+    top: 20%;
+    font-size: 1.3rem;
+  }
+  .reviews__box-info-signature {
+    font-size: 3.5rem;
   }
 }
 
@@ -1178,6 +1314,12 @@ body {
     width: 35%;
     right: 30px;
   }
+  .reviews__box-info-text {
+    font-size: 1.6rem;
+  }
+  .reviews__box-info-signature {
+    font-size: 4.5rem;
+  }
 }
 
 @media (min-width: 1366px) {
@@ -1202,6 +1344,16 @@ body {
   }
   .hero-img__text {
     font-size: 3rem;
+  }
+  .reviews__box-info-quote {
+    font-size: 5rem;
+  }
+  .reviews__box-info-text {
+    top: 12%;
+    font-size: 2.1rem;
+  }
+  .reviews__box-info-signature {
+    font-size: 5rem;
   }
 }
 
@@ -1240,6 +1392,18 @@ body {
   .offers__card-img-info-more {
     font-size: 3.5rem;
   }
+  .reviews__box-img-info-text {
+    font-size: 5.5rem;
+  }
+  .reviews__box-img-info-more {
+    font-size: 4rem;
+  }
+  .reviews__box-info-text {
+    font-size: 2.8rem;
+  }
+  .reviews__box-info-signature {
+    font-size: 5.5rem;
+  }
 }
 
 @media only screen and (min-width: 2202px) {
@@ -1269,6 +1433,18 @@ body {
   }
   .hero-img__text {
     font-size: 4rem;
+  }
+  .reviews__box-img-info-text {
+    font-size: 6rem;
+  }
+  .reviews__box-info-quote {
+    font-size: 6rem;
+  }
+  .reviews__box-info-text {
+    font-size: 3.5rem;
+  }
+  .reviews__box-info-signature {
+    font-size: 7.5rem;
   }
 }
 
