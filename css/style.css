@@ -581,7 +581,7 @@ body {
 }
 
 .offers__card-img--first {
-  background-image: url("/img/photographerBig.jpg");
+  background-image: url("../img/photographerBig.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -589,7 +589,7 @@ body {
 }
 
 .offers__card-img--second {
-  background-image: url("/img/photographerBig2Main.jpg");
+  background-image: url("../img/photographerBig2Main.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -597,7 +597,7 @@ body {
 }
 
 .offers__card-img--third {
-  background-image: url("/img/photographerBig.jpg");
+  background-image: url("../img/photographerBig.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -605,7 +605,7 @@ body {
 }
 
 .offers__card-img--fourth {
-  background-image: url("/img/photographerBig2Main.jpg");
+  background-image: url("../img/photographerBig2Main.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

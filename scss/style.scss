@@ -295,21 +295,21 @@ body{
             }
 
             &--first{
-                @include heroImages('/img/photographerBig.jpg');
+                @include heroImages('../img/photographerBig.jpg');
                 background-attachment: unset;  
             }
 
             &--second{
-                @include heroImages('/img/photographerBig2Main.jpg'); 
+                @include heroImages('../img/photographerBig2Main.jpg'); 
                 background-attachment: unset;  
             }
             &--third{
-                @include heroImages('/img/photographerBig.jpg');
+                @include heroImages('../img/photographerBig.jpg');
                 background-attachment: unset;  
             }
 
             &--fourth{
-                @include heroImages('/img/photographerBig2Main.jpg'); 
+                @include heroImages('../img/photographerBig2Main.jpg'); 
                 background-attachment: unset;  
             }
 
