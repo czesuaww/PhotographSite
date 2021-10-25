@@ -511,10 +511,14 @@ body{
     }
 
     &__bottom-text{
-        padding: 2em;
+        // padding: 2em;
         text-align: center;
     }
 
+    &__bottom-made{
+        margin-bottom: 0;
+        text-align: center;
+    }
     
 }
 
@@ -957,7 +961,7 @@ body{
                 }
         
                 &-signature{
-                    font-size: 3rem;
+                    font-size: 3rem;  
                 }
             }        
         }     

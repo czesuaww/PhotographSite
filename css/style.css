@@ -813,7 +813,11 @@ body {
 }
 
 .footer__bottom-text {
-  padding: 2em;
+  text-align: center;
+}
+
+.footer__bottom-made {
+  margin-bottom: 0;
   text-align: center;
 }
 
