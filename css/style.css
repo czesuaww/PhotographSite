@@ -521,7 +521,7 @@ body {
 .aboutme__box-info-text {
   position: absolute;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
   top: 70px;
   padding: 2em;
 }
@@ -530,8 +530,8 @@ body {
   position: absolute;
   font-family: 'Dancing Script', cursive;
   color: #41bcac;
-  font-size: 2rem;
-  bottom: 5%;
+  font-size: 2.5rem;
+  bottom: 0;
   right: 10%;
 }
 
@@ -1138,14 +1138,14 @@ body {
     height: 100vh;
   }
   .aboutme__box-info-heading {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .aboutme__box-info-text {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     top: 25%;
   }
   .aboutme__box-info-signature {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .reviews__box-img-info-text {
     font-size: 3rem;
