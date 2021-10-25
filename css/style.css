@@ -4,6 +4,12 @@
   max-width: 1200px;
 }
 
+.wrapper-offers {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1800px;
+}
+
 .white-block {
   position: absolute;
   height: 40px;
@@ -276,7 +282,7 @@ html {
 }
 
 body {
-  font-family: 'KoHo', sans-serif;
+  font-family: 'Cinzel', serif;
   font-size: 1.6rem;
   overflow-x: hidden;
 }
@@ -562,62 +568,77 @@ body {
 
 .offers__card {
   position: relative;
-  margin-bottom: 2em;
-  height: 400px;
-  color: #ffffff;
-  text-align: center;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-}
-
-.offers__card:hover .offers__card-img {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-  opacity: 0;
-}
-
-.offers__card:hover .offers__card-info {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-  opacity: 1;
 }
 
 .offers__card-img {
-  padding: 2em;
-  height: 100%;
+  position: relative;
+  height: 100vh;
+}
+
+.offers__card-img:hover .offers__card-img-info {
+  -webkit-clip-path: circle(120% at 50% 90%);
+          clip-path: circle(120% at 50% 90%);
+}
+
+.offers__card-img--first {
+  background-image: url("/img/photographerBig.jpg");
   background-size: cover;
   background-position: center;
-  -webkit-animation: slidePicture 25s linear infinite 0s;
-          animation: slidePicture 25s linear infinite 0s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, -webkit-transform 1s;
-  transition: transform 1s, opacity 1s;
-  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+  background-attachment: fixed;
+  background-attachment: unset;
+}
+
+.offers__card-img--second {
+  background-image: url("/img/photographerBig2Main.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-attachment: unset;
+}
+
+.offers__card-img--third {
+  background-image: url("/img/photographerBig.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-attachment: unset;
+}
+
+.offers__card-img--fourth {
+  background-image: url("/img/photographerBig2Main.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-attachment: unset;
+}
+
+.offers__card-img-question {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 36px;
+  text-shadow: 2px 2px 5px black;
+  z-index: 1;
 }
 
 .offers__card-img-title {
-  font-size: 4.3rem;
+  position: absolute;
+  color: #d59c41;
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  top: 75px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
 }
 
 .offers__card-img-info {
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-  font-size: 1.8rem;
-}
-
-.offers__card-img-info i {
-  margin-right: 0.3em;
-}
-
-.offers__card-info {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -625,60 +646,45 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-image: linear-gradient(45deg, rgba(238, 196, 201, 0.6), rgba(238, 196, 201, 0.6));
-  border-radius: 8px;
-  opacity: 0;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  -webkit-transition: opacity 1s,-webkit-transform 1s;
-  transition: opacity 1s,-webkit-transform 1s;
-  transition: transform 1s,opacity 1s;
-  transition: transform 1s,opacity 1s,-webkit-transform 1s;
-  color: #2e2e2e;
-}
-
-.offers__card-info-title {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  color: #41bcac;
-  top: .5em;
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.offers__card-info-text {
-  padding: 1em;
-  margin-top: 10em;
-  font-size: 1.5rem;
-}
-
-.offers__card-info-faceInfo {
-  margin-bottom: 1.3em;
-  padding: 1em;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.offers__card-icons {
-  position: absolute;
+  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  font-size: 3rem;
-  margin-top: -.5em;
+  padding: 80px 30px;
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-clip-path: circle(0 at 50% 10%);
+          clip-path: circle(0 at 50% 10%);
+  -webkit-transition: -webkit-clip-path .8s;
+  transition: -webkit-clip-path .8s;
+  transition: clip-path .8s;
+  transition: clip-path .8s, -webkit-clip-path .8s;
 }
 
-.offers__card-icons-facebook {
-  color: #d59c41;
+.offers__card-img-info-text {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 2.3rem;
+  padding: 1em;
+  text-transform: uppercase;
+  color: #41bcac;
 }
 
-.offers__card-icons-instagram {
-  color: rgba(138, 73, 212, 0.75);
+.offers__card-img-info-more {
+  position: absolute;
+  bottom: 10%;
+  font-size: 2rem;
+  right: 0;
+  left: 0;
+  text-align: center;
+  text-decoration: none;
+  color: pink;
 }
 
 .reviews__box {
@@ -805,16 +811,6 @@ body {
     padding: 1em;
     bottom: 30px;
   }
-  .offers__card-info-text {
-    margin-top: 5em;
-  }
-  .offers__card-info-faceInfo {
-    margin-top: 0em;
-    font-size: 1.3rem;
-  }
-  .offers__card-icons {
-    font-size: 3.5rem;
-  }
 }
 
 @media (min-width: 360px) {
@@ -844,9 +840,6 @@ body {
     padding: 2em;
     font-size: 1.6rem;
     bottom: 30px;
-  }
-  .offers__card-info {
-    font-size: 4rem;
   }
   .contact__map {
     margin: 2em;
@@ -891,17 +884,11 @@ body {
     font-size: 1.6rem;
     bottom: 0px;
   }
-  .offers__card {
-    margin: 4em;
+  .offers__card-img-info-text {
+    font-size: 2.8rem;
   }
-  .offers__card-info-title {
-    font-size: 4rem;
-  }
-  .offers__card-info-faceInfo {
-    font-size: 1.3rem;
-  }
-  .offers__card-icons {
-    font-size: 4.5rem;
+  .offers__card-img-info-more {
+    font-size: 2.2rem;
   }
   .contact__map {
     margin: 3em;
@@ -912,34 +899,11 @@ body {
   .header .fa-chevron-down {
     margin-top: 5.5em;
   }
-  .offers__card {
-    margin: 5em;
-  }
-  .offers__card-info-title {
-    font-size: 4rem;
-  }
-  .offers__card-info-text {
-    margin-top: 7em;
-    font-size: 1.6rem;
-  }
-  .offers__card-info-faceInfo {
-    margin-bottom: 1.4em;
-    padding: 1em;
-    font-weight: bold;
-    font-size: 1rem;
-  }
-  .offers__card-icons {
-    bottom: 10px;
-    font-size: 4rem;
-  }
 }
 
 @media (min-width: 568px) {
   .header .fa-chevron-down {
     margin-top: 3.5em;
-  }
-  .offers__card-title {
-    font-size: 4rem;
   }
 }
 
@@ -947,36 +911,12 @@ body {
   .header .fa-chevron-down {
     margin-top: 4em;
   }
-  .offers__card {
-    margin: 6em;
-  }
-  .offers__card-info-title {
-    font-size: 4rem;
-  }
-  .offers__card-info-text {
-    margin-top: 5em;
-    font-size: 1.8rem;
-  }
-  .offers__card-info-faceInfo {
-    margin-bottom: 1.3em;
-    font-size: 1.5rem;
-  }
 }
 
 @media (min-width: 667px) {
   .header .fa-chevron-down {
     margin-top: 5em;
     font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 717px) {
-  .offers__card-info-title {
-    top: 1em;
-    font-size: 4rem;
-  }
-  .offers__card-info-text {
-    margin-top: 5em;
   }
 }
 
@@ -997,13 +937,6 @@ body {
   .header .fa-chevron-down {
     margin-top: 5em;
     font-size: 3rem;
-  }
-  .offers__card-info-title {
-    top: .5em;
-  }
-  .offers__card-info-faceInfo {
-    margin-bottom: 3.5em;
-    font-size: 1.2rem;
   }
 }
 
@@ -1036,20 +969,6 @@ body {
   }
   .hero-img__text {
     font-size: 2rem;
-  }
-  .offers__cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .offers__card {
-    margin: 1em;
-    width: 45%;
   }
   .contact {
     height: 100%;
@@ -1084,6 +1003,15 @@ body {
     margin: auto;
     border-radius: 6px;
     background-attachment: unset;
+  }
+  .offers__card-img-title {
+    font-size: 5rem;
+  }
+  .offers__card-img-info-text {
+    font-size: 4.4rem;
+  }
+  .offers__card-img-info-more {
+    font-size: 3.5rem;
   }
   .footer__boxes {
     display: -webkit-box;
@@ -1156,12 +1084,6 @@ body {
   }
 }
 
-@media (min-width: 992px) {
-  .offers__card {
-    width: 30%;
-  }
-}
-
 @media (min-width: 1024px) {
   .section-heading {
     font-size: 5rem;
@@ -1182,6 +1104,33 @@ body {
   .aboutme__box-info-signature {
     font-size: 5.5rem;
   }
+  .offers__card {
+    padding-bottom: 1em;
+  }
+  .offers__card-img--first {
+    width: 50%;
+  }
+  .offers__card-img--second {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+  }
+  .offers__card-img--third {
+    width: 60%;
+  }
+  .offers__card-img--fourth {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+  }
+  .offers__card-img-info-text {
+    font-size: 4.4rem;
+  }
+  .offers__card-img-info-more {
+    font-size: 3.5rem;
+  }
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
@@ -1194,6 +1143,12 @@ body {
   .aboutme__box-info-signature {
     font-size: 5.5rem;
   }
+  .offers__card-img-info-text {
+    font-size: 3rem;
+  }
+  .offers__card-img-info-more {
+    font-size: 2.5rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1205,6 +1160,23 @@ body {
   }
   .hero-img__text {
     font-size: 2.2rem;
+  }
+  .offers__card {
+    padding-bottom: 6em;
+  }
+  .offers__card-img--first {
+    width: 40%;
+    margin-left: 2em;
+  }
+  .offers__card-img--second {
+    right: 30px;
+  }
+  .offers__card-img--fourth {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35%;
+    right: 30px;
   }
 }
 
@@ -1255,6 +1227,18 @@ body {
   }
   .aboutme__box-info-signature {
     font-size: 8rem;
+  }
+  .offers__card-img--fourth {
+    right: 50px;
+  }
+  .offers__card-img-title {
+    font-size: 6.5rem;
+  }
+  .offers__card-img-info-text {
+    font-size: 4.4rem;
+  }
+  .offers__card-img-info-more {
+    font-size: 3.5rem;
   }
 }
 

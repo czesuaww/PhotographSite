@@ -19,7 +19,7 @@ html{
 }
 
 body{
-    font-family: 'KoHo', sans-serif;
+    font-family: 'Cinzel', serif;
     font-size: 1.6rem;
     overflow-x: hidden;
 }
@@ -216,7 +216,7 @@ body{
                 position: absolute;
                 text-align: center;
                 font-size: 2rem;
-            text-transform: uppercase;
+                text-transform: uppercase;
                 left: 0;
                 right: 0;
                 top: 25px;
@@ -282,110 +282,114 @@ body{
 //oferty 2
 .offers{
     &__card{
-        position: relative;
-        margin-bottom: 2em;
-        height: 400px;
-        color: $pure-white;
-        text-align: center;
-        perspective: 1000px;
+        position: relative; 
 
-        &:hover{
-            .offers__card-img{
-                transform: rotateY(-180deg);
-                opacity: 0;
-            }
-            .offers__card-info{
-                transform: rotateY(0);
-                opacity: 1;
-            }
-        }
-
-        &-img{
-            padding: 2em;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            animation: slidePicture 25s linear infinite 0s;
-            animation-timing-function: ease-in-out;
-            transition: transform 1s, opacity 1s;
-
-            &-title{
-                font-size: 4.3rem;
-            }
-            &-info{
-                position: absolute;
-                bottom: 30px;
-                right: 30px;
-                font-size: 1.8rem;
-
-                i{
-                    margin-right: 0.3em;
+        &-img{   
+            position: relative;
+            height: 100vh;
+        
+            &:hover{
+                .offers__card-img-info{
+                    clip-path: circle(120% at 50% 90%);
                 }
             }
-        }
 
-        &-info{
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background-image: $card-powderPink-gradient;
-            border-radius: 8px;
-            opacity: 0;
-            transform: rotateY(180deg);
-            transition: transform 1s,opacity 1s;
-            color: $dark;
+            &--first{
+                @include heroImages('/img/photographerBig.jpg');
+                background-attachment: unset;  
+            }
+
+            &--second{
+                @include heroImages('/img/photographerBig2Main.jpg'); 
+                background-attachment: unset;  
+            }
+            &--third{
+                @include heroImages('/img/photographerBig.jpg');
+                background-attachment: unset;  
+            }
+
+            &--fourth{
+                @include heroImages('/img/photographerBig2Main.jpg'); 
+                background-attachment: unset;  
+            }
+
+
+            &-question{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                padding: 10px;
+                background: none;
+                border: none;
+                color:white;
+                font-size: 36px;
+                text-shadow: 2px 2px 5px rgb(0, 0, 0);     
+                z-index: 1;
+            } 
 
             &-title{
-                // @include offersCardStyles;
                 position: absolute;
-                left: 50%;
-                transform: translate(-50%);
-                color: $button-green;
-                top: .5em;
-                font-size: 3rem;
-                font-weight: bold;
-            }
-
-            &-text{
-                padding: 1em;
-                margin-top: 10em;
-                font-size: 1.5rem;
-            }
-
-            &-faceInfo{
-                margin-bottom: 1.3em;
-                padding: 1em;
-                font-weight: bold;
-                font-size: 1rem;
-            }
-        }
-
-        &-icons{
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            font-size: 3rem;
-            margin-top: -.5em;
-            &-facebook{
                 color: $main-color;
+                font-size: 4rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                top: 75px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                z-index: 1;
             }
 
-            &-instagram{
-                color: $pink-color;
+          
+            &-info{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 80px 30px;
+                background-color: rgba(0,0,0,.85);
+                clip-path: circle(0 at 50% 10%);
+                transition: clip-path .8s;
+            
+                &-text{
+                    position: absolute;
+                    top: 30%;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    font-size: 2.3rem;
+                    padding: 1em;
+                    text-transform: uppercase;
+                    color: $button-green;
+                }
+
+                &-more{
+                    position: absolute;
+                    bottom: 10%;
+                    font-size: 2rem;
+                    right: 0;
+                    left: 0;
+                    text-align: center;
+                    text-decoration: none;
+                    // z-index: 1;
+                    color: pink;
+                }
             }
-        }
+            
+        }  
     }
+    
 }
+
 
 //REVIEWS
 
 .reviews{
+    // padding:;
     &__box{
         position: relative;
         margin: 2em;
@@ -523,26 +527,7 @@ body{
             bottom: 30px;
         }
     
-    }
-    .offers{
-        &__card{    
-            &-info{
-                &-text{
-                    margin-top: 5em;
-                }
-    
-                &-faceInfo{
-                    margin-top: 0em;
-                    font-size: 1.3rem;
-                }   
-            }
-            &-icons{
-                font-size: 3.5rem;
-            }
-        }
-    }
-
-    
+    } 
 }
 @media(min-width:360px){
     
@@ -582,15 +567,6 @@ body{
             padding: 2em;
             font-size: 1.6rem;
             bottom: 30px;
-        }
-    }
-
-    .offers{
-        &__card{    
-            &-info{
-                    font-size: 4rem;
-                }
-    
         }
     }
 
@@ -657,21 +633,19 @@ body{
 
     .offers{
         &__card{
-            margin: 4em;
-            &-info{
-                &-title{
-                    font-size: 4rem;
-                }
-                &-faceInfo{
-                    font-size: 1.3rem;
-                }
-            }
-            &-icons{
-                font-size: 4.5rem;
-              
-            }
-        }
-    }  
+            &-img{      
+                &-info{
+                    &-text{
+                        font-size: 2.8rem;
+                    }
+    
+                    &-more{
+                        font-size: 2.2rem;
+                    }
+                }  
+            }  
+        }   
+    } 
 
     .contact{ 
         &__map{
@@ -689,33 +663,6 @@ body{
             margin-top: 5.5em;
         }
     }
-    
-    .offers{
-        &__card{
-            margin: 5em;
-        
-            &-info{
-                &-title{
-                    font-size: 4rem;
-                }
-                &-text{
-                    margin-top: 7em;
-                    font-size: 1.6rem;
-                }
-                &-faceInfo{
-                    margin-bottom: 1.4em;
-                    padding: 1em;
-                    font-weight: bold;
-                    font-size: 1rem;
-                }
-            }
-    
-            &-icons{
-                bottom: 10px;
-                font-size: 4rem;
-            }
-        }
-    }
 }
 
 
@@ -727,14 +674,6 @@ body{
         }
     }
 
-    .offers{
-        &__card{
-            // margin: 7em;
-                &-title{
-                    font-size: 4rem;
-                }
-        }
-    }
 }
 
 @media (min-width: 640px){
@@ -745,26 +684,6 @@ body{
         }
     }
 
-    .offers{
-        &__card{
-            margin: 6em;
-            &-info{
-                &-title{
-                    font-size: 4rem;
-                }
-    
-                &-text{
-                    margin-top: 5em;
-                    font-size: 1.8rem;
-                }
-    
-                &-faceInfo{
-                    margin-bottom: 1.3em;
-                    font-size: 1.5rem;
-                }
-            }
-        }
-    } 
 }
 
 @media (min-width: 667px){
@@ -780,19 +699,19 @@ body{
 }
 
 @media (min-width: 717px){
-    .offers{
-        &__card{
-            &-info{
-                &-title{
-                    top: 1em;
-                    font-size: 4rem;
-                }
-                &-text{
-                    margin-top: 5em;
-                }
-            }
-        }
-    }
+    // .offers{
+    //     &__card{
+    //         &-info{
+    //             &-title{
+    //                 top: 1em;
+    //                 font-size: 4rem;
+    //             }
+    //             &-text{
+    //                 margin-top: 5em;
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 @media (min-width: 720px){
@@ -819,21 +738,6 @@ body{
         .fa-chevron-down{
             margin-top: 5em;
             font-size: 3rem;
-        }
-    }
-
-    .offers{
-        &__card{
-            &-info{
-                &-title{
-                    top: .5em;
-                }
-    
-                &-faceInfo{
-                    margin-bottom: 3.5em;
-                    font-size: 1.2rem;
-                }
-            }
         }
     }
 }
@@ -881,19 +785,6 @@ body{
             font-size: 2rem;
         }
     }
-    
-    .offers{
-        &__cards{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        &__card{
-            margin: 1em;
-            width: 45%;
-        }
-    }
 
     .contact{   
         height: 100%;     
@@ -927,15 +818,30 @@ body{
                         background-attachment: unset;
                     }
                 }
-            }
+            }  
+        }
+    }
 
-            
+    .offers{
+        &__card{
+            &-img{   
+                &-title{
+                    font-size: 5rem;
+                }
+                &-info{
+                    &-text{
+                        font-size: 4.4rem;
+                    }
+
+                    &-more{
+                        font-size: 3.5rem;
+                    }
+                }  
+            }  
         }
     }
     
-
     .footer{
-
         &__boxes{
             display: flex;
             justify-content: space-between;
@@ -1033,11 +939,11 @@ body{
 
 @media(min-width:992px){
 
-    .offers{
-        &__card{
-            width: 30%;
-        }
-    }
+    // .offers{
+    //     &__card{
+    //         width: 30%;
+    //     }
+    // }
 }
 
 
@@ -1058,6 +964,7 @@ body{
         &__box{
             height: 80vh;
             &-info{
+
                 &-heading{
                     font-size: 4.5rem;
                 }
@@ -1072,7 +979,45 @@ body{
             }        
         }     
     }
-    
+
+    .offers{
+        &__card{
+            padding-bottom: 1em;
+            &-img{   
+                &--first{
+                    width: 50%;
+                }
+
+                &--second{
+                    position: absolute; 
+                    right: 0;
+                    top: 0;
+                    width: 50%;
+
+                }
+                &--third{
+                    width: 60%;
+                }
+
+                &--fourth{
+                    position: absolute; 
+                    right: 0;
+                    top: 0;
+                    width: 40%; 
+                } 
+
+                &-info{
+                    &-text{
+                        font-size: 4.4rem;
+                    }
+
+                    &-more{
+                        font-size: 3.5rem;
+                    }
+                }  
+            }  
+        }
+    }   
 }
 
 @media (min-width: 1024px) and (orientation: landscape){
@@ -1092,15 +1037,24 @@ body{
         }     
     }
     
+    .offers{
+        &__card{
+            &-img{   
+                &-info{
+                    &-text{
+                        font-size: 3rem;
+                    }
+
+                    &-more{
+                        font-size: 2.5rem;
+                    }
+                }  
+            }  
+        }
+    }   
 } 
 
 @media (min-width: 1280px){
-    // .aboutme{ 
-    //     &__img{
-    //         width: 500px;
-    //     }
-    // }
-
     .hero-img{
         padding: 13em;    
         &__title{
@@ -1110,7 +1064,29 @@ body{
             font-size: 2.2rem;
         }
     }
-    
+
+    .offers{
+        &__card{
+            padding-bottom: 6em;
+            &-img{   
+                &--first{
+                    width: 40%;
+                    margin-left: 2em;
+                }
+
+                &--second{
+                    right: 30px;
+                }
+                &--fourth{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 35%; 
+                    right: 30px;
+                }  
+            }
+         } 
+    }
 }
 
 @media (min-width: 1366px){
@@ -1145,8 +1121,7 @@ body{
         &__text{
             font-size: 3rem;
         }
-    }
-    
+    } 
 }
 
 @media only screen and (min-width: 2065px){
@@ -1184,6 +1159,28 @@ body{
             }        
         }     
     }
+
+    .offers{
+        &__card{
+            &-img{
+                &--fourth{    
+                    right: 50px;
+                } 
+                &-title{
+                    font-size: 6.5rem;
+                }
+                &-info{
+                    &-text{
+                        font-size: 4.4rem;
+                    }
+
+                    &-more{
+                        font-size: 3.5rem;
+                    }
+                }
+            }  
+        }
+    }
 }
 
 @media only screen and (min-width: 2202px){
@@ -1194,8 +1191,7 @@ body{
                 height: 4px;
             }
         }
-    }
-    
+    } 
 }
 
 @media only screen and (min-width: 2478px){
@@ -1242,3 +1238,129 @@ body{
     }
     
 }
+
+// .offers{
+
+//     &__card{
+//         // height: 90vh;
+//         // width: 100vw;
+//         // border: 2px solid pink;
+//         // overflow: hidden;
+//         position: relative;
+//         padding-bottom: 4em;
+        
+        
+//         &-img{   
+//             position: relative;
+//             height: 100vh;
+//             &:hover{
+//                 .offers__card-img-info{
+//                     clip-path: circle(120% at 50% 90%);
+//                 }
+//             }
+
+//             &--first{
+//                 width: 40%;
+//                 @include heroImages('/img/photographerBig.jpg');
+//                 background-attachment: unset;  
+//                 overflow: hidden;
+//             }
+
+//             &--second{
+//                 position: absolute;
+//                 @include heroImages('/img/photographerBig2Main.jpg'); 
+//                 background-attachment: unset;  
+//                 right: 0;
+//                 top: 0;
+//                 width: 50%;
+//                 right: 50px;
+//             }
+//             &--third{
+//                 // position: absolute;
+//                 width: 60%;
+//                 @include heroImages('/img/photographerBig.jpg');
+//                 background-attachment: unset;  
+//                 overflow: hidden;  
+//             }
+
+//             &--fourth{
+//                 position: absolute;
+//                 @include heroImages('/img/photographerBig2Main.jpg'); 
+//                 background-attachment: unset;  
+//                 right: 0;
+//                 top: 0;
+//                 width: 30%; 
+//                 right: 100px;
+//             }
+
+
+//             &-question{
+//                 position: absolute;
+//                 top: 10px;
+//                 right: 10px;
+//                 padding: 10px;
+//                 background: none;
+//                 border: none;
+//                 color:white;
+//                 font-size: 36px;
+//                 text-shadow: 2px 2px 5px rgb(0, 0, 0);     
+//                 z-index: 1;
+//             } 
+
+//             &-title{
+//                 position: absolute;
+//                 color: $main-color;
+//                 font-size: 5rem;
+//                 font-weight: bold;
+//                 text-transform: uppercase;
+//                 bottom: 35px;
+//                 left: 0;
+//                 right: 0;
+//                 text-align: center;
+//                 z-index: 1;
+//             }
+
+          
+//             &-info{
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: flex-end;
+//                 position: absolute;
+//                 top: 0;
+//                 bottom: 0;
+//                 left: 0;
+//                 right: 0;
+//                 padding: 80px 30px;
+//                 background-color: rgba(0,0,0,.85);
+//                 clip-path: circle(0 at 50% 10%);
+//                 transition: clip-path .8s;
+            
+//                 &-text{
+//                     position: absolute;
+//                     top: 10%;
+//                     left: 0;
+//                     right: 0;
+//                     text-align: center;
+//                     font-size: 3.4rem;
+//                     padding: 1em;
+//                     text-transform: uppercase;
+//                     color: $button-green;
+//                 }
+
+//                 &-more{
+//                     position: absolute;
+//                     bottom: 30%;
+//                     font-size: 2.5rem;
+//                     right: 0;
+//                     left: 0;
+//                     text-align: center;
+//                     text-decoration: none;
+//                     // z-index: 1;
+//                     color: pink;
+//                 }
+//             }
+            
+//         }  
+//     }
+    
+// }
