@@ -461,16 +461,29 @@ body{
 
     &__box{
         font-size: 1.4rem;
-
+        // border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         &-title{
             margin-bottom: 1em;
             font-size: 3rem;
             text-transform: uppercase;
+            color: $button-green;
+            text-align: center;
+            // font-family: 'Dancing Script', cursive;
+        }
+
+        &-text{
+            text-align: center;
         }
 
         &-social{
             margin: 2em 0 1em;
+            display: flex;
+            justify-content: center;
         }
+
         &-link{
             color: azure;
             font-size: 3.6rem;
@@ -478,19 +491,23 @@ body{
             text-decoration: none;
             transition: color .3s;
 
-            &:first-child{
-                padding-left: 0;
-            }
-
             &:hover{
                 color: $main-color;
             }
         }
 
-
+        &-img{
+            @include heroImages('../img/LOGO.png');
+            height: 500px;
+            width: 500px;
+            background-attachment: unset;
+            // border: 1px solid black;
+        }
         &-desktop{
             display: none;
         }
+
+        
     }
 
     &__bottom-text{
@@ -512,7 +529,6 @@ body{
         }
         &__text{
             padding: 1em;
-            // font-size: 1.6rem;
             bottom: 30px;
         }
     
@@ -765,7 +781,7 @@ body{
             position: relative;
             padding-bottom: 115px;
             height: 400px;
-            // contact__box-map-boxmap--img"
+
             &-map{
             
                 width: 50%;
@@ -823,13 +839,11 @@ body{
             padding: 0em;
             border-radius: 0;
             box-shadow: 5px 5px 5px #2e2e2e2e;
-            // border: 1px solid black;
 
             &-img{
                 position: absolute;
                 @include heroImages('../img/photographerBig.jpg');
                 color: $main-color;
-                // border: 3px solid green;
                 background-attachment: unset;
                 right: 0;
                 width: 60%;
@@ -839,7 +853,6 @@ body{
                     position: absolute;
                     width: 100%;
                     font-size: 2rem;
-                    // border: 1px solid black;
                     height: 100%;
 
                     &-text{
@@ -867,8 +880,6 @@ body{
                 position: relative;
                 width: 40%;
                 height: 100%;
-                // box-shadow: 5px 5px 5px #2e2e2e2e;
-                // border: 1px solid black;
 
                 &-quote{
                     position: absolute;
@@ -881,7 +892,6 @@ body{
                 &-text{
                     position: absolute;
                     font-weight: bold;
-                    // border: 1px solid black;
                     padding: 2em;
                     top: 15%;
                     font-size: 1.5rem;
@@ -910,65 +920,21 @@ body{
 
         &__box{   
             margin: 0 2em;
-            width: 25%;  
+            // width: 25%;  
             
             &:first-child{
                 width: 50%;
             }
 
             &-title{
-                font-size: 2.4rem;
+                font-size: 3.4rem;
             }
-            
-            &-list{
-                list-style: none;
-                
-                &-item{
-                    margin-bottom: 1em;
-
-                    a{
-                        color: $pure-pink;
-                        text-decoration: none;
-                    }
-                }
-            }
-            
             &-desktop{         
                 display: block;     
             }    
         }
       }
 }
-
-// @media (min-width: 812px){
-//     .reviews{
-//         &__box{
-//             &-img{
-//                 &-info{
-//                     &-text{
-//                         font-size: 3rem;
-//                     }
-
-//                     &-more{
-//                         font-size: 2.5rem;
-//                     }
-//                 }
-//             }
-//             &-info{
-//                 &-quote{
-//                     font-size: 2.5rem;
-//                 }
-//                 &-text{
-//                     top: 15%;
-//                     font-size: 12.5rem;
-//                 }
-//                 &-signature{
-//                     font-size: 3rem;
-//                 }
-//             }
-//         }
-//     }
-// }
 
 @media (min-width: 812px){
     .header{
@@ -1522,87 +1488,3 @@ body{
     }
     
 }
-
-// .reviews{
-//     margin-top: 15em;
-//     margin-bottom: 8em;
-//     &__boxPhone{
-//         height: 100vh;
-//         // border: 1px solid black;
-//         position: relative;
-//         &-img{
-//             position: absolute;
-//             @include heroImages('../img/photographerBig.jpg');
-//             color: $main-color;
-//             // border: 1px solid yellow;
-//             background-attachment:unset;
-//             right: 0px;
-//             width: 60%;
-//             height: 100%;
-
-//             &-info{
-//                 position: absolute;
-//                 width: 100%;
-//                 font-size: 2rem;
-//                 // border: 1px solid black;
-//                 height: 100%;
-
-//                 &-text{
-//                     position: absolute;
-//                     left: 0;
-//                     right: 0;
-//                     top: 10%;
-//                     padding: 1em;
-//                     font-weight: bold;
-//                     text-align: center;
-//                     font-size: 4rem;
-//                 }
-
-//                 &-more{
-//                     position: absolute;
-//                     bottom: 7%;
-//                     left: 5%;
-//                     font-size: 3rem;
-//                     text-decoration: none;
-//                     color: $pure-pink;
-//                 }
-//             }
-//         }
-
-//         &-info{
-//             position: relative;
-//             // border: 1px solid black;
-//             width: 40%;
-//             height: 100%;
-//             box-shadow: 5px 5px 5px #2e2e2e2e;
-
-//             &-text{
-//                 position: absolute;
-//                 border: 1px solid black;
-//                 padding: 3em;
-//                 top: 10%;
-//                 font-size: 2.3rem;
-//             }
-
-//             &-signature{
-//                 position: absolute;
-//                 bottom: 5%;
-//                 font-size: 5rem;
-//                 right: 10%;
-//                 color: $button-green;
-//                 font-family: 'Dancing Script', cursive;
-//             }
-//             &-quote{
-//                 position: absolute;
-//                 top: 0;
-//                 padding: 1em;
-//                 margin-bottom: 1em;
-//                 font-size: 5rem;
-//                 color: $main-color;
-//             }
-//         }
-
-//     }
-// }
-
-
