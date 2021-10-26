@@ -1082,41 +1082,44 @@ body {
   }
   .reviews__box-info {
     position: relative;
-    width: 40%;
-    min-height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 40%;
+    min-height: 100vh;
   }
   .reviews__box-info-quote {
-    position: absolute;
-    top: 5%;
-    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding: 1em;
-    margin-bottom: 1em;
-    font-size: 4rem;
+    margin-bottom: 0em;
+    font-size: 5rem;
     color: #d59c41;
   }
   .reviews__box-info-text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 1rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    font-size: 44rem;
     font-weight: bold;
     font-size: 1.5rem;
-    padding: 5em 2em 3em 2em;
+    padding: 0em 2em 3em 2em;
     top: 15%;
   }
   .reviews__box-info-signature {
-    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     bottom: 5%;
-    font-size: 4.5rem;
+    font-size: 4rem;
     right: 10%;
     color: #41bcac;
     font-family: 'Dancing Script', cursive;
@@ -1165,35 +1168,6 @@ body {
   .aboutme__box-info-signature {
     font-size: 3rem;
   }
-  .reviews__box-img-info-text {
-    font-size: 3rem;
-  }
-  .reviews__box-img-info-more {
-    font-size: 2.5rem;
-  }
-  .reviews__box-info-quote {
-    font-size: 2.5rem;
-  }
-  .reviews__box-info-text {
-    top: 16%;
-    font-size: 1.5rem;
-  }
-  .reviews__box-info-signature {
-    bottom: 1%;
-    font-size: 3rem;
-  }
-}
-
-@media screen and (min-width: 812px) and (orientation: landscape) {
-  .reviews__box-img-info-text {
-    font-size: 2rem;
-  }
-  .reviews__box-img-info-more {
-    font-size: 1.5rem;
-  }
-  .reviews__box-info-text {
-    font-size: .9rem;
-  }
 }
 
 @media (min-width: 880px) {
@@ -1211,9 +1185,6 @@ body {
   }
   .nav__item {
     font-size: 4rem;
-  }
-  .reviews__box-info-text {
-    font-size: 1.7rem;
   }
 }
 
@@ -1264,16 +1235,6 @@ body {
   .offers__card-img-info-more {
     font-size: 3.5rem;
   }
-  .reviews__box-info-quote {
-    font-size: 5rem;
-  }
-  .reviews__box-info-text {
-    top: 12%;
-    font-size: 1.8rem;
-  }
-  .reviews__box-info-signature {
-    font-size: 4.5rem;
-  }
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
@@ -1291,13 +1252,6 @@ body {
   }
   .offers__card-img-info-more {
     font-size: 2.5rem;
-  }
-  .reviews__box-info-text {
-    top: 20%;
-    font-size: 1.3rem;
-  }
-  .reviews__box-info-signature {
-    font-size: 3.5rem;
   }
 }
 
@@ -1328,12 +1282,6 @@ body {
     width: 35%;
     right: 30px;
   }
-  .reviews__box-info-text {
-    font-size: 1.7rem;
-  }
-  .reviews__box-info-signature {
-    font-size: 4.5rem;
-  }
 }
 
 @media (min-width: 1366px) {
@@ -1358,16 +1306,6 @@ body {
   }
   .hero-img__text {
     font-size: 3rem;
-  }
-  .reviews__box-info-quote {
-    font-size: 5rem;
-  }
-  .reviews__box-info-text {
-    top: 12%;
-    font-size: 2.1rem;
-  }
-  .reviews__box-info-signature {
-    font-size: 5rem;
   }
 }
 
@@ -1406,18 +1344,6 @@ body {
   .offers__card-img-info-more {
     font-size: 3.5rem;
   }
-  .reviews__box-img-info-text {
-    font-size: 5.5rem;
-  }
-  .reviews__box-img-info-more {
-    font-size: 4rem;
-  }
-  .reviews__box-info-text {
-    font-size: 2.8rem;
-  }
-  .reviews__box-info-signature {
-    font-size: 5.5rem;
-  }
 }
 
 @media only screen and (min-width: 2202px) {
@@ -1447,18 +1373,6 @@ body {
   }
   .hero-img__text {
     font-size: 4rem;
-  }
-  .reviews__box-img-info-text {
-    font-size: 6rem;
-  }
-  .reviews__box-info-quote {
-    font-size: 6rem;
-  }
-  .reviews__box-info-text {
-    font-size: 3.5rem;
-  }
-  .reviews__box-info-signature {
-    font-size: 7.5rem;
   }
 }
 

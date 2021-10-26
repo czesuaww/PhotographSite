@@ -882,33 +882,38 @@ body{
             }
             &-info{
                 position: relative;
+                display: flex;
+                flex-direction: column;
                 width: 40%;
                 min-height: 100vh;
-                display: flex;
+                
                 &-quote{
-                    position: absolute;
-                    top: 5%;
-                    left: 0;
+                    display: flex;
+                    // position: absolute;
+                    // top: 5%;
+                    // left: 0;
                     padding: 1em;
-                    margin-bottom: 1em;
-                    font-size: 4rem;
+                    margin-bottom: 0em;
+                    font-size: 5rem;
                     color: $main-color;
                 }
                 &-text{
                     display: flex;
-                    font-size: 1rem;
-                    justify-content: center;
-                    align-items: center;
+                    font-size: 44rem;
+                    // justify-content: center;
+                    // align-items: center;
                     font-weight: bold;
                     font-size: 1.5rem;
-                    padding: 5em 2em 3em 2em;
+                    padding: 0em 2em 3em 2em;
                     top: 15%;
                 }
 
                 &-signature{
-                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    // position: absolute;
                     bottom: 5%;
-                    font-size: 4.5rem;
+                    font-size: 4rem;
                     right: 10%;
                     color: $button-green;
                     font-family: 'Dancing Script', cursive;
@@ -970,58 +975,58 @@ body{
             }        
         }     
     }
-    .reviews{
-        &__box{
-            &-img{
-                &-info{
-                    &-text{
-                        font-size: 3rem;
-                    }
+    // .reviews{
+    //     &__box{
+    //         &-img{
+    //             &-info{
+    //                 &-text{
+    //                     font-size: 3rem;
+    //                 }
 
-                    &-more{
-                        font-size: 2.5rem;
-                    }
-                }
-            }
-            &-info{
-                &-quote{
-                    font-size: 2.5rem;
-                }
-                &-text{
-                    top: 16%;
-                    font-size: 1.5rem;
-                }
-                &-signature{
-                    bottom: 1%;
-                    font-size: 3rem;
-                }
-            }
-        }
-    }
+    //                 &-more{
+    //                     font-size: 2.5rem;
+    //                 }
+    //             }
+    //         }
+    //         &-info{
+    //             &-quote{
+    //                 font-size: 2.5rem;
+    //             }
+    //             &-text{
+    //                 top: 16%;
+    //                 font-size: 1.5rem;
+    //             }
+    //             &-signature{
+    //                 bottom: 1%;
+    //                 font-size: 3rem;
+    //             }
+    //         }
+    //     }
+    // }
     
 }
 
 @media screen and (min-width: 812px) and (orientation: landscape){
-    .reviews{
-        &__box{
-            &-img{
-                &-info{
-                    &-text{
-                        font-size: 2rem;
-                    }
+    // .reviews{
+    //     &__box{
+    //         &-img{
+    //             &-info{
+    //                 &-text{
+    //                     font-size: 2rem;
+    //                 }
 
-                    &-more{
-                        font-size: 1.5rem;
-                    }
-                }
-            }
-            &-info{
-                &-text{
-                    font-size: .9rem;
-                }
-            }
-        }
-    }
+    //                 &-more{
+    //                     font-size: 1.5rem;
+    //                 }
+    //             }
+    //         }
+    //         &-info{
+    //             &-text{
+    //                 font-size: .9rem;
+    //             }
+    //         }
+    //     }
+    // }
 }
 // @media (min-width:823px) and (orientation: landscape) {
 //     .reviews{
@@ -1074,15 +1079,15 @@ body{
         }
     }
 
-    .reviews{
-        &__box{
-            &-info{
-                &-text{
-                    font-size: 1.7rem;
-                }
-            }
-        }
-    }
+    // .reviews{
+    //     &__box{
+    //         &-info{
+    //             &-text{
+    //                 font-size: 1.7rem;
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 
@@ -1158,22 +1163,22 @@ body{
         }
     }
     
-    .reviews{
-        &__box{
-            &-info{
-                &-quote{
-                    font-size: 5rem;
-                }
-                &-text{
-                    top: 12%;
-                    font-size: 1.8rem;
-                }
-                &-signature{
-                    font-size: 4.5rem;
-                }
-            }
-        }
-    }
+    // .reviews{
+    //     &__box{
+    //         &-info{
+    //             &-quote{
+    //                 font-size: 5rem;
+    //             }
+    //             &-text{
+    //                 top: 12%;
+    //                 font-size: 1.8rem;
+    //             }
+    //             &-signature{
+    //                 font-size: 4.5rem;
+    //             }
+    //         }
+    //     }
+    // }
 }
 @media (min-width: 1024px) and (orientation: landscape){
 
@@ -1208,20 +1213,20 @@ body{
         }
     } 
     
-    .reviews{
-        &__box{
-            &-info{
-                &-text{
-                    top: 20%;
-                    font-size: 1.3rem;
-                }
-                &-signature{
-                    font-size: 3.5rem;
-                }
-            }
+    // .reviews{
+    //     &__box{
+    //         &-info{
+    //             &-text{
+    //                 top: 20%;
+    //                 font-size: 1.3rem;
+    //             }
+    //             &-signature{
+    //                 font-size: 3.5rem;
+    //             }
+    //         }
             
-        }
-    }
+    //     }
+    // }
 } 
 
 @media (min-width: 1280px){
@@ -1258,19 +1263,19 @@ body{
          } 
     }
 
-    .reviews{
-        &__box{
-            &-info{
-                &-text{
-                    font-size: 1.7rem;
-                }
-                &-signature{
-                    font-size: 4.5rem;
-                }
-            }
+    // .reviews{
+    //     &__box{
+    //         &-info{
+    //             &-text{
+    //                 font-size: 1.7rem;
+    //             }
+    //             &-signature{
+    //                 font-size: 4.5rem;
+    //             }
+    //         }
             
-        }
-    }
+    //     }
+    // }
 }
 
 @media (min-width: 1366px){
@@ -1307,22 +1312,22 @@ body{
         }
     } 
     
-    .reviews{
-        &__box{
-            &-info{
-                &-quote{
-                    font-size: 5rem;
-                }
-                &-text{
-                    top: 12%;
-                    font-size: 2.1rem;
-                }
-                &-signature{
-                    font-size: 5rem;
-                }
-            }
-        }
-    }
+    // .reviews{
+    //     &__box{
+    //         &-info{
+    //             &-quote{
+    //                 font-size: 5rem;
+    //             }
+    //             &-text{
+    //                 top: 12%;
+    //                 font-size: 2.1rem;
+    //             }
+    //             &-signature{
+    //                 font-size: 5rem;
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 @media only screen and (min-width: 2065px){
@@ -1383,30 +1388,30 @@ body{
         }
     }
 
-    .reviews{
-        &__box{
-            &-img{
-                &-info{
-                    &-text{
-                        font-size: 5.5rem;
-                    }
+    // .reviews{
+    //     &__box{
+    //         &-img{
+    //             &-info{
+    //                 &-text{
+    //                     font-size: 5.5rem;
+    //                 }
 
-                    &-more{
-                        font-size: 4rem;
-                    }
-                }
-            }
-            &-info{
-                &-text{
-                    font-size: 2.8rem;
-                }
-                &-signature{
-                    font-size: 5.5rem;
-                }
-            }
+    //                 &-more{
+    //                     font-size: 4rem;
+    //                 }
+    //             }
+    //         }
+    //         &-info{
+    //             &-text{
+    //                 font-size: 2.8rem;
+    //             }
+    //             &-signature{
+    //                 font-size: 5.5rem;
+    //             }
+    //         }
             
-        }
-    }
+    //     }
+    // }
 }
 
 @media only screen and (min-width: 2202px){
@@ -1455,29 +1460,29 @@ body{
         }
     }
 
-    .reviews{
-        &__box{
-            &-img{
-                &-info{
-                    &-text{
-                        font-size: 6rem;
-                    }
-                }
-            }
-            &-info{
-                &-quote{
-                    font-size: 6rem;
-                }
-                &-text{
-                    font-size: 3.5rem;
-                }
-                &-signature{
-                    font-size: 7.5rem;
-                }
-            }
+    // .reviews{
+    //     &__box{
+    //         &-img{
+    //             &-info{
+    //                 &-text{
+    //                     font-size: 6rem;
+    //                 }
+    //             }
+    //         }
+    //         &-info{
+    //             &-quote{
+    //                 font-size: 6rem;
+    //             }
+    //             &-text{
+    //                 font-size: 3.5rem;
+    //             }
+    //             &-signature{
+    //                 font-size: 7.5rem;
+    //             }
+    //         }
             
-        }
-    }
+    //     }
+    // }
 }
 
 @media only screen and (min-width: 3304px){
