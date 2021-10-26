@@ -413,8 +413,6 @@ body{
             }
         }
         
-
-          
         &:hover{
             transform: scale(.95);
         }
@@ -837,8 +835,9 @@ body{
     .reviews{
         margin-top: 15em;
         margin-bottom: 8em;
+        // min-height: 100vh;
         &__box{
-            height: 100vh;
+            min-height: 100vh;
             margin: 0em;
             padding: 0em;
             border-radius: 0;
@@ -851,13 +850,13 @@ body{
                 background-attachment: unset;
                 right: 0;
                 width: 60%;
-                height: 100%;
+                min-height: 100%;
 
                 &-info{
                     position: absolute;
                     width: 100%;
                     font-size: 2rem;
-                    height: 100%;
+                    min-height: 100vh;
 
                     &-text{
                         position: absolute;
@@ -868,6 +867,7 @@ body{
                         font-weight: bold;
                         text-align: center;
                         font-size: 4rem;
+                        min-height: 100vh;
                     }
 
                     &-more{
@@ -883,22 +883,26 @@ body{
             &-info{
                 position: relative;
                 width: 40%;
-                height: 100%;
-
+                min-height: 100vh;
+                display: flex;
                 &-quote{
                     position: absolute;
-                    top: 0;
+                    top: 5%;
+                    left: 0;
                     padding: 1em;
                     margin-bottom: 1em;
-                    font-size: 5rem;
+                    font-size: 4rem;
                     color: $main-color;
                 }
                 &-text{
-                    position: absolute;
+                    display: flex;
+                    font-size: 1rem;
+                    justify-content: center;
+                    align-items: center;
                     font-weight: bold;
-                    padding: 2em;
-                    top: 15%;
                     font-size: 1.5rem;
+                    padding: 5em 2em 3em 2em;
+                    top: 15%;
                 }
 
                 &-signature{
@@ -956,7 +960,7 @@ body{
                 }
         
                 &-text{
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                     top: 25%;
                 }
         
@@ -985,7 +989,7 @@ body{
                 }
                 &-text{
                     top: 16%;
-                    font-size: 1.6rem;
+                    font-size: 1.5rem;
                 }
                 &-signature{
                     bottom: 1%;
@@ -997,59 +1001,51 @@ body{
     
 }
 
-@media screen and (min-width: 812px){
+@media screen and (min-width: 812px) and (orientation: landscape){
     .reviews{
         &__box{
             &-img{
                 &-info{
                     &-text{
-                        font-size: 3rem;
+                        font-size: 2rem;
                     }
 
                     &-more{
-                        font-size: 2.5rem;
+                        font-size: 1.5rem;
                     }
                 }
             }
             &-info{
-                &-quote{
-                    font-size: 2.5rem;
-                }
                 &-text{
-                    top: 16%;
-                    font-size: 1rem;
-                }
-                &-signature{
-                    bottom: 1%;
-                    font-size: 3rem;
+                    font-size: .9rem;
                 }
             }
         }
     }
 }
-@media (min-width:823px) and (orientation: landscape) {
-    .reviews{
-        &__box{
-            &-img{
-                &-info{
-                    &-more{
-                        font-size: 2rem;
-                    }
-                }
-            }
-            &-info{
-                &-text{
-                    top: 20%;
-                    font-size: 1rem;
-                }
-                &-signature{
-                    font-size: 3rem;
-                }
-            }
+// @media (min-width:823px) and (orientation: landscape) {
+//     .reviews{
+//         &__box{
+//             &-img{
+//                 &-info{
+//                     &-more{
+//                         font-size: 2rem;
+//                     }
+//                 }
+//             }
+//             &-info{
+//                 &-text{
+//                     top: 20%;
+//                     font-size: 1rem;
+//                 }
+//                 &-signature{
+//                     font-size: 3rem;
+//                 }
+//             }
             
-        }
-    }
-}
+//         }
+//     }
+// }
 
 
 
@@ -1170,10 +1166,10 @@ body{
                 }
                 &-text{
                     top: 12%;
-                    font-size: 2.1rem;
+                    font-size: 1.8rem;
                 }
                 &-signature{
-                    font-size: 5rem;
+                    font-size: 4.5rem;
                 }
             }
         }
@@ -1266,7 +1262,7 @@ body{
         &__box{
             &-info{
                 &-text{
-                    font-size: 1.6rem;
+                    font-size: 1.7rem;
                 }
                 &-signature{
                     font-size: 4.5rem;
