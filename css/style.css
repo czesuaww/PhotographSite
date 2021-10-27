@@ -1047,8 +1047,7 @@ body {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: 100%;
-        grid-template-rows: 100%;
+    min-height: 100vh;
   }
   .reviews__box-img {
     background-image: url("../img/photographerBig.jpg");
@@ -1124,7 +1123,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 0em 2em 3em 2em;
   }
   .reviews__box-info-signature {
