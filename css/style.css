@@ -1045,8 +1045,8 @@ body {
     border-radius: 0;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (2fr)[2];
+        grid-template-columns: repeat(2, 2fr);
     min-height: 100vh;
   }
   .reviews__box-img {
@@ -1123,7 +1123,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 0em 2em 3em 2em;
   }
   .reviews__box-info-signature {
@@ -1136,7 +1136,7 @@ body {
     color: #41bcac;
     margin-top: auto;
     font-family: 'Dancing Script', cursive;
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .reviews__box:hover {
     -webkit-transform: scale(1);
