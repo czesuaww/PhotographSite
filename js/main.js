@@ -56,6 +56,7 @@ const prepareDOMEvents = () => {
             }
         });
     }
+    
     //I was trying to do it with API, but it is not working, 
     //because google maps is only for developers, and I did with iframe.
     // const initMap = () => {  
