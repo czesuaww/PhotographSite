@@ -783,17 +783,14 @@ body{
         min-height: 100vh;
         display: grid;
         justify-content: center;
-        .section-heading{
-            padding-top: 2em;
-            padding-bottom: 0;
-        }
+        
         &__box{
             display: grid;
             grid-template-columns: repeat(2,1fr);
             width: 80vw;   
             min-height: 60vh;
             margin: auto;
-            border: 1px solid black;         
+
             &-map{
                 grid-column: 1/2;
                 min-height: 60vh;

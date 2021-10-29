@@ -999,10 +999,6 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .contact .section-heading {
-    padding-top: 2em;
-    padding-bottom: 0;
-  }
   .contact__box {
     display: -ms-grid;
     display: grid;
@@ -1011,7 +1007,6 @@ body {
     width: 80vw;
     min-height: 60vh;
     margin: auto;
-    border: 1px solid black;
   }
   .contact__box-map {
     -ms-grid-column: 1;
