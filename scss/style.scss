@@ -425,7 +425,7 @@ body{
 
 .contact{   
     position: relative;
-    padding-bottom: 5em;
+    padding-bottom: 3em;
     background-color: $background-colorr;   
     
     .white-block-right{
@@ -433,7 +433,7 @@ body{
     }
 
     &__box{
-        position: relative;
+        // position: relative;
         padding-bottom: 115px;
         height: 400px;
         margin: 2em;
@@ -780,33 +780,35 @@ body{
     }
 
     .contact{   
-        height: 100%;     
+        min-height: 100vh;
+        display: grid;
+        justify-content: center;
+        .section-heading{
+            padding-top: 2em;
+            padding-bottom: 0;
+        }
         &__box{
-            position: relative;
-            padding-bottom: 115px;
-            height: 400px;
-
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            width: 80vw;   
+            min-height: 60vh;
+            margin: auto;
+            border: 1px solid black;         
             &-map{
-            
-                width: 50%;
-                height: 400px;
+                grid-column: 1/2;
+                min-height: 60vh;
 
                 &-boxmap{
-                    position: absolute;
-                    display: inline-block;
-                    width: 50%;
-                    height: 100%;
-
+                    display: grid;
+                    grid-column: 2/3;
+                    min-height: 60vh;
+                    margin-left: 2em;
                     &--img{
-                        @include heroImages("../img/building.PNG");
-                        position: absolute;
-                        width: 80%;
-                        height: 70%;
-                        right: 0;
-                        top: 0;
-                        bottom: 0;
-                        left: 0;
                         margin: auto;
+                        @include heroImages("../img/building.PNG");
+                        height: 70%;
+                        width: 90%;
+                        
                         border-radius: 6px;
                         background-attachment: unset;
                     }

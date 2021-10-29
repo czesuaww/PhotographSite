@@ -723,7 +723,7 @@ body {
 
 .contact {
   position: relative;
-  padding-bottom: 5em;
+  padding-bottom: 3em;
   background-color: #e0dbde;
 }
 
@@ -732,7 +732,6 @@ body {
 }
 
 .contact__box {
-  position: relative;
   padding-bottom: 115px;
   height: 400px;
   margin: 2em;
@@ -993,36 +992,50 @@ body {
     font-size: 2rem;
   }
   .contact {
-    height: 100%;
+    min-height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact .section-heading {
+    padding-top: 2em;
+    padding-bottom: 0;
   }
   .contact__box {
-    position: relative;
-    padding-bottom: 115px;
-    height: 400px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    width: 80vw;
+    min-height: 60vh;
+    margin: auto;
+    border: 1px solid black;
   }
   .contact__box-map {
-    width: 50%;
-    height: 400px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    min-height: 60vh;
   }
   .contact__box-map-boxmap {
-    position: absolute;
-    display: inline-block;
-    width: 50%;
-    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    min-height: 60vh;
+    margin-left: 2em;
   }
   .contact__box-map-boxmap--img {
+    margin: auto;
     background-image: url("../img/building.PNG");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    position: absolute;
-    width: 80%;
     height: 70%;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+    width: 90%;
     border-radius: 6px;
     background-attachment: unset;
   }
