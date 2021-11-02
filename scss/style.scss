@@ -818,27 +818,28 @@ body{
                 grid-row: 1/2;
                 grid-column: 2/2;
                 // max-height: 100vh;
-
+                display: flex;
                 &-info{
                     display: flex;
-                    flex-direction: column;
+                    // flex-direction: column;
                     // max- height: 100%;
                     color: $main-color;
                     max-height: 100vh;
 
                     &-text{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         padding: 1em;
                         text-align: center;
                         font-size: 4rem;
-                        margin-top: 2em;
+                        // margin-top: 2em;
 
                     }
 
                     &-more{
                         display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding-bottom: 11em;
+                        padding: 2em;
                         font-size: 3rem;
                         color: $pure-pink;
                         text-decoration: none; 
