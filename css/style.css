@@ -1050,16 +1050,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-bottom: 11em;
-    font-size: 3rem;
-    color: #f9b2d3;
-    text-decoration: none;
+    margin-top: auto;
   }
   .reviews__box-info {
     display: -webkit-box;
@@ -1402,6 +1393,19 @@ body {
   }
 }
 
+@media (min-width: 1835px) {
+  .reviews__box-img-info-text {
+    font-size: 5rem;
+  }
+  .reviews__box-img-info-more {
+    margin-bottom: 0em;
+    font-size: 5rem;
+  }
+  .reviews__box-info-text {
+    padding: 3em;
+  }
+}
+
 @media only screen and (min-width: 2065px) {
   .section-heading {
     font-size: 6rem;
@@ -1437,11 +1441,29 @@ body {
   .offers__card-img-info-more {
     font-size: 3.5rem;
   }
+  .reviews__box-img-info-more {
+    margin-bottom: 0em;
+    font-size: 5rem;
+  }
+  .reviews__box-info-quote {
+    font-size: 7rem;
+  }
+  .reviews__box-info-text {
+    padding: 2em;
+    font-size: 3.5rem;
+  }
 }
 
 @media only screen and (min-width: 2202px) {
   .burger-btn__bars::after {
     height: 4px;
+  }
+  .reviews__box-info-text {
+    font-size: 3rem;
+    padding: 3em;
+  }
+  .reviews__box-info-signature {
+    font-size: 6rem;
   }
 }
 
@@ -1467,11 +1489,32 @@ body {
   .hero-img__text {
     font-size: 4rem;
   }
+  .reviews__box-info-quote {
+    font-size: 10rem;
+  }
+  .reviews__box-info-signature {
+    font-size: 10rem;
+  }
 }
 
 @media only screen and (min-width: 3304px) {
   .nav__item {
     font-size: 6rem;
+  }
+  .reviews__box-img-info-text {
+    font-size: 10rem;
+  }
+  .reviews__box-img-info-more {
+    margin-top: 20em;
+  }
+  .reviews__box-info-quote {
+    font-size: 12rem;
+  }
+  .reviews__box-info-text {
+    font-size: 4.5rem;
+  }
+  .reviews__box-info-signature {
+    font-size: 10rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
