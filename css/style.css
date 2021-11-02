@@ -1001,7 +1001,9 @@ body {
   }
   .reviews {
     margin: 0;
-    min-height: 100vh;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    max-height: 100vh;
   }
   .reviews__box {
     margin: 0;
@@ -1013,7 +1015,7 @@ body {
         grid-template-columns: repeat(2, 2fr);
     -webkit-box-shadow: 0px 0px 0px #2e2e2e2e;
             box-shadow: 0px 0px 0px #2e2e2e2e;
-    min-height: 100vh;
+    max-height: 100vh;
   }
   .reviews__box-img {
     background-image: url("../img/photographerBig.jpg");
@@ -1035,8 +1037,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 100%;
     color: #d59c41;
+    max-height: 100vh;
   }
   .reviews__box-img-info-text {
     padding: 1em;
@@ -1054,11 +1056,10 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-bottom: 11em;
     font-size: 3rem;
     color: #f9b2d3;
-    padding-bottom: 1em;
     text-decoration: none;
-    margin-top: auto;
   }
   .reviews__box-info {
     display: -webkit-box;
@@ -1076,6 +1077,8 @@ body {
     grid-column: 1/2;
     -webkit-box-shadow: 3px 3px 3px #2e2e2e2e;
             box-shadow: 3px 3px 3px #2e2e2e2e;
+    max-height: 100vh;
+    overflow: scroll;
   }
   .reviews__box-info-quote {
     display: -webkit-box;
@@ -1222,15 +1225,27 @@ body {
 }
 
 @media screen and (min-width: 812px) and (orientation: landscape) {
+  .reviews__box-img-info-text {
+    font-size: 3rem;
+  }
+  .reviews__box-img-info-more {
+    font-size: 2rem;
+  }
   .reviews__box-info-text {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .reviews__box-info-signature {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 }
 
 @media (min-width: 823px) and (orientation: landscape) {
+  .reviews__box-img-info-text {
+    font-size: 3rem;
+  }
+  .reviews__box-img-info-more {
+    font-size: 2rem;
+  }
   .reviews__box-info-text {
     font-size: 1.5rem;
   }
@@ -1251,15 +1266,6 @@ body {
   }
   .nav__item {
     font-size: 4rem;
-  }
-  .reviews__box-img-info-text {
-    font-size: 5rem;
-  }
-  .reviews__box-info-text {
-    font-size: 2.5rem;
-  }
-  .reviews__box-info-signature {
-    font-size: 5.5rem;
   }
 }
 
@@ -1310,6 +1316,15 @@ body {
   .offers__card-img-info-more {
     font-size: 3.5rem;
   }
+  .reviews__box-img-info-text {
+    font-size: 5rem;
+  }
+  .reviews__box-info-text {
+    font-size: 2.4rem;
+  }
+  .reviews__box-info-signature {
+    font-size: 5.5rem;
+  }
 }
 
 @media (min-width: 1024px) and (orientation: landscape) {
@@ -1327,6 +1342,9 @@ body {
   }
   .offers__card-img-info-more {
     font-size: 2.5rem;
+  }
+  .reviews__box-img-info-text {
+    font-size: 3.5rem;
   }
 }
 
@@ -1357,14 +1375,6 @@ body {
     width: 35%;
     right: 30px;
   }
-  .reviews__box-info-text {
-    margin: 0;
-    padding: 1em;
-    font-size: 3rem;
-  }
-  .reviews__box-info-signature {
-    font-size: 7.5rem;
-  }
 }
 
 @media (min-width: 1366px) {
@@ -1389,16 +1399,6 @@ body {
   }
   .hero-img__text {
     font-size: 3rem;
-  }
-}
-
-@media (min-width: 1835px) {
-  .reviews__box-img-info-more {
-    margin-bottom: 0em;
-    font-size: 5rem;
-  }
-  .reviews__box-info-text {
-    padding: 3em;
   }
 }
 
@@ -1437,25 +1437,11 @@ body {
   .offers__card-img-info-more {
     font-size: 3.5rem;
   }
-  .reviews__box-img-info-more {
-    margin-bottom: 0em;
-    font-size: 5rem;
-  }
-  .reviews__box-info-quote {
-    font-size: 7rem;
-  }
-  .reviews__box-info-text {
-    padding: 2em;
-    font-size: 3.5rem;
-  }
 }
 
 @media only screen and (min-width: 2202px) {
   .burger-btn__bars::after {
     height: 4px;
-  }
-  .reviews__box-info-text {
-    padding: 3em;
   }
 }
 
@@ -1481,33 +1467,11 @@ body {
   .hero-img__text {
     font-size: 4rem;
   }
-  .reviews__box-info-quote {
-    font-size: 10rem;
-  }
-  .reviews__box-info-text {
-    font-size: 4rem;
-  }
-  .reviews__box-info-signature {
-    font-size: 10rem;
-  }
 }
 
 @media only screen and (min-width: 3304px) {
   .nav__item {
     font-size: 6rem;
-  }
-  .reviews__box-img-info-text {
-    font-size: 10rem;
-  }
-  .reviews__box-info-quote {
-    font-size: 12rem;
-  }
-  .reviews__box-info-text {
-    padding: 4em;
-    font-size: 5rem;
-  }
-  .reviews__box-info-signature {
-    font-size: 15rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
