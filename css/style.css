@@ -1050,6 +1050,16 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 11em;
+    font-size: 3rem;
+    color: #f9b2d3;
+    text-decoration: none;
     margin-top: auto;
   }
   .reviews__box-info {
