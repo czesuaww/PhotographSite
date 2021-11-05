@@ -242,33 +242,46 @@ body{
 //HERO-IMG
 
 .hero-img{
-    position: relative;
-    padding: 7em;
-    @include heroImages("../img/photographerBig.jpg");
-    text-align: center;
-    // overflow: hidden;
-    background-attachment: unset;
-    background-position: top;
-    // height: 100%;
+    // position: relative;
+    // padding: 7em;
+    // @include heroImages("../img/photographerBig.jpg");
+    // text-align: center;
+    // // overflow: hidden;
+    // background-attachment: unset;
+    // background-position: top;
+    // // height: 100%;
 
-    &__title{
-        position: absolute;
-        top: 40px;
-        left: 0;
-        right: 0;
-        font-size: 2.5rem;
-        color: $main-color;
-        font-weight: bold;
-    }
+    // &__title{
+    //     position: absolute;
+    //     top: 40px;
+    //     left: 0;
+    //     right: 0;
+    //     font-size: 2.5rem;
+    //     color: $main-color;
+    //     font-weight: bold;
+    // }
 
-    &__text{
-        position: absolute;
-        left: 0;
-        right: 0;
-        padding: 1em 0;
-        font-size: 1.3rem;
-        color: #f9b2d3;
+    // &__text{
+    //     position: absolute;
+    //     left: 0;
+    //     right: 0;
+    //     padding: 1em 0;
+    //     font-size: 1.3rem;
+    //     color: #f9b2d3;
 
+    // }
+
+    .carousel{
+        h1{
+            text-transform: uppercase;
+            color: $button-green;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        p{
+            font-size: 1rem;
+            color: $main-color;
+        }
     }
 
 }
@@ -517,17 +530,17 @@ body{
 
 @media(min-width:320px){
     
-    .hero-img{    
+    // .hero-img{    
      
-        &__title{
-            padding: .3em;
-        }
-        &__text{
-            padding: 1em;
-            bottom: 30px;
-        }
+    //     &__title{
+    //         padding: .3em;
+    //     }
+    //     &__text{
+    //         padding: 1em;
+    //         bottom: 30px;
+    //     }
     
-    } 
+    // } 
 }
 @media(min-width:360px){
     
@@ -559,16 +572,16 @@ body{
      
     // }
 
-    .hero-img{    
-        &__title{
-            padding: 1em;
-        }
-        &__text{
-            padding: 2em;
-            font-size: 1.6rem;
-            bottom: 30px;
-        }
-    }
+    // .hero-img{    
+    //     &__title{
+    //         padding: 1em;
+    //     }
+    //     &__text{
+    //         padding: 2em;
+    //         font-size: 1.6rem;
+    //         bottom: 30px;
+    //     }
+    // }
 
     .contact{
         &__map{
@@ -612,18 +625,18 @@ body{
     //         }  
     //     }
 
-    .hero-img{   
-        padding: 6em;
-        &__title{
-            top: 0;
-            padding: 1em;
-        }
-        &__text{
-            padding: 2em;
-            font-size: 1.6rem;
-            bottom: 0px;
-        }
-    }
+    // .hero-img{   
+    //     padding: 6em;
+    //     &__title{
+    //         top: 0;
+    //         padding: 1em;
+    //     }
+    //     &__text{
+    //         padding: 2em;
+    //         font-size: 1.6rem;
+    //         bottom: 0px;
+    //     }
+    // }
 
     .offers{
         &__card{
@@ -663,6 +676,31 @@ body{
             }
         }  
     }
+
+    .hero-img{
+        
+        .carousel{
+           height: 70vh;
+           
+           .carousel-item{
+               height: 70vh;
+           }
+
+           .carousel-item img {
+            position: absolute;
+            object-fit:cover;
+            top: 0;
+            left: 0;
+            min-height: 70vh;
+        }
+            h1{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+        }
+    }
 }
 
 
@@ -693,14 +731,14 @@ body{
     //     }     
     // }
 
-    .hero-img{    
-        padding: 8em;
-        
-        &__title{
-            font-size: 4rem;
-        }
-        &__text{
-            font-size: 2rem;
+    .hero-img{
+        .carousel{
+            h1{
+                font-size: 3.5rem;
+            }
+            p{
+                font-size: 2.5rem;
+            }
         }
     }
 
@@ -970,6 +1008,16 @@ body{
         }
     }
 
+    .hero-img{
+        .carousel{
+            h1{
+                font-size: 4.5rem;
+            }
+            p{
+                font-size: 3.5rem;
+            }
+        }
+    }
     // .reviews{
     //     &__box{
     //         &-img{
@@ -1287,7 +1335,7 @@ body{
 //     // }
 }
 
-// @media only screen and (min-width: 2065px){
+@media only screen and (min-width: 2065px){
     
 //     .section-heading{
 //         font-size: 6rem;
@@ -1318,6 +1366,16 @@ body{
 //     //     }     
 //     // }
 
+    .hero-img{
+        .carousel{
+            h1{
+                font-size: 6.5rem;
+            }
+            p{
+                font-size: 5.5rem;
+            }
+        }
+    }
 //     .offers{
 //         &__card{
 //             &-img{
@@ -1363,7 +1421,7 @@ body{
 //     // }
 
         
-// }
+}
 
 // @media only screen and (min-width: 2202px){
    
