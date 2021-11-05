@@ -1151,14 +1151,13 @@ body {
     font-size: 4rem;
   }
   .aboutme {
-    min-height: 80vh;
+    min-height: 90vh;
   }
   .aboutme__box-img {
-    min-height: 80vh;
+    min-height: 90vh;
   }
   .aboutme__box-info {
-    min-height: 80vh;
-    overflow-y: scroll;
+    min-height: 90vh;
   }
   .aboutme__box-info-heading {
     font-size: 3rem;

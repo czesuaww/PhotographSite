@@ -1020,15 +1020,14 @@ body{
     }
 
     .aboutme{
-        min-height: 80vh;
+        min-height: 90vh;
         &__box{
             &-img{
-                min-height: 80vh;
+                min-height: 90vh;
             }
                 
             &-info{
-                min-height: 80vh;
-                overflow-y: scroll;
+                min-height: 90vh;
                 &-heading{
                     font-size: 3rem;
                 }
