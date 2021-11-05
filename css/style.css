@@ -1151,20 +1151,20 @@ body {
     font-size: 4rem;
   }
   .aboutme {
-    min-height: 90vh;
+    min-height: 60vh;
   }
   .aboutme__box-img {
-    min-height: 90vh;
+    min-height: 60vh;
   }
   .aboutme__box-info {
-    min-height: 90vh;
+    min-height: 60vh;
   }
   .aboutme__box-info-heading {
     font-size: 3rem;
   }
   .aboutme__box-info-text {
     margin-top: 2em;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .aboutme__box-info-signature {
     font-size: 4.5rem;

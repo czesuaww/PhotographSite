@@ -1020,21 +1020,21 @@ body{
     }
 
     .aboutme{
-        min-height: 90vh;
+        min-height: 60vh;
         &__box{
             &-img{
-                min-height: 90vh;
+                min-height: 60vh;
             }
                 
             &-info{
-                min-height: 90vh;
+                min-height: 60vh;
                 &-heading{
                     font-size: 3rem;
                 }
                     
                 &-text{
                     margin-top: 2em;
-                    font-size: 1.8rem;
+                    font-size: 1.5rem;
                 }
     
                 &-signature{
