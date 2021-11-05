@@ -821,7 +821,7 @@ body{
                 grid-column: 1/2;
                 box-shadow: 3px 3px 3px #2e2e2e2e;
                 max-height: 100vh;
-                // overflow-y: scroll;
+                overflow-y: scroll;
 
                 &-quote{
                     display: flex;

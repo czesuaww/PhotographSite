@@ -958,6 +958,7 @@ body {
     -webkit-box-shadow: 3px 3px 3px #2e2e2e2e;
             box-shadow: 3px 3px 3px #2e2e2e2e;
     max-height: 100vh;
+    overflow-y: scroll;
   }
   .reviews__box-info-quote {
     display: -webkit-box;
