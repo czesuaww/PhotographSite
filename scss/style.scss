@@ -1034,7 +1034,7 @@ body{
                     
                 &-text{
                     margin-top: 2em;
-                    font-size: 1.5rem;
+                    font-size: 1.7rem;
                 }
     
                 &-signature{
@@ -1268,7 +1268,7 @@ body{
                 }
                     
                 &-text{
-                    font-size: 2.3rem;
+                    font-size: 1.8rem;
                 }
     
                 &-signature{
@@ -1324,26 +1324,27 @@ body{
 //     //         }  
 //     //     }
 //     // }
-}
+// }
 
 // @media (min-width: 1366px){
-// 
-//     // .aboutme{
-//     //     &__box{  
-//     //         &-info{
-//     //             &-heading{
-//     //                 font-size: 5rem;
-//     //             }
-//     //             &-text{
-//     //                 font-size: 2.7rem;
-//     //             }
-        
-//     //             &-signature{
-//     //                 font-size: 6rem;
-//     //             }
-//     //         }      
-//     //     }     
-//     // }
+
+//     .aboutme{
+//         &__box{  
+//             &-info{
+//                 &-heading{
+//                     font-size: 6rem;
+//                 }
+                    
+//                 &-text{
+//                     font-size: 1rem;
+//                 }
+
+//                 &-signature{
+//                     font-size: 7rem;        
+//                 }
+//             }  
+//         }
+//     }
 
 //     .hero-img{    
 //         padding: 15em;
@@ -1354,7 +1355,7 @@ body{
 //             font-size: 3rem;
 //         }
 //     } 
-// }
+}
 
 @media (min-width: 1835px){
 
