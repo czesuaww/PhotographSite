@@ -1151,13 +1151,14 @@ body {
     font-size: 4rem;
   }
   .aboutme {
-    height: 70vh;
+    min-height: 80vh;
   }
   .aboutme__box-img {
-    height: 70vh;
+    min-height: 80vh;
   }
   .aboutme__box-info {
-    height: 70vh;
+    min-height: 80vh;
+    overflow-y: scroll;
   }
   .aboutme__box-info-heading {
     font-size: 3rem;
@@ -1220,15 +1221,6 @@ body {
 }
 
 @media (min-width: 1280px) {
-  .aboutme {
-    min-height: 80vh;
-  }
-  .aboutme__box-img {
-    min-height: 80vh;
-  }
-  .aboutme__box-info {
-    min-height: 80vh;
-  }
   .aboutme__box-info-heading {
     font-size: 4rem;
   }
