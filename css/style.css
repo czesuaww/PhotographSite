@@ -486,7 +486,6 @@ body {
           box-shadow: 0px 0px 0px #2e2e2e2e;
   -ms-grid-rows: 200px 300px;
       grid-template-rows: 200px 300px;
-  max-height: 100vh;
 }
 
 .aboutme__box-img {
@@ -822,6 +821,12 @@ body {
   .nav__item {
     font-size: 2rem;
   }
+  .aboutme__box-info-heading {
+    font-size: 2.1rem;
+  }
+  .aboutme__box-info-text {
+    font-size: 1.2rem;
+  }
   .contact__map {
     margin: 2em;
   }
@@ -843,6 +848,9 @@ body {
   .header__img-arrow {
     font-size: 2.5rem;
     bottom: 1.8em;
+  }
+  .aboutme__box-info-text {
+    font-size: 1.5rem;
   }
   .hero-img .carousel {
     height: 70vh;
@@ -869,6 +877,31 @@ body {
 @media (min-width: 768px) {
   .white-block {
     height: 50px;
+  }
+  .aboutme__box-img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .aboutme__box-info {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .aboutme__box-info-heading {
+    font-size: 3rem;
+  }
+  .aboutme__box-info-text {
+    font-size: 1.5rem;
+  }
+  .aboutme__box-info-signature {
+    font-size: 4rem;
   }
   .hero-img .carousel h1 {
     font-size: 3.5rem;
@@ -1117,6 +1150,25 @@ body {
   .nav__item {
     font-size: 4rem;
   }
+  .aboutme {
+    min-height: 70vh;
+  }
+  .aboutme__box-img {
+    min-height: 70vh;
+  }
+  .aboutme__box-info {
+    min-height: 70vh;
+  }
+  .aboutme__box-info-heading {
+    font-size: 3rem;
+  }
+  .aboutme__box-info-text {
+    margin-top: 2em;
+    font-size: 1.8rem;
+  }
+  .aboutme__box-info-signature {
+    font-size: 4.5rem;
+  }
   .hero-img .carousel h1 {
     font-size: 4.5rem;
   }
@@ -1167,6 +1219,27 @@ body {
   }
 }
 
+@media (min-width: 1280px) {
+  .aboutme {
+    min-height: 80vh;
+  }
+  .aboutme__box-img {
+    min-height: 80vh;
+  }
+  .aboutme__box-info {
+    min-height: 80vh;
+  }
+  .aboutme__box-info-heading {
+    font-size: 4rem;
+  }
+  .aboutme__box-info-text {
+    font-size: 2.3rem;
+  }
+  .aboutme__box-info-signature {
+    font-size: 5rem;
+  }
+}
+
 @media (min-width: 1835px) {
   .header__img-arrow {
     font-size: 5rem;
@@ -1174,11 +1247,101 @@ body {
 }
 
 @media only screen and (min-width: 2065px) {
+  .aboutme__box-info-heading {
+    font-size: 6rem;
+  }
+  .aboutme__box-info-text {
+    font-size: 3rem;
+  }
+  .aboutme__box-info-signature {
+    font-size: 7rem;
+  }
   .hero-img .carousel h1 {
     font-size: 6.5rem;
   }
   .hero-img .carousel p {
     font-size: 5.5rem;
+  }
+  .reviews {
+    min-height: 90vh;
+  }
+  .reviews__box {
+    min-height: 90vh;
+  }
+  .reviews__box-img {
+    min-height: 90vh;
+  }
+  .reviews__box-img-info-more {
+    font-size: 4rem;
+  }
+  .reviews__box-info {
+    min-height: 90vh;
+  }
+  .reviews__box-info-quote {
+    font-size: 7rem;
+  }
+  .reviews__box-info-text {
+    padding: 2em;
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 2202px) {
+  .burger-btn__bars::after {
+    height: 4px;
+  }
+  .reviews__box-info-text {
+    font-size: 3rem;
+    padding: 3em;
+  }
+  .reviews__box-info-signature {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (min-width: 2478px) {
+  .nav__item {
+    font-size: 5rem;
+  }
+  .burger-btn__bars::after {
+    height: 5px;
+  }
+  .burger-btn__bars::before {
+    height: 5px;
+  }
+  .aboutme__box-info-text {
+    font-size: 3.5rem;
+  }
+  .reviews__box-info-quote {
+    font-size: 10rem;
+  }
+  .reviews__box-info-text {
+    font-size: 3.5rem;
+  }
+  .reviews__box-info-signature {
+    font-size: 10rem;
+  }
+}
+
+@media only screen and (min-width: 3098px) {
+  .nav__item {
+    font-size: 6rem;
+  }
+  .reviews__box-img-info-text {
+    font-size: 10rem;
+  }
+  .reviews__box-img-info-more {
+    font-size: 8rem;
+    margin-top: 10em;
+  }
+  .reviews__box-info-quote {
+    font-size: 12rem;
+  }
+  .reviews__box-info-text {
+    font-size: 4.5rem;
+  }
+  .reviews__box-info-signature {
+    font-size: 9rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
