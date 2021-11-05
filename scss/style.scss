@@ -171,9 +171,10 @@ body{
         &-arrow{
             position: absolute;
             color: $button-green;
-            bottom: 2em;
+            bottom: 2.5em;
             left: 50%;
-            transform: translateX(-50%);
+            right: 50%;
+            transform: translateX(-50%,-50%);
             font-size: 2rem;
         }
     }
@@ -657,7 +658,8 @@ body{
     .header{
         &__img{
             &-arrow{
-                font-size: 3rem;
+                font-size: 2.5rem;
+                bottom: 1.8em;
             }
         }  
     }
