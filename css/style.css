@@ -465,7 +465,7 @@ body {
 .header__img-arrow {
   position: absolute;
   color: #41bcac;
-  bottom: 1em;
+  bottom: 2em;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
