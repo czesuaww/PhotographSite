@@ -1151,13 +1151,13 @@ body {
     font-size: 4rem;
   }
   .aboutme {
-    min-height: 70vh;
+    height: 70vh;
   }
   .aboutme__box-img {
-    min-height: 70vh;
+    height: 70vh;
   }
   .aboutme__box-info {
-    min-height: 70vh;
+    height: 70vh;
   }
   .aboutme__box-info-heading {
     font-size: 3rem;
