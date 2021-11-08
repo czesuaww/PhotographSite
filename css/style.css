@@ -907,6 +907,15 @@ body {
   .aboutme__box-info-signature {
     font-size: 4rem;
   }
+  .hero-img .carousel {
+    min-height: 50vh;
+  }
+  .hero-img .carousel .carousel-item {
+    min-height: 50vh;
+  }
+  .hero-img .carousel .carousel-item img {
+    min-height: 50vh;
+  }
   .hero-img .carousel .carousel-caption h1 {
     font-size: 3.5rem;
   }

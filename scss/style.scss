@@ -645,6 +645,15 @@ body{
 
     .hero-img{
         .carousel{
+            min-height: 50vh;
+           
+           .carousel-item{
+               min-height: 50vh;
+           }
+
+           .carousel-item img {
+            min-height: 50vh;
+            }
             .carousel-caption{
                 h1{
                     font-size: 3.5rem;
@@ -1000,7 +1009,7 @@ body{
             }
         }
     }
-
+}
 //     .offers{
 //         &__card{
 //             padding-bottom: 6em;
@@ -1039,37 +1048,6 @@ body{
 //     //     }
 //     // }
 // }
-
-// @media (min-width: 1366px){
-
-//     .aboutme{
-//         &__box{  
-//             &-info{
-//                 &-heading{
-//                     font-size: 6rem;
-//                 }
-                    
-//                 &-text{
-//                     font-size: 1rem;
-//                 }
-
-//                 &-signature{
-//                     font-size: 7rem;        
-//                 }
-//             }  
-//         }
-//     }
-
-//     .hero-img{    
-//         padding: 15em;
-//         &__title{
-//             font-size: 5rem;
-//         }
-//         &__text{
-//             font-size: 3rem;
-//         }
-//     } 
-}
 
 @media (min-width: 1835px){
 
@@ -1248,16 +1226,6 @@ body{
             }  
         }
     }
-
-//     .hero-img{    
-//         padding: 20em;
-//         &__title{
-//             font-size: 6rem;
-//         }
-//         &__text{
-//             font-size: 4rem;
-//         }
-//     }
 
     .reviews{
         &__box{
