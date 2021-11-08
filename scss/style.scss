@@ -237,49 +237,24 @@ body{
 //HERO-IMG
 
 .hero-img{
-    // position: relative;
-    // padding: 7em;
-    // @include heroImages("../img/photographerBig.jpg");
-    // text-align: center;
-    // // overflow: hidden;
-    // background-attachment: unset;
-    // background-position: top;
-    // // height: 100%;
-
-    // &__title{
-    //     position: absolute;
-    //     top: 40px;
-    //     left: 0;
-    //     right: 0;
-    //     font-size: 2.5rem;
-    //     color: $main-color;
-    //     font-weight: bold;
-    // }
-
-    // &__text{
-    //     position: absolute;
-    //     left: 0;
-    //     right: 0;
-    //     padding: 1em 0;
-    //     font-size: 1.3rem;
-    //     color: #f9b2d3;
-
-    // }
     .carousel{
-
-        h1{
-            text-transform: uppercase;
-            color: $button-green;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        p{
-            font-size: 1rem;
-            color: $main-color;
-        }
+        .carousel-caption{
+            background-color: rgba($color: #000000, $alpha: 0.8);
+                h1{
+                text-transform: uppercase;
+                color: $button-green;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            p{
+                font-size: 1rem;
+                color: $main-color;
+            }
+        }  
     }
-
 }
+
+
 //Offers
 
 //oferty 2
@@ -523,20 +498,7 @@ body{
 
 //MEDIA
 
-@media(min-width:320px){
-    
-    // .hero-img{    
-     
-    //     &__title{
-    //         padding: .3em;
-    //     }
-    //     &__text{
-    //         padding: 1em;
-    //         bottom: 30px;
-    //     }
-    
-    // } 
-}
+
 @media(min-width:360px){
     
     .nav{
@@ -567,17 +529,6 @@ body{
         }
     }
 
-    // .hero-img{    
-    //     &__title{
-    //         padding: 1em;
-    //     }
-    //     &__text{
-    //         padding: 2em;
-    //         font-size: 1.6rem;
-    //         bottom: 30px;
-    //     }
-    // }
-
     .contact{
         &__map{
             margin: 2em;
@@ -588,51 +539,6 @@ body{
 
 @media (min-width: 411px){
     
-    // .aboutme{
-    //     &__box{
-            
-    //             &-img{
-    //                 width: 40%;
-    //                 height: 140vh;
-    //             }
-        
-    //             &-info{
-    //                 width: 60%;
-    //                 top: 0;
-    //                 right: 0;
-    //                 height: 100%;
-        
-    //                 &-heading{
-    //                     font-size: 2.5rem;
-    //                 }
-        
-    //                 &-text{
-    //                     font-size: 1.1rem;
-    //                     padding: 2em;
-    //                     top: 30%;
-    //                 }
-        
-    //                 &-signature{
-    //                     bottom: 5%;
-    //                     font-size: 2.5rem;
-    //                 }
-    //             }        
-    //         }  
-    //     }
-
-    // .hero-img{   
-    //     padding: 6em;
-    //     &__title{
-    //         top: 0;
-    //         padding: 1em;
-    //     }
-    //     &__text{
-    //         padding: 2em;
-    //         font-size: 1.6rem;
-    //         bottom: 0px;
-    //     }
-    // }
-
     .offers{
         &__card{
             &-img{      
@@ -657,11 +563,6 @@ body{
     
 }
 
-
-
-
-
-
 @media(min-width: 576px){
     .header{
         &__img{
@@ -685,10 +586,10 @@ body{
     .hero-img{
         
         .carousel{
-           height: 70vh;
+            min-height: 40vh;
            
            .carousel-item{
-               height: 70vh;
+               min-height: 40vh;
            }
 
            .carousel-item img {
@@ -696,7 +597,7 @@ body{
             object-fit:cover;
             top: 0;
             left: 0;
-            min-height: 70vh;
+            min-height: 40vh;
         }
             h1{
                 font-size: 3rem;
@@ -744,16 +645,16 @@ body{
 
     .hero-img{
         .carousel{
-            h1{
-                font-size: 3.5rem;
-            }
-            p{
-                font-size: 2.5rem;
+            .carousel-caption{
+                h1{
+                    font-size: 3.5rem;
+                }
+                p{
+                    font-size: 2rem;
+                }
             }
         }
     }
-
-    
 
     .offers{
         &__card{
@@ -939,76 +840,6 @@ body{
       }
 }
 
-@media (min-width: 812px){
-    // .aboutme{
-    //     &__box{
-    //         height: 100vh;
-    //         &-info{
-    //             &-heading{
-    //                 font-size: 3rem;
-    //             }
-        
-    //             &-text{
-    //                 font-size: 1rem;
-    //                 top: 25%;
-    //             }
-        
-    //             &-signature{
-    //                 font-size: 3rem;  
-    //             }
-    //         }        
-    //     }     
-    // }
-    
-}
-
-@media screen and (min-width: 812px) and (orientation: landscape){
-    .reviews{
-        &__box{
-            &-img{
-                &-info{
-                    &-text{
-                        font-size: 3rem;
-                    }
-                    &-more{
-                        font-size: 2rem;
-                    }
-                }
-            }
-            &-info{
-                &-text{
-                    font-size: 1rem;
-                }
-                &-signature{
-                    font-size: 3.5rem;
-                }
-            }  
-        }
-    }
-}
-
-@media (min-width:823px) and (orientation: landscape) {
-    .reviews{
-        &__box{
-            &-img{
-                &-info{
-                    &-text{
-                        font-size: 3rem;
-                    }
-                    &-more{
-                        font-size: 2rem;
-                    }
-                }
-            }
-            &-info{
-                &-text{
-                    font-size: 1.5rem;
-                }
-            }  
-        }
-    }
-}
-
 @media(min-width:921px){
 
     .nav{
@@ -1046,35 +877,22 @@ body{
 
     .hero-img{
         .carousel{
-            h1{
-                font-size: 4.5rem;
+            min-height: 50vh;
+           
+           .carousel-item{
+               min-height: 50vh;
+           }
+
+           .carousel-item img {
+            min-height: 50vh;
             }
-            p{
-                font-size: 3.5rem;
+            .carousel-caption{
+                p{
+                    font-size: 2rem;
+                }
             }
         }
     }
-    // .reviews{
-    //     &__box{
-    //         &-img{
-    //             &-info{
-    //                 &-text{
-    //                     font-size: 5rem;
-    //                 }
-    //            }
-    //         }
-            
-    //         &-info{
-    //             &-text{
-    //                 font-size: 2.5rem;
-    //             }
-
-    //             &-signature{
-    //                 font-size: 5.5rem;   
-    //             }
-    //         }  
-    //     }
-    // }
 }
 
 
@@ -1084,26 +902,6 @@ body{
     .section-heading{
         font-size: 5rem;
     }
-
-    // .aboutme{
-    //     &__box{
-    //         height: 80vh;
-    //         &-info{
-
-    //             &-heading{
-    //                 font-size: 4.5rem;
-    //             }
-        
-    //             &-text{
-    //                 font-size: 2.7rem;
-    //             }
-        
-    //             &-signature{
-    //                 font-size: 5.5rem;
-    //             }
-    //         }        
-    //     }     
-    // }
 
     .offers{
         &__card{
@@ -1169,94 +967,6 @@ body{
 
 }
 
-// @media (min-width: 1024px) and (min-height: 600px){
-//     .reviews{
-//         &__box{
-//             &-img{
-//                 &-info{
-//                     &-text{
-//                         font-size: 5rem;
-//                     }
-//                }
-//             }
-            
-//             &-info{
-//                 &-text{
-//                     font-size: 1.5rem;
-//                 }
-
-//                 &-signature{
-//                     font-size: 4.5rem;   
-//                 }
-//             }  
-//         }
-//     }
-// }
-
-
-// @media (min-width: 1024px) and (min-height: 768px){
-//     .reviews{
-//         &__box{
-//             &-info{
-//                 &-text{
-//                     font-size: 1.8rem;
-//                 }
-
-//                 &-signature{
-//                     font-size: 5.5rem;   
-//                 }
-//             }  
-//         }
-//     }
-// }
-
-// @media (min-width: 1024px) and (orientation: landscape){
-
-//     // .aboutme{
-//     //     &__box{
-//     //         height: 120vh;   
-//     //         &-info{
-//     //             &-text{
-//     //                 font-size: 2.2rem;
-//     //             }
-        
-//     //             &-signature{
-//     //                 font-size: 5.5rem;
-//     //             }
-//     //         }      
-//     //     }     
-//     // }
-    
-//     .offers{
-//         &__card{
-//             &-img{   
-//                 &-info{
-//                     &-text{
-//                         font-size: 3rem;
-//                     }
-
-//                     &-more{
-//                         font-size: 2.5rem;
-//                     }
-//                 }  
-//             }  
-//         }
-//     }
-    
-//     .reviews{
-//         &__box{
-//             &-img{
-//                 &-info{
-//                     &-text{
-//                         font-size: 3.5rem;
-//                     }
-//                }
-//             }
-//         }
-//     }
-// } 
-
-
 
 @media (min-width: 1280px){
 
@@ -1277,15 +987,19 @@ body{
             }  
         }
     }
-//     .hero-img{
-//         padding: 13em;    
-//         &__title{
-//             font-size: 4.5rem;
-//         }
-//         &__text{
-//             font-size: 2.2rem;
-//         }
-//     }
+    .hero-img{
+        .carousel{
+            min-height: 60vh;
+           
+           .carousel-item{
+               min-height: 60vh;
+           }
+
+           .carousel-item img {
+            min-height: 60vh;
+            }
+        }
+    }
 
 //     .offers{
 //         &__card{

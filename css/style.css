@@ -542,14 +542,18 @@ body {
   font-size: 3rem;
 }
 
-.hero-img .carousel h1 {
+.hero-img .carousel .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hero-img .carousel .carousel-caption h1 {
   text-transform: uppercase;
   color: #41bcac;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.hero-img .carousel p {
+.hero-img .carousel .carousel-caption p {
   font-size: 1rem;
   color: #d59c41;
 }
@@ -853,10 +857,10 @@ body {
     font-size: 1.5rem;
   }
   .hero-img .carousel {
-    height: 70vh;
+    min-height: 40vh;
   }
   .hero-img .carousel .carousel-item {
-    height: 70vh;
+    min-height: 40vh;
   }
   .hero-img .carousel .carousel-item img {
     position: absolute;
@@ -864,7 +868,7 @@ body {
        object-fit: cover;
     top: 0;
     left: 0;
-    min-height: 70vh;
+    min-height: 40vh;
   }
   .hero-img .carousel h1 {
     font-size: 3rem;
@@ -903,11 +907,11 @@ body {
   .aboutme__box-info-signature {
     font-size: 4rem;
   }
-  .hero-img .carousel h1 {
+  .hero-img .carousel .carousel-caption h1 {
     font-size: 3.5rem;
   }
-  .hero-img .carousel p {
-    font-size: 2.5rem;
+  .hero-img .carousel .carousel-caption p {
+    font-size: 2rem;
   }
   .offers__card-img-title {
     font-size: 5rem;
@@ -1116,33 +1120,6 @@ body {
   }
 }
 
-@media screen and (min-width: 812px) and (orientation: landscape) {
-  .reviews__box-img-info-text {
-    font-size: 3rem;
-  }
-  .reviews__box-img-info-more {
-    font-size: 2rem;
-  }
-  .reviews__box-info-text {
-    font-size: 1rem;
-  }
-  .reviews__box-info-signature {
-    font-size: 3.5rem;
-  }
-}
-
-@media (min-width: 823px) and (orientation: landscape) {
-  .reviews__box-img-info-text {
-    font-size: 3rem;
-  }
-  .reviews__box-img-info-more {
-    font-size: 2rem;
-  }
-  .reviews__box-info-text {
-    font-size: 1.5rem;
-  }
-}
-
 @media (min-width: 921px) {
   .nav {
     width: 25%;
@@ -1169,11 +1146,17 @@ body {
   .aboutme__box-info-signature {
     font-size: 4.5rem;
   }
-  .hero-img .carousel h1 {
-    font-size: 4.5rem;
+  .hero-img .carousel {
+    min-height: 50vh;
   }
-  .hero-img .carousel p {
-    font-size: 3.5rem;
+  .hero-img .carousel .carousel-item {
+    min-height: 50vh;
+  }
+  .hero-img .carousel .carousel-item img {
+    min-height: 50vh;
+  }
+  .hero-img .carousel .carousel-caption p {
+    font-size: 2rem;
   }
 }
 
@@ -1228,6 +1211,15 @@ body {
   }
   .aboutme__box-info-signature {
     font-size: 5rem;
+  }
+  .hero-img .carousel {
+    min-height: 60vh;
+  }
+  .hero-img .carousel .carousel-item {
+    min-height: 60vh;
+  }
+  .hero-img .carousel .carousel-item img {
+    min-height: 60vh;
   }
 }
 
