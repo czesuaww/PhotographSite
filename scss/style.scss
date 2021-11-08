@@ -265,7 +265,6 @@ body{
         &-img{   
             position: relative;
             height: 100vh;
-        
             &:hover{
                 .offers__card-img-info{
                     clip-path: circle(120% at 50% 90%);
@@ -353,7 +352,19 @@ body{
                     left: 0;
                     text-align: center;
                     text-decoration: none;
-                    // z-index: 1;
+                    z-index: 1;
+                    color: pink;
+                }
+
+                &-pictures{
+                    position: absolute;
+                    bottom: 20%;
+                    font-size: 2rem;
+                    right: 0;
+                    left: 0;
+                    text-align: center;
+                    text-decoration: none;
+                    z-index: 1;
                     color: pink;
                 }
             } 
@@ -940,7 +951,7 @@ body{
 
                 &-info{
                     &-text{
-                        font-size: 4.4rem;
+                        font-size: 3.4rem;
                     }
 
                     &-more{

@@ -676,6 +676,19 @@ body {
   left: 0;
   text-align: center;
   text-decoration: none;
+  z-index: 1;
+  color: pink;
+}
+
+.offers__card-img-info-pictures {
+  position: absolute;
+  bottom: 20%;
+  font-size: 2rem;
+  right: 0;
+  left: 0;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1;
   color: pink;
 }
 
@@ -1195,7 +1208,7 @@ body {
     width: 40%;
   }
   .offers__card-img-info-text {
-    font-size: 4.4rem;
+    font-size: 3.4rem;
   }
   .offers__card-img-info-more {
     font-size: 3.5rem;
