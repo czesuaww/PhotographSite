@@ -568,7 +568,6 @@ body {
           box-shadow: 0px 0px 0px #2e2e2e2e;
   -ms-grid-rows: (1fr)[6];
       grid-template-rows: repeat(6, 1fr);
-  min-height: 80vh;
 }
 
 .offers__card-img {
@@ -579,7 +578,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 80vh;
+  min-height: 70vh;
 }
 
 .offers__card-img-question {
@@ -599,8 +598,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
   padding-top: 2em;
   color: #d59c41;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 4rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -616,7 +622,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -637,7 +642,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  font-size: 1.9rem;
+  font-size: 2.9rem;
   text-transform: uppercase;
   color: #41bcac;
   padding: 1em;
@@ -1004,11 +1009,64 @@ body {
   .hero-img .carousel .carousel-caption p {
     font-size: 2rem;
   }
+  .offers__card {
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    gap: 5px 5px;
+  }
+  .offers__card-img--first {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .offers__card-img--second {
+    width: auto;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .offers__card-img--third {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .offers__card-img--fourth {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .offers__card-img--fifth {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .offers__card-img--sixth {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
   .reviews {
     margin: 0;
     margin-top: 2em;
     margin-bottom: 2em;
-    max-height: 100vh;
   }
   .reviews__box {
     margin: 0;
@@ -1020,7 +1078,6 @@ body {
         grid-template-columns: repeat(2, 2fr);
     -webkit-box-shadow: 0px 0px 0px #2e2e2e2e;
             box-shadow: 0px 0px 0px #2e2e2e2e;
-    max-height: 100vh;
   }
   .reviews__box-img {
     background-image: url("../img/photographerBig.jpg");
@@ -1036,7 +1093,6 @@ body {
   }
   .reviews__box-img-info {
     color: #d59c41;
-    max-height: 100vh;
   }
   .reviews__box-img-info-text {
     padding: 1em;
@@ -1076,8 +1132,6 @@ body {
     grid-column: 1/2;
     -webkit-box-shadow: 3px 3px 3px #2e2e2e2e;
             box-shadow: 3px 3px 3px #2e2e2e2e;
-    max-height: 100vh;
-    overflow-y: scroll;
   }
   .reviews__box-info-quote {
     display: -webkit-box;
@@ -1247,10 +1301,10 @@ body {
     font-size: 5rem;
   }
   .reviews__box-img-info-text {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .reviews__box-info-text {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
   }
   .reviews__box-info-signature {
     font-size: 5.5rem;
@@ -1285,6 +1339,12 @@ body {
 }
 
 @media only screen and (min-width: 2065px) {
+  .section-heading {
+    font-size: 6rem;
+  }
+  .burger-btn__bars {
+    height: 4px;
+  }
   .aboutme__box-info-heading {
     font-size: 6rem;
   }
@@ -1300,20 +1360,20 @@ body {
   .hero-img .carousel p {
     font-size: 5.5rem;
   }
-  .reviews {
-    min-height: 90vh;
+  .offers__card-img-title {
+    font-size: 6.5rem;
   }
-  .reviews__box {
-    min-height: 90vh;
+  .offers__card-img-info-text {
+    font-size: 4rem;
   }
-  .reviews__box-img {
-    min-height: 90vh;
+  .offers__card-img-info-more {
+    font-size: 3.5rem;
+  }
+  .offers__card-img-info-pictures {
+    font-size: 4rem;
   }
   .reviews__box-img-info-more {
     font-size: 4rem;
-  }
-  .reviews__box-info {
-    min-height: 90vh;
   }
   .reviews__box-info-quote {
     font-size: 7rem;
