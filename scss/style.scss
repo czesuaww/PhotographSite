@@ -600,31 +600,6 @@ body{
             }  
         }
     }
-
-    .hero-img{
-        
-        .carousel{
-            min-height: 40vh;
-           
-           .carousel-item{
-               min-height: 40vh;
-           }
-
-           .carousel-item img {
-            position: absolute;
-            object-fit:cover;
-            top: 0;
-            left: 0;
-            min-height: 40vh;
-        }
-            h1{
-                font-size: 3rem;
-            }
-            p{
-                font-size: 2rem;
-            }
-        }
-    }
 }
 
 
@@ -658,28 +633,6 @@ body{
                     font-size: 4rem;     
                 }
             }  
-        }
-    }
-
-    .hero-img{
-        .carousel{
-            min-height: 50vh;
-           
-           .carousel-item{
-               min-height: 50vh;
-           }
-
-           .carousel-item img {
-            min-height: 50vh;
-            }
-            .carousel-caption{
-                h1{
-                    font-size: 3.5rem;
-                }
-                p{
-                    font-size: 2rem;
-                }
-            }
         }
     }
 
@@ -910,25 +863,6 @@ body{
             }  
         }
     }
-
-    .hero-img{
-        .carousel{
-            min-height: 50vh;
-           
-           .carousel-item{
-               min-height: 50vh;
-           }
-
-           .carousel-item img {
-            min-height: 50vh;
-            }
-            .carousel-caption{
-                p{
-                    font-size: 2rem;
-                }
-            }
-        }
-    }
 }
 
 
@@ -982,19 +916,6 @@ body{
                     font-size: 5rem;        
                 }
             }  
-        }
-    }
-    .hero-img{
-        .carousel{
-            min-height: 60vh;
-           
-           .carousel-item{
-               min-height: 60vh;
-           }
-
-           .carousel-item img {
-            min-height: 60vh;
-            }
         }
     }
 
@@ -1075,16 +996,6 @@ body{
         }
     }
 
-    .hero-img{
-        .carousel{
-            h1{
-                font-size: 6.5rem;
-            }
-            p{
-                font-size: 5.5rem;
-            }
-        }
-    }
     .offers{
         &__card{
             &-img{
