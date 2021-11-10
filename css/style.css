@@ -545,6 +545,13 @@ body {
   margin-top: 1em;
 }
 
+.hero-img .carousel img {
+  max-height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .hero-img .carousel .carousel-caption {
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -552,12 +559,12 @@ body {
 .hero-img .carousel .carousel-caption h1 {
   text-transform: uppercase;
   color: #41bcac;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .hero-img .carousel .carousel-caption p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #d59c41;
 }
 
@@ -977,6 +984,14 @@ body {
   .aboutme__box-info-signature {
     font-size: 4rem;
   }
+  .hero-img .carousel .carousel-caption h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  .hero-img .carousel .carousel-caption p {
+    font-size: 3rem;
+    color: #d59c41;
+  }
   .offers__card {
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
@@ -1280,6 +1295,14 @@ body {
   .aboutme__box-info-signature {
     font-size: 5rem;
   }
+  .hero-img .carousel .carousel-caption h1 {
+    font-size: 5.5rem;
+    font-weight: bold;
+  }
+  .hero-img .carousel .carousel-caption p {
+    font-size: 4.5rem;
+    color: #d59c41;
+  }
   .reviews__box-info-text {
     font-size: 2.3rem;
   }
@@ -1319,6 +1342,14 @@ body {
   }
   .aboutme__box-info-signature {
     font-size: 7rem;
+  }
+  .hero-img .carousel .carousel-caption h1 {
+    font-size: 7.5rem;
+    font-weight: bold;
+  }
+  .hero-img .carousel .carousel-caption p {
+    font-size: 5.5rem;
+    color: #d59c41;
   }
   .offers__card-img-title {
     font-size: 6.5rem;
@@ -1369,6 +1400,14 @@ body {
   }
   .aboutme__box-info-text {
     font-size: 3.5rem;
+  }
+  .hero-img .carousel .carousel-caption h1 {
+    font-size: 9.5rem;
+    font-weight: bold;
+  }
+  .hero-img .carousel .carousel-caption p {
+    font-size: 7.5rem;
+    color: #d59c41;
   }
   .reviews__box-info-quote {
     font-size: 10rem;
