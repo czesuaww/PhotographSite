@@ -189,12 +189,15 @@ body{
 .aboutme{
     font-family: 'Cinzel', serif;
 //    height: 100vh;
+
     &__box{
         display: grid;
         grid-template-columns: repeat(2,2fr);
         grid-template-rows: 300px 300px;
         // width: 1920px;
         // height: 1080px;
+        min-height: 70vh;
+
         &-img{
             @include heroImages('../img/kinga1.png');
             background-attachment: unset;
@@ -206,7 +209,6 @@ body{
             
         &-info{
             display: flex;
-            // height: 100vh;
 
             flex-direction: column;
             grid-row: 2/3;
@@ -231,7 +233,7 @@ body{
                 margin-top: auto;
                 font-family: 'Dancing Script', cursive;
                 text-align: center;
-                font-size: 3rem;
+                font-size: 3.5rem;
                     
             }
         }  
@@ -241,7 +243,6 @@ body{
 //HERO-IMG
 
 .hero-img{
-    margin-top: 1em;
     
     .carousel{
         .carousel-item{
@@ -1142,9 +1143,10 @@ body{
 
     .aboutme{
         &__box{  
+            // grid-template-rows: 00px 300px;
             &-info{    
                 &-text{
-                    font-size: 2.7rem;
+                    font-size: 2rem;
                 }
             }  
         }

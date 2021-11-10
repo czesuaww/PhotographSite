@@ -484,6 +484,7 @@ body {
       grid-template-columns: repeat(2, 2fr);
   -ms-grid-rows: 300px 300px;
       grid-template-rows: 300px 300px;
+  min-height: 70vh;
 }
 
 .aboutme__box-img {
@@ -538,11 +539,7 @@ body {
   margin-top: auto;
   font-family: 'Dancing Script', cursive;
   text-align: center;
-  font-size: 3rem;
-}
-
-.hero-img {
-  margin-top: 1em;
+  font-size: 3.5rem;
 }
 
 .hero-img .carousel .carousel-item {
@@ -1399,7 +1396,7 @@ body {
     height: 5px;
   }
   .aboutme__box-info-text {
-    font-size: 2.7rem;
+    font-size: 2rem;
   }
   .hero-img .carousel .carousel-caption h1 {
     font-size: 8.5rem;
