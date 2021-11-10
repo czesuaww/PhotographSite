@@ -707,7 +707,7 @@ body {
 }
 
 .offers__card-img--first h3 {
-  color: #ffffff;
+  color: #dcb38d;
   padding-top: 1em;
   font-weight: bolder;
 }
@@ -803,8 +803,9 @@ body {
 }
 
 .offers__card-img--sixth h3 {
+  padding-top: 1em;
   font-size: 3rem;
-  color: #a87554;
+  color: #ffefef;
 }
 
 .reviews__box {

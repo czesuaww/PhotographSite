@@ -369,7 +369,7 @@ body{
                 grid-column: 1/3; 
 
                 h3{
-                    color: $pure-white;
+                    color: $session-childer-color;
                     padding-top: 1em;
                     font-weight: bolder;
                 }
@@ -429,6 +429,7 @@ body{
                 grid-column: 1/3; 
                 
                 h3{
+                    padding-top: 1em;
                     font-size: 3rem;
                     color: $session-photojournalism-color;                   
                 }
