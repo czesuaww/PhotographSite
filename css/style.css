@@ -482,16 +482,17 @@ body {
   display: grid;
   -ms-grid-columns: (2fr)[2];
       grid-template-columns: repeat(2, 2fr);
-  -ms-grid-rows: 200px 300px;
-      grid-template-rows: 200px 300px;
+  -ms-grid-rows: 350px 300px;
+      grid-template-rows: 350px 300px;
 }
 
 .aboutme__box-img {
-  background-image: url("../img/photographerBig2Main.jpg");
+  background-image: url("../img/kinga1.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-attachment: unset;
+  background-position: top;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
@@ -540,10 +541,6 @@ body {
 
 .hero-img {
   margin-top: 1em;
-}
-
-.hero-img .carousel .carousel-item {
-  height: 300px;
 }
 
 .hero-img .carousel .carousel-caption {
