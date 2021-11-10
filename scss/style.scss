@@ -194,9 +194,6 @@ body{
         display: grid;
         grid-template-columns: repeat(2,2fr);
         grid-template-rows: 300px 300px;
-        // width: 1920px;
-        // height: 1080px;
-        // min-height: 70vh;
 
         &-img{
             @include heroImages('../img/kinga1.png');
@@ -283,6 +280,7 @@ body{
             justify-content: center;
             display: flex;
             min-height: 70vh;
+
             &-question{
                 position: absolute;
                 top: 10px;
@@ -294,13 +292,14 @@ body{
                 font-size: 36px;
                 text-shadow: 2px 2px 5px rgb(0, 0, 0);     
                 z-index: 1;
+
             } 
 
             &-title{
                 display: flex;
                 position: absolute;
                 padding-top: 2em;
-                color: $main-color;
+                color: $button-green;
                 justify-content: center;
                 align-items: center;
                 font-size: 4rem;
@@ -329,7 +328,7 @@ body{
                     text-align: center;
                     font-size: 2.9rem;
                     text-transform: uppercase;
-                    color: $button-green;
+                    color: $main-color;
                     padding: 1em;
                 }
 
@@ -364,41 +363,41 @@ body{
             }
             
             &--first{
-                @include heroImages('../img/photographerBig.jpg');
+                @include heroImages('../img/sesjaDziecieca.jpg');
                 background-attachment: unset; 
                 grid-row: 1/2;
                 grid-column: 1/3; 
             }
 
             &--second{
-                @include heroImages('../img/photographerBig2Main.jpg'); 
+                @include heroImages('../img/sesjaRodzinna.jpg');
                 background-attachment: unset;
                 grid-row: 2/3;
                 grid-column: 1/3;  
             }
             &--third{
-                @include heroImages('../img/photographerBig.jpg');
+                @include heroImages('../img/sesjaCiazowa.jpg'); 
                 background-attachment: unset;  
                 grid-row: 3/4;
                 grid-column: 1/3; 
             }
 
             &--fourth{
-                @include heroImages('../img/photographerBig2Main.jpg'); 
+                @include heroImages('../img/sesjaKobieca.jpg');
                 background-attachment: unset;  
                 grid-row: 4/5;
                 grid-column: 1/3; 
             }
 
             &--fifth{
-                @include heroImages('../img/photographerBig2Main.jpg'); 
+                @include heroImages('../img/sesjaBiznesowa.jpg'); 
                 background-attachment: unset; 
                 grid-row: 5/6;
                 grid-column: 1/3; 
             }
 
             &--sixth{
-                @include heroImages('../img/photographerBig.jpg');
+                @include heroImages('../img/fotoreportaze.jpg');
                 background-attachment: unset; 
                 grid-row: 6/7;
                 grid-column: 1/3; 
