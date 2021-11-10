@@ -599,10 +599,10 @@ body {
 }
 
 .offers__card-img-title {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
   padding-top: 2em;
   color: #41bcac;
   -webkit-box-pack: center;
@@ -708,7 +708,7 @@ body {
 
 .offers__card-img--first h3 {
   color: #ffffff;
-  padding-top: 13em;
+  padding-top: 1em;
   font-weight: bolder;
 }
 
@@ -728,7 +728,7 @@ body {
 
 .offers__card-img--second h3 {
   color: #4b7baa;
-  padding-top: 13em;
+  padding-top: 1em;
 }
 
 .offers__card-img--third {

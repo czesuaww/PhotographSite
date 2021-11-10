@@ -296,8 +296,8 @@ body{
             } 
 
             &-title{
-                display: flex;
                 position: absolute;
+                display: flex;
                 padding-top: 2em;
                 color: $button-green;
                 justify-content: center;
@@ -370,7 +370,7 @@ body{
 
                 h3{
                     color: $pure-white;
-                    padding-top: 13em;
+                    padding-top: 1em;
                     font-weight: bolder;
                 }
             }
@@ -383,7 +383,7 @@ body{
 
                 h3{
                     color: $session-family-color;
-                    padding-top: 13em;
+                    padding-top: 1em;
                 }
             }
             &--third{
