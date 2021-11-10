@@ -545,11 +545,8 @@ body {
   margin-top: 1em;
 }
 
-.hero-img .carousel img {
+.hero-img .carousel .carousel-item {
   max-height: 80vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 .hero-img .carousel .carousel-caption {
@@ -1295,12 +1292,15 @@ body {
   .aboutme__box-info-signature {
     font-size: 5rem;
   }
+  .hero-img .carousel .carousel-caption {
+    padding: 3em;
+  }
   .hero-img .carousel .carousel-caption h1 {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     font-weight: bold;
   }
   .hero-img .carousel .carousel-caption p {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     color: #d59c41;
   }
   .reviews__box-info-text {
@@ -1344,11 +1344,11 @@ body {
     font-size: 7rem;
   }
   .hero-img .carousel .carousel-caption h1 {
-    font-size: 7.5rem;
+    font-size: 6.5rem;
     font-weight: bold;
   }
   .hero-img .carousel .carousel-caption p {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     color: #d59c41;
   }
   .offers__card-img-title {
@@ -1402,11 +1402,11 @@ body {
     font-size: 3.5rem;
   }
   .hero-img .carousel .carousel-caption h1 {
-    font-size: 9.5rem;
+    font-size: 8.5rem;
     font-weight: bold;
   }
   .hero-img .carousel .carousel-caption p {
-    font-size: 7.5rem;
+    font-size: 6.5rem;
     color: #d59c41;
   }
   .reviews__box-info-quote {
