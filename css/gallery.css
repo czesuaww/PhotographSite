@@ -324,7 +324,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .header__img-info {
@@ -345,11 +345,12 @@ body {
           justify-content: space-between;
   text-transform: uppercase;
   padding: .5em;
-  font-size: 1.5em;
+  font-size: 2.5em;
+  color: #d59c41;
 }
 
 .offers {
-  margin-top: 10em;
+  margin-top: 2em;
 }
 
 .offers__card {
@@ -644,7 +645,7 @@ body {
 
 @media (min-width: 768px) {
   .header__img-info-text {
-    font-size: 3rem;
+    font-size: 5rem;
   }
   .header__img-info-subtext {
     font-size: 2.5rem;
@@ -811,7 +812,7 @@ body {
 
 @media only screen and (min-width: 2478px) {
   .header__img-info-text {
-    font-size: 5rem;
+    font-size: 7rem;
   }
   .header__img-info-subtext {
     font-size: 4.5rem;

@@ -50,7 +50,7 @@ body{
            position: absolute;
            width: 100%;
            height: 100%;
-           background-color: rgba(0, 0, 0, .3);
+           background-color: rgba(0, 0, 0, .7);
        }
 
        &-info{
@@ -63,14 +63,15 @@ body{
             justify-content: space-between;
             text-transform: uppercase;
             padding: .5em;
-            font-size: 1.5em;
+            font-size: 2.5em;
+            color: $main-color;
          }
        }
    }
 }
 
 .offers{
-   margin-top: 10em;
+   margin-top: 2em;
    &__card{
        display: grid;
        display: grid;
@@ -224,7 +225,7 @@ body{
           &-info{
              
              &-text{
-               font-size: 3rem;
+               font-size: 5rem;
             }
 
             &-subtext{
@@ -338,7 +339,7 @@ body{
           &-info{
              
             &-text{
-               font-size: 5rem;
+               font-size: 7rem;
             }
 
             &-subtext{
