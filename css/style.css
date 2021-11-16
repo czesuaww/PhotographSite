@@ -420,6 +420,10 @@ body {
           transform: scaleY(1);
 }
 
+.nav__item:hover {
+  color: #ffffff;
+}
+
 .nav .nav-items-animation {
   -webkit-animation: navItemsAnimation 1s both;
           animation: navItemsAnimation 1s both;
@@ -666,8 +670,12 @@ body {
   text-align: center;
   text-decoration: none;
   z-index: 11;
-  color: pink;
+  color: #f9b2d3;
   margin-top: auto;
+}
+
+.offers__card-img-info-more:hover {
+  color: #f9b2d3;
 }
 
 .offers__card-img-info-pictures {
@@ -684,7 +692,11 @@ body {
   text-align: center;
   text-decoration: none;
   z-index: 1;
-  color: pink;
+  color: #f9b2d3;
+}
+
+.offers__card-img-info-pictures:hover {
+  color: #f9b2d3;
 }
 
 .offers__card-img:hover .offers__card-img-info {

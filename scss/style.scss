@@ -132,6 +132,10 @@ body{
 
         &:hover::before{
             transform: scaleY(1);
+           
+        }
+        &:hover{
+            color: $pure-white;
         }
     }
 
@@ -340,8 +344,12 @@ body{
                     text-align: center;
                     text-decoration: none;
                     z-index: 11;
-                    color: pink;
+                    color: $pure-pink;
                     margin-top: auto;  
+
+                    &:hover{
+                        color: $pure-pink;
+                    }
                 }
                 
                 &-pictures{
@@ -352,7 +360,11 @@ body{
                     text-align: center;
                     text-decoration: none;
                     z-index: 1;
-                    color: pink;
+                    color: $pure-pink;
+
+                    &:hover{
+                        color: $pure-pink;
+                    }
                 }
             } 
 
