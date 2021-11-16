@@ -693,7 +693,7 @@ body {
 }
 
 .offers__card-img--first {
-  background-image: url("../img/sesjaDziecieca.jpg");
+  background-image: url("../img/sesjaDziecieca.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -713,7 +713,7 @@ body {
 }
 
 .offers__card-img--second {
-  background-image: url("../img/sesjaRodzinna.jpg");
+  background-image: url("../img/sesjaRodzinna.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -732,7 +732,7 @@ body {
 }
 
 .offers__card-img--third {
-  background-image: url("../img/sesjaCiazowa.jpg");
+  background-image: url("../img/sesjaCiazowa.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -751,7 +751,7 @@ body {
 }
 
 .offers__card-img--fourth {
-  background-image: url("../img/sesjaKobieca.jpg");
+  background-image: url("../img/sesjaKobieca.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -770,7 +770,7 @@ body {
 }
 
 .offers__card-img--fifth {
-  background-image: url("../img/sesjaBiznesowa.jpg");
+  background-image: url("../img/sesjaBiznesowa.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -789,7 +789,7 @@ body {
 }
 
 .offers__card-img--sixth {
-  background-image: url("../img/fotoreportaze.jpg");
+  background-image: url("../img/fotoreportaz.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
