@@ -1101,31 +1101,32 @@ body {
     grid-row: 1/2;
     -ms-grid-column: 2;
     grid-column: 2/2;
-  }
-  .reviews__box-img-info {
-    color: #d59c41;
-  }
-  .reviews__box-img-info-text {
-    padding: 1em;
-    text-align: center;
-    font-size: 4rem;
-    margin-top: 2em;
-  }
-  .reviews__box-img-info-more {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  }
+  .reviews__box-img-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reviews__box-img-info-text {
+    color: #d59c41;
+    padding: 1em;
+    text-align: center;
+    font-size: 4rem;
+  }
+  .reviews__box-img-info-more {
     margin-top: auto;
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #f9b2d3;
     text-decoration: none;
+    padding: 1em;
   }
   .reviews__box-info {
     display: -webkit-box;
