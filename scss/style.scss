@@ -103,7 +103,8 @@ body{
     background-image: $nav-powderPink-gradient;
     z-index: 100;
     transition: .5s;
-    
+    font-family: 'Raleway', sans-serif;
+
     &--active{
         left: 0;
     }
@@ -191,7 +192,6 @@ body{
 //ABOUT ME
 
 .aboutme{
-    margin-bottom: 1em;
     
     &__box{
         display: grid;
@@ -668,11 +668,12 @@ body{
     }
 
     .aboutme{
+        padding: 5em 0 6em 2em;
         &__box{
             &-img{
                 grid-row: 1/3;
                 grid-column: 1/2;
-            }
+                padding-left: 5em;            }
                 
             &-info{
                 grid-row: 1/3;
@@ -790,8 +791,15 @@ body{
                         color: $pure-pink;
                         text-decoration: none;
                         padding: 1em; 
+                        animation: bounceInLeft 2s infinite;
+
+                        &:hover{
+                            color: $pure-pink;
+                        }
                     }
                }
+
+               
             }
             
             &-info{
@@ -913,14 +921,14 @@ body{
     }
 
     .aboutme{
-        min-height: 60vh;
+        // min-height: 60vh;
         &__box{
             &-img{
-                min-height: 60vh;
+                // min-height: 60vh;
             }
                 
             &-info{
-                min-height: 60vh;
+                // min-height: 60vh;
                 &-heading{
                     font-size: 3rem;
                 }
@@ -975,6 +983,7 @@ body{
 @media (min-width: 1280px){
 
     .aboutme{
+        // padding: 0;
         &__box{     
             &-info{    
                 &-heading{
@@ -1065,8 +1074,16 @@ body{
     }
 
     .aboutme{
+        min-height: 60vh;
         &__box{  
+        min-height: 60vh;
+
+        &-img{
+            min-height: 60vh;
+        }
             &-info{
+                min-height: 60vh;
+
                 &-heading{
                     font-size: 6rem;
                 }

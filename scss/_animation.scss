@@ -40,26 +40,18 @@
         }
 }
 
-// @keyframes cardHoverLeft {
-//         form{
-//                 left: 0;
-//         }
-//         to{
-//                 left: -20%;
-//         }
-// }
+@keyframes bounceInLeft {
+        0% {
+           transform: translateX(-40px);
+        }
+        50% {
+           transform: translateX(0px);
+        }
+        100%{
+               transform: translateX(-40px);
+        }
+     }
 
-// @keyframes cardHoverRight {
-//         form{
-//                 opacity: 0;
-//                 right: 0;
-//         }
-//         to{
-//                 right: -50%;
-//                 transition: all 1s;
-//                 opacity: 1;
-//         }
-// }
 
 .bounce-top {
     display: block; //we animate a block object, not a linear one, we add it so that it displays well in other browsers
