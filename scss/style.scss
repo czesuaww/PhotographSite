@@ -19,7 +19,6 @@ html{
 }
 
 body{
-    // font-family: 'Zen Antique Soft', serif;
     font-size: 1.6rem;
     overflow-x: inherit;
 }
@@ -221,7 +220,6 @@ body{
                 font-size: 2rem;
                 color: $main-color;
                 font-family: 'Raleway', sans-serif;
-                // font-weight: 55;
             }
                 
             &-text{
@@ -458,8 +456,6 @@ body{
 //REVIEWS
 
 .reviews{
-    // padding:;
-    // margin: 3em;
     &__box{
         position: relative;
         margin: 2em;
@@ -510,7 +506,6 @@ body{
     }
 
     &__box{
-        // position: relative;
         height: 400px;
         margin: 2em;
 
@@ -562,7 +557,6 @@ body{
         }
 
         &-social{
-            // margin: 2em 0 1em;
             display: flex;
             justify-content: center;
         }
@@ -587,7 +581,6 @@ body{
     }
 
     &__bottom-text{
-        // padding: 2em;
         text-align: center;
     }
 
@@ -883,10 +876,6 @@ body{
             grid-template-rows: 100px 200px 100px;
             margin: 0 2em;
             gap: 35px;
-
-            // &:first-child{
-            //     // width: 50%;
-            // }
 
             &-title{
                 font-size: 3.4rem;
@@ -1200,7 +1189,6 @@ body{
 
     .aboutme{
         &__box{  
-            // grid-template-rows: 00px 300px;
             &-info{    
                 &-text{
                     font-size: 2.3rem;
