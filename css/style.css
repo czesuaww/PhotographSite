@@ -728,7 +728,7 @@ body {
 
 .offers__card-img--first h3 {
   color: #dcb38d;
-  padding-top: 1em;
+  padding-top: 0em;
 }
 
 .offers__card-img--second {
@@ -747,7 +747,7 @@ body {
 
 .offers__card-img--second h3 {
   color: #4b7baa;
-  padding-top: 1em;
+  padding-top: 0em;
 }
 
 .offers__card-img--third {
@@ -767,6 +767,7 @@ body {
 
 .offers__card-img--third h3 {
   color: #d59c41;
+  padding-top: 0em;
 }
 
 .offers__card-img--fourth {
@@ -785,7 +786,7 @@ body {
 
 .offers__card-img--fourth h3 {
   color: #6b4121;
-  padding-top: 1em;
+  padding-top: 0em;
 }
 
 .offers__card-img--fifth {
@@ -803,7 +804,7 @@ body {
 }
 
 .offers__card-img--fifth h3 {
-  padding-top: 1em;
+  padding-top: 0em;
   color: #2e2e2e;
 }
 
@@ -822,7 +823,7 @@ body {
 }
 
 .offers__card-img--sixth h3 {
-  font-size: 3rem;
+  padding-top: 0em;
   color: #ffefef;
 }
 
@@ -1103,9 +1104,6 @@ body {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
-  }
-  .offers__card-img--sixth h3 {
-    font-size: 4rem;
   }
   .reviews {
     margin: 0;
@@ -1396,17 +1394,11 @@ body {
   .burger-btn__bars {
     height: 4px;
   }
-  .aboutme {
-    min-height: 60vh;
-  }
   .aboutme__box {
-    min-height: 60vh;
+    min-height: 80vh;
   }
   .aboutme__box-img {
-    min-height: 60vh;
-  }
-  .aboutme__box-info {
-    min-height: 60vh;
+    min-height: 80vh;
   }
   .aboutme__box-info-heading {
     font-size: 6rem;

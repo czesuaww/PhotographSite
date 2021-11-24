@@ -385,7 +385,7 @@ body{
 
                 h3{
                     color: $session-childer-color;
-                    padding-top: 1em;
+                    padding-top: 0em;
                 }
             }
 
@@ -397,7 +397,7 @@ body{
 
                 h3{
                     color: $session-family-color;
-                    padding-top: 1em;
+                    padding-top: 0em;
                 }
             }
             &--third{
@@ -409,6 +409,7 @@ body{
                 
                 h3{
                     color: $main-color;
+                    padding-top: 0em;
                 }
             }
 
@@ -420,7 +421,7 @@ body{
 
                 h3{
                     color: $seesion-woman-color;
-                    padding-top: 1em
+                    padding-top: 0em;
                 }
             }
 
@@ -431,7 +432,7 @@ body{
                 grid-column: 1/3; 
 
                 h3{
-                    padding-top: 1em;
+                    padding-top: 0em;
                     color: $dark;
                 }
             }
@@ -443,7 +444,7 @@ body{
                 grid-column: 1/3; 
                 
                 h3{
-                    font-size: 3rem;
+                    padding-top: 0em;
                     color: $session-photojournalism-color;                   
                 }
             }
@@ -745,7 +746,7 @@ body{
                     grid-column: 2/3; 
 
                     h3{
-                        font-size: 4rem;
+                        // font-size: 4rem;
                     }
                 }
             }  
@@ -1068,15 +1069,15 @@ body{
     }
 
     .aboutme{
-        min-height: 60vh;
+        // min-height: 60vh;
         &__box{  
-        min-height: 60vh;
+        min-height: 80vh;
 
         &-img{
-            min-height: 60vh;
+            min-height: 80vh;
         }
             &-info{
-                min-height: 60vh;
+                // min-height: 80vh;
 
                 &-heading{
                     font-size: 6rem;
