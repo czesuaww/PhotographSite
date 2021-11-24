@@ -1394,6 +1394,9 @@ body {
   .burger-btn__bars {
     height: 4px;
   }
+  .aboutme {
+    padding-bottom: 6em;
+  }
   .aboutme__box {
     min-height: 80vh;
   }

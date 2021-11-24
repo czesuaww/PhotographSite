@@ -1070,12 +1070,15 @@ body{
 
     .aboutme{
         // min-height: 60vh;
-        &__box{  
-        min-height: 80vh;
+        padding-bottom: 6em;
+        &__box{ 
 
-        &-img{
             min-height: 80vh;
-        }
+
+            &-img{
+                min-height: 80vh;
+            }
+
             &-info{
                 // min-height: 80vh;
 
