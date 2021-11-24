@@ -19,7 +19,7 @@ html{
 }
 
 body{
-    font-family: 'Zen Antique Soft', serif;
+    // font-family: 'Zen Antique Soft', serif;
     font-size: 1.6rem;
     overflow-x: inherit;
 }
@@ -32,6 +32,7 @@ body{
     color: $main-color;
     text-align: center;
     letter-spacing: 2px;
+    font-family: 'Cinzel', serif;
 }
 
 //NAV 
@@ -191,9 +192,8 @@ body{
 //ABOUT ME
 
 .aboutme{
-    font-family: 'Cinzel', serif;
     margin-bottom: 1em;
-
+    
     &__box{
         display: grid;
         grid-template-columns: repeat(2,2fr);
@@ -210,7 +210,6 @@ body{
             
         &-info{
             display: flex;
-
             flex-direction: column;
             grid-row: 2/3;
             grid-column: 1/3;
@@ -221,18 +220,22 @@ body{
                 text-align: center;
                 font-size: 2rem;
                 color: $main-color;
+                font-family: 'Raleway', sans-serif;
+                // font-weight: 55;
             }
                 
             &-text{
+                display: flex;
                 font-size: 1rem;
                 padding: 1em;
                 text-align: center;
+                font-family: 'M PLUS 1', sans-serif;
             }
 
             &-signature{
                 color: $main-color;
                 margin-top: auto;
-                font-family: 'Dancing Script', cursive;
+                font-family: 'Great Vibes', cursive;
                 text-align: center;
                 font-size: 3.5rem;
                     
@@ -253,14 +256,15 @@ body{
         .carousel-caption{
             background-color: rgba($color: #000000, $alpha: 0.8);
             h1{
+                font-family: 'Raleway', sans-serif;
                 text-transform: uppercase;
                 color: $button-green;
                 font-size: 2rem;
-                font-weight: bold;
             }
             p{
                 font-size: 1.5rem;
                 color: $main-color;
+                font-family: 'M PLUS 1', sans-serif;
             }
         }  
     }
@@ -307,8 +311,8 @@ body{
                 justify-content: center;
                 align-items: center;
                 font-size: 4rem;
-                font-weight: bold;
                 text-transform: uppercase;
+                font-family: 'Raleway', sans-serif;
                 text-align: center;
                 z-index: 1;
             }
@@ -331,6 +335,7 @@ body{
                     display: flex;
                     text-align: center;
                     font-size: 2.9rem;
+                    font-family: 'M PLUS 1', sans-serif;
                     text-transform: uppercase;
                     color: $main-color;
                     padding: 1em;
@@ -346,7 +351,7 @@ body{
                     z-index: 11;
                     color: $pure-pink;
                     margin-top: auto;  
-
+                    font-family: 'Economica', sans-serif;
                     &:hover{
                         color: $pure-pink;
                     }
@@ -361,7 +366,7 @@ body{
                     text-decoration: none;
                     z-index: 1;
                     color: $pure-pink;
-
+                    font-family: 'Economica', sans-serif;
                     &:hover{
                         color: $pure-pink;
                     }
@@ -383,7 +388,6 @@ body{
                 h3{
                     color: $session-childer-color;
                     padding-top: 1em;
-                    font-weight: bolder;
                 }
             }
 
@@ -478,6 +482,13 @@ body{
                 margin-bottom: 1em;
                 font-size: 1.4rem;
                 color: $dark;
+                font-family: 'M PLUS 1', sans-serif;
+            }
+
+            strong{
+                color: $main-color;
+                font-family: 'Great Vibes', cursive;
+                font-size: 3rem;
             }
         }
         
@@ -535,9 +546,10 @@ body{
             text-align: center;
             justify-content: center;
             align-items: center;
-            font-size: 3rem;
+            font-size: 4rem;
             text-transform: uppercase;
             color: $button-green;
+            font-family: 'Raleway', sans-serif;
         }
 
         &-text{
@@ -545,6 +557,8 @@ body{
             text-align: center;
             align-items: center;
             font-size: 2rem;
+            font-family: 'M PLUS 1', sans-serif;
+            padding: 1em;
         }
 
         &-social{
@@ -677,6 +691,7 @@ body{
                     
                 &-text{
                     font-size: 1.5rem;
+                    padding: 2em;
                 }
     
                 &-signature{
@@ -691,7 +706,6 @@ body{
             .carousel-caption{
                 h1{
                     font-size: 4rem;
-                    font-weight: bold;
                 }
                 p{
                     font-size: 3rem;
@@ -763,6 +777,7 @@ body{
                 grid-row: 1/2;
                 grid-column: 2/2;
                 display: flex;
+
                 &-info{
                     display: flex;
                     flex-direction: column;
@@ -771,6 +786,8 @@ body{
                         padding: 1em;
                         text-align: center;
                         font-size: 4rem;
+                        font-family: 'Raleway', sans-serif;
+                        font-weight: bold;
                     }
 
                     &-more{
@@ -803,7 +820,7 @@ body{
                     display: flex;
                     font-size: 1.8rem;
                     padding: 0em 3em 3em 3em;
-                    
+                    font-family: 'M PLUS 1', sans-serif;
                 }
 
                 &-signature{
@@ -811,8 +828,8 @@ body{
                     justify-content: center;
                     color: $button-green;
                     margin-top: auto;
-                    font-family: 'Dancing Script', cursive;
                     font-size: 4rem;
+                    font-family: 'Great Vibes', cursive;
                     
                 }
             }  
@@ -992,11 +1009,9 @@ body{
                 padding: 3em;
                 h1{
                     font-size: 4.5rem;
-                    font-weight: bold;
                 }
                 p{
                     font-size: 3.5rem;
-                    color: $main-color;
                 }
             }  
         }
@@ -1083,11 +1098,9 @@ body{
             .carousel-caption{
                 h1{
                     font-size: 6.5rem;
-                    font-weight: bold;
                 }
                 p{
                     font-size: 4.5rem;
-                    color: $main-color;
                 }
             }  
         }
@@ -1201,11 +1214,9 @@ body{
             .carousel-caption{
                 h1{
                     font-size: 8.5rem;
-                    font-weight: bold;
                 }
                 p{
                     font-size: 6.5rem;
-                    color: $main-color;
                 }
             }  
         }
