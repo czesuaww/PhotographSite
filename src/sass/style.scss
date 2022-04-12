@@ -230,7 +230,7 @@ body {
 
       &-signature {
         color: $main-color;
-        margin-top: auto;
+        margin-top: 2em;
         font-family: "Great Vibes", cursive;
         text-align: center;
         font-size: 3.5rem;
@@ -447,6 +447,8 @@ body {
 //REVIEWS
 
 .reviews {
+  padding-top: 8em;
+  padding-bottom: 8em;
   &__box {
     position: relative;
     margin: 2em;
@@ -592,10 +594,6 @@ body {
   .aboutme {
     &__box {
       &-info {
-        &-heading {
-          // font-size: 2.1rem;
-        }
-
         &-text {
           font-size: 1.2rem;
         }
@@ -898,7 +896,6 @@ body {
         }
 
         &-text {
-          // margin-top: 2em;
           font-size: 1.5rem;
         }
 
@@ -1139,6 +1136,9 @@ body {
 }
 
 @media only screen and (min-width: 2478px) {
+  .wrapper-offers {
+    max-width: 1800px;
+  }
   .nav {
     &__item {
       font-size: 5rem;
