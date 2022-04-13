@@ -163,15 +163,25 @@ body {
   overflow: hidden;
 
   &__img {
+    @include heroImages("../img/headerHallery.jpg");
     grid-row: 1/3;
     grid-column: 1/3;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    @include heroImages("../img/LOGO.png");
-    background-attachment: scroll;
-    background-size: contain;
-    background-repeat: no-repeat;
+    animation: slidePictureHeader 30s infinite forwards;
+
+    &-shadow {
+      background-color: rgba($color: #000000, $alpha: 0.7);
+      width: 100%;
+      height: 100%;
+    }
+
+    &-logo {
+      @include heroImages("../img/LOGO.png");
+      grid-row: 1/3;
+      grid-column: 1/3;
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+    }
 
     &-arrow {
       position: absolute;
