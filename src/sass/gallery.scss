@@ -16,6 +16,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
@@ -66,7 +67,7 @@ body {
 // }
 
 .offers {
-  margin-top: 10em;
+  //   margin-top: 2em;
   margin-bottom: 10em;
   &__card {
     display: grid;
@@ -74,7 +75,7 @@ body {
     grid-template-columns: repeat(2, 2fr);
     box-shadow: 0px 0px 0px #2e2e2e2e;
     grid-template-rows: repeat(6, 1fr);
-
+    gap: 25px;
     &-img {
       position: relative;
       justify-content: center;
