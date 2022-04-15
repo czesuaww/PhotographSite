@@ -4,9 +4,16 @@ let $allNavItems;
 let $navBtnBars;
 let $allSections;
 let $footerYear;
+let $navD;
+let $sectionOne;
+const sectionOneOptions = {
+  rootMargin: "-200px 0px 0px 0px",
+};
 
 const prepareDOMElemets = () => {
   $nav = document.querySelector(".nav");
+  $navD = document.querySelector(".navigationD");
+  $sectionOne = document.querySelector(".welcomeSection");
   $burgerBtn = document.querySelector(".burger-btn");
   $allNavItems = document.querySelectorAll(".nav__item");
   $navBtnBars = document.querySelector(".burger-btn__bars");
@@ -15,6 +22,16 @@ const prepareDOMElemets = () => {
 };
 
 const prepareDOMEvents = () => {
+  const sectionOneObserver = new IntersectionObserver(function (entries, sectionOneObserver) {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        $navD.classList.add("nav-scrolled");
+      } else {
+        $navD.classList.remove("nav-scrolled");
+      }
+    });
+  }, sectionOneOptions);
+
   const handleNav = () => {
     $nav.classList.toggle("nav--active");
     $navBtnBars.classList.remove("black-bars-color");
@@ -67,7 +84,7 @@ const prepareDOMEvents = () => {
   //         map: map
   //     })
   // }
-
+  sectionOneObserver.observe($sectionOne);
   handleCurrentYear();
   window.addEventListener("scroll", handleObserver);
   $burgerBtn.addEventListener("click", handleNav);
