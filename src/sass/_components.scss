@@ -33,3 +33,10 @@
     transform: skew(-45deg);
   }
 }
+
+.nav-scrolled {
+  color: #333;
+  background-color: black;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  transition: 1s;
+}
