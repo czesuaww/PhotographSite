@@ -268,11 +268,17 @@
         display: inline-block;
         text-align: center;
         padding: 2em 2em 2em 2em;
+
+        :hover {
+          color: pink;
+        }
+
         a {
           text-decoration: none;
           text-transform: uppercase;
           font-size: 2rem;
           color: white;
+          transition: color 0.4s;
         }
       }
     }
