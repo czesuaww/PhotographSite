@@ -94,7 +94,7 @@ body {
 
 //HEADER
 
-.header {
+.welcomeSection {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -119,6 +119,10 @@ body {
       height: 100%;
     }
   }
+}
+
+.navigationD {
+  display: none;
 }
 
 .nav {
