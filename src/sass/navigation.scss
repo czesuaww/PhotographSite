@@ -1,6 +1,9 @@
 @import "./colors";
 @import "./mixins";
 
+.navigationD {
+  display: none;
+}
 .nav {
   position: fixed;
   display: flex;
