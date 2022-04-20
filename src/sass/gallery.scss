@@ -25,15 +25,53 @@ body {
 }
 
 .welcomeSection {
-  @include header;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  &__card {
+    @include header;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
-  &__img {
-    @include heroImages("../img/ania.jpg");
+    &-img {
+      position: relative;
+      justify-content: center;
 
-    &-logo {
-      // @include heroImages("../img/LOGO.png");
+      &--one {
+        @include heroImages("../img/kasia1.jpg");
+        grid-row: 1/3;
+        grid-column: 1/2;
+      }
+
+      &--two {
+        @include heroImages("../img/ola3.jpg");
+        grid-row: 1/3;
+        grid-column: 2/3;
+      }
+
+      &--three {
+        @include heroImages("../img/sysia1.jpg");
+        grid-row: 1/3;
+        grid-column: 3/4;
+      }
+
+      &--four {
+        @include heroImages("../img/ktoś1.jpg");
+        grid-row: 1/3;
+        grid-column: 4/5;
+      }
+    }
+    &-heroBg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      width: 100%;
+      height: 100%;
+
+      &--text {
+        text-align: center;
+        font-size: 8rem;
+        text-transform: uppercase;
+      }
     }
   }
 }
