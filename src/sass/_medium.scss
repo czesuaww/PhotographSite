@@ -250,46 +250,9 @@
   }
 }
 
-@media screen and (min-width: 821px) {
-  // .burger-btn {
-  //   display: none;
-  // }
-
-  // .navigationD {
-  //   display: flex;
-  //   justify-content: center;
-  //   position: fixed;
-  //   text-align: center;
-  //   width: 100%;
-  //   z-index: 100;
-  //   letter-spacing: 8px;
-  //   transition: 1s;
-
-  //   &__desktop {
-  //     li {
-  //       display: inline-block;
-  //       text-align: center;
-  //       padding: 3em 2em 2em 2em;
-
-  //       :hover {
-  //         color: $pure-pink;
-  //       }
-
-  //       a {
-  //         text-decoration: none;
-  //         text-transform: uppercase;
-  //         font-size: 2rem;
-  //         color: $pure-white;
-  //         transition: color 0.4s;
-  //       }
-  //     }
-  //   }
-  // }
-}
-
 @media (min-width: 921px) {
   .nav {
-    width: 25%;
+    width: 40%;
 
     &__item {
       font-size: 4rem;
