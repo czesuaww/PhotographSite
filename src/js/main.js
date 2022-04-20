@@ -6,7 +6,6 @@ let $allSections;
 let $footerYear;
 let $navD;
 let $sectionOne;
-let $sectionTwo;
 const sectionOneOptions = {
   rootMargin: "-200px 0px 0px 0px",
 };
