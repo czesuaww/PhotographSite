@@ -25,6 +25,7 @@ body {
 }
 
 .welcomeSection {
+  padding-bottom: 10em;
   &__card {
     @include header;
     grid-template-rows: repeat(2, 1fr);
@@ -38,24 +39,28 @@ body {
         @include heroImages("../img/kasia1.jpg");
         grid-row: 1/3;
         grid-column: 1/2;
+        background-attachment: unset;
       }
 
       &--two {
         @include heroImages("../img/ola3.jpg");
         grid-row: 1/3;
         grid-column: 2/3;
+        background-attachment: unset;
       }
 
       &--three {
         @include heroImages("../img/sysia1.jpg");
         grid-row: 1/3;
         grid-column: 3/4;
+        background-attachment: unset;
       }
 
       &--four {
         @include heroImages("../img/ktoś1.jpg");
         grid-row: 1/3;
         grid-column: 4/5;
+        background-attachment: unset;
       }
     }
     &-heroBg {
