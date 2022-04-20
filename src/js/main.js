@@ -6,6 +6,7 @@ let $allSections;
 let $footerYear;
 let $navD;
 let $sectionOne;
+let $sectionTwo;
 const sectionOneOptions = {
   rootMargin: "-200px 0px 0px 0px",
 };
@@ -13,7 +14,7 @@ const sectionOneOptions = {
 const prepareDOMElemets = () => {
   $nav = document.querySelector(".nav");
   $navD = document.querySelector(".navigationD");
-  $sectionOne = document.querySelector(".welcomeSection");
+  $sectionOne = document.querySelector(".navBlack");
   $burgerBtn = document.querySelector(".burger-btn");
   $allNavItems = document.querySelectorAll(".nav__item");
   $navBtnBars = document.querySelector(".burger-btn__bars");
