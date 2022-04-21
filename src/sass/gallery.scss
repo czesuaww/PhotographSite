@@ -14,18 +14,18 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
-  overflow-x: inherit;
+  // overflow-x: inherit;
   color: $pure-white;
 }
 
 .welcomeSection {
-  padding-bottom: 10em;
+  padding-bottom: 5em;
   &__card {
     @include header;
     grid-template-rows: repeat(2, 1fr);
@@ -81,186 +81,298 @@ body {
   }
 }
 
-.offers {
-  //   margin-top: 2em;
-  margin-bottom: 10em;
-  &__card {
-    display: grid;
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    box-shadow: 0px 0px 0px #2e2e2e2e;
-    grid-template-rows: repeat(6, 1fr);
-    gap: 25px;
-    &-img {
-      position: relative;
-      justify-content: center;
-      display: flex;
-      min-height: 70vh;
-
-      &--first {
-        @include heroImages("../img/ania.jpg");
-        background-attachment: unset;
-        grid-row: 1/2;
-        grid-column: 1/3;
-      }
-
-      &--second {
-        @include heroImages("../img/ania1.jpg");
-        background-attachment: unset;
-        grid-row: 2/3;
-        grid-column: 1/3;
-      }
-
-      &--third {
-        @include heroImages("../img/ania2.jpg");
-        background-attachment: unset;
-        grid-row: 3/4;
-        grid-column: 1/3;
-        background-position: 25%;
-      }
-
-      &--fourth {
-        @include heroImages("../img/ania3.jpg");
-        background-attachment: unset;
-        grid-row: 4/5;
-        grid-column: 1/3;
-      }
-
-      &--fifth {
-        @include heroImages("../img/kasia1.jpg");
-        background-attachment: unset;
-        grid-row: 5/6;
-        grid-column: 1/3;
-      }
-
-      &--sixth {
-        @include heroImages("../img/kasia2.jpg");
-        background-attachment: unset;
-        grid-row: 6/7;
-        grid-column: 1/3;
-      }
-
-      &--seventh {
-        @include heroImages("../img/kasia3.jpg");
-        background-attachment: unset;
-        grid-row: 7/8;
-        grid-column: 1/3;
-      }
-
-      &--eighth {
-        @include heroImages("../img/kasia4.jpg");
-        background-attachment: unset;
-        grid-row: 8/9;
-        grid-column: 1/3;
-      }
-      &--ninth {
-        @include heroImages("../img/ola1.jpg");
-        background-attachment: unset;
-        grid-row: 9/10;
-        grid-column: 1/3;
-      }
-
-      &--tenth {
-        @include heroImages("../img/ola2.jpg");
-        background-attachment: unset;
-        grid-row: 10/11;
-        grid-column: 1/3;
-      }
-
-      &--eleventh {
-        @include heroImages("../img/ola3.jpg");
-        background-attachment: unset;
-        grid-row: 11/12;
-        grid-column: 1/3;
-      }
-
-      &--twelfth {
-        @include heroImages("../img/ola4.jpg");
-        background-attachment: unset;
-        grid-row: 12/13;
-        grid-column: 1/3;
-      }
-      &--thirteenth {
-        @include heroImages("../img/ola5.jpg");
-        background-attachment: unset;
-        grid-row: 13/14;
-        grid-column: 1/3;
-      }
-      &--fourteenth {
-        @include heroImages("../img/ola6.jpg");
-        background-attachment: unset;
-        grid-row: 14/15;
-        grid-column: 1/3;
-      }
-      &--fifteenth {
-        @include heroImages("../img/ola7.jpg");
-        background-attachment: unset;
-        grid-row: 15/16;
-        grid-column: 1/3;
-      }
-      &--sixteenth {
-        @include heroImages("../img/ola8.jpg");
-        background-attachment: unset;
-        grid-row: 16/17;
-        grid-column: 1/3;
-      }
-      &--seventeenth {
-        @include heroImages("../img/ola9.jpg");
-        background-attachment: unset;
-        grid-row: 17/18;
-        grid-column: 1/3;
-      }
-      &--eighteenth {
-        @include heroImages("../img/sabina1.jpg");
-        background-attachment: unset;
-        grid-row: 18/19;
-        grid-column: 1/3;
-      }
-      &--nineteenth {
-        @include heroImages("../img/sabina2.jpg");
-        background-attachment: unset;
-        grid-row: 19/20;
-        grid-column: 1/3;
-      }
-      &--twentyth {
-        @include heroImages("../img/sabina3.jpg");
-        background-attachment: unset;
-        grid-row: 20/21;
-        grid-column: 1/3;
-      }
-      &--twentyfirst {
-        @include heroImages("../img/sabina4.jpg");
-        background-attachment: unset;
-        grid-row: 21/22;
-        grid-column: 1/3;
-      }
-      &--twentysecond {
-        @include heroImages("../img/sysia1.jpg");
-        background-attachment: unset;
-        grid-row: 22/23;
-        grid-column: 1/3;
-      }
-      &--twentythird {
-        @include heroImages("../img/sysia2.jpg");
-        background-attachment: unset;
-        grid-row: 23/24;
-        grid-column: 1/3;
-      }
-      &--twentyfourth {
-        @include heroImages("../img/sysia3.jpg");
-        background-attachment: unset;
-        grid-row: 24/25;
-        grid-column: 1/3;
-      }
-      &--twentyfifth {
-        @include heroImages("../img/sysia4.jpg");
-        background-attachment: unset;
-        grid-row: 25/26;
-        grid-column: 1/3;
-      }
-    }
-  }
+.gallery li {
+  list-style: none;
 }
+
+.card-item a {
+  text-decoration: none;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  gap: 25px;
+  // margin: 2em;
+  // grid-template-columns: repeat(auto-fit, 4, 1fr);
+}
+
+.gallery img {
+  max-width: 100%;
+}
+// .offers {
+//   //   margin-top: 2em;
+//   margin-bottom: 10em;
+//   &__card {
+//     display: grid;
+//     // min-height: 100vh;
+//     // overflow: hidden;
+//     grid-template-columns: repeat(2, 1fr);
+//     box-shadow: 0px 0px 0px #2e2e2e2e;
+//     // grid-template-rows: repeat(300px);
+//     margin: 0.4em;
+//     grid-auto-rows: 300px;
+//     justify-content: center;
+//     width: 100%;
+
+//     &-img {
+//       justify-content: center;
+//       // position: relative;
+//       // justify-content: center;
+//       // display: flex;
+//       // min-height: 100vh;
+//       // /
+//       &--first {
+//         @include heroImages("../img/ania.jpg");
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//         grid-row: 1/2;
+//         grid-column: 1/2;
+//       }
+
+//       &--second {
+//         @include heroImages("../img/ania1.jpg");
+//         background-size: contain;
+//         background-attachment: unset;
+//         background-position: unset;
+//         background-repeat: no-repeat;
+//         grid-row: 1/2;
+//         grid-column: 2/3;
+//       }
+
+//       &--third {
+//         @include heroImages("../img/ania2.jpg");
+//         background-attachment: unset;
+//         grid-row: 2/3;
+//         grid-column: 1/2;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+
+//       &--fourth {
+//         @include heroImages("../img/ania3.jpg");
+//         background-attachment: unset;
+//         grid-row: 1/2;
+//         grid-column: 4/5;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+
+//       &--fifth {
+//         @include heroImages("../img/kasia1.jpg");
+//         background-attachment: unset;
+//         grid-row: 2/3;
+//         grid-column: 1/2;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+
+//       &--sixth {
+//         @include heroImages("../img/kasia2.jpg");
+//         background-attachment: unset;
+//         grid-row: 2/3;
+//         grid-column: 2/3;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+
+//       &--seventh {
+//         @include heroImages("../img/kasia3.jpg");
+//         background-attachment: unset;
+//         grid-row: 2/3;
+//         grid-column: 3/4;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+
+//       &--eighth {
+//         @include heroImages("../img/kasia4.jpg");
+//         background-attachment: unset;
+//         grid-row: 2/3;
+//         grid-column: 4/5;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+//       &--ninth {
+//         @include heroImages("../img/ola1.jpg");
+//         background-attachment: unset;
+//         grid-row: 3/4;
+//         grid-column: 1/2;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+
+//       &--tenth {
+//         @include heroImages("../img/ola2.jpg");
+//         background-attachment: unset;
+//         grid-row: 3/4;
+//         grid-column: 2/3;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+
+//       &--eleventh {
+//         @include heroImages("../img/ola3.jpg");
+//         background-attachment: unset;
+//         grid-row: 3/4;
+//         grid-column: 3/4;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+
+//       &--twelfth {
+//         @include heroImages("../img/ola4.jpg");
+//         background-attachment: unset;
+//         grid-row: 3/4;
+//         grid-column: 4/5;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+//       &--thirteenth {
+//         @include heroImages("../img/ola5.jpg");
+//         background-attachment: unset;
+//         grid-row: 4/5;
+//         grid-column: 1/2;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+//       &--fourteenth {
+//         @include heroImages("../img/ola6.jpg");
+//         background-attachment: unset;
+//         grid-row: 4/5;
+//         grid-column: 2/3;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+//       &--fifteenth {
+//         @include heroImages("../img/ola7.jpg");
+//         background-attachment: unset;
+//         grid-row: 4/5;
+//         grid-column: 3/4;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+//       &--sixteenth {
+//         @include heroImages("../img/ola8.jpg");
+//         background-attachment: unset;
+//         grid-row: 4/5;
+//         grid-column: 4/5;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+//       &--seventeenth {
+//         @include heroImages("../img/sabina1.jpg");
+//         background-attachment: unset;
+//         grid-row: 5/6;
+//         grid-column: 1/2;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+//       &--eighteenth {
+//         @include heroImages("../img/sabina2.jpg");
+//         background-attachment: unset;
+//         grid-row: 5/6;
+//         grid-column: 2/3;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+//       &--nineteenth {
+//         @include heroImages("../img/sabina3.jpg");
+//         background-attachment: unset;
+//         grid-row: 5/6;
+//         grid-column: 3/4;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+//       &--twentyth {
+//         @include heroImages("../img/sabina4.jpg");
+//         background-attachment: unset;
+//         grid-row: 5/6;
+//         grid-column: 4/5;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+//       &--twentyfirst {
+//         @include heroImages("../img/sysia1.jpg");
+//         background-attachment: unset;
+//         grid-row: 6/7;
+//         grid-column: 1/2;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+//       &--twentysecond {
+//         @include heroImages("../img/sysia2.jpg");
+//         background-attachment: unset;
+//         grid-row: 6/7;
+//         grid-column: 2/3;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+//       &--twentythird {
+//         @include heroImages("../img/sysia3.jpg");
+//         background-attachment: unset;
+//         grid-row: 6/7;
+//         grid-column: 3/4;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+//       &--twentyfourth {
+//         @include heroImages("../img/sysia4.jpg");
+//         background-attachment: unset;
+//         grid-row: 6/7;
+//         grid-column: 4/5;
+//         background-size: contain;
+//         background-position: unset;
+//         background-attachment: unset;
+//         background-repeat: no-repeat;
+//       }
+//     }
+//   }
+// }
 
 @media (min-width: 768px) {
   .header {
@@ -276,140 +388,140 @@ body {
       }
     }
   }
-
-  .offers {
-    &__card {
-      grid-template-rows: repeat(3, 1fr);
-      gap: 25px 25px;
-
-      &-img {
-        &--first {
-          grid-row: 1/2;
-          grid-column: 1/2;
-        }
-
-        &--second {
-          width: auto;
-          grid-row: 1/2;
-          grid-column: 2/3;
-        }
-        &--third {
-          grid-row: 2/3;
-          grid-column: 1/2;
-        }
-
-        &--fourth {
-          grid-row: 2/3;
-          grid-column: 2/3;
-        }
-
-        &--fifth {
-          grid-row: 3/4;
-          grid-column: 1/2;
-        }
-
-        &--sixth {
-          grid-row: 3/4;
-          grid-column: 2/3;
-        }
-
-        &--seventh {
-          grid-row: 7/8;
-          grid-column: 1/2;
-        }
-
-        &--eighth {
-          grid-row: 7/8;
-          grid-column: 2/3;
-        }
-        &--ninth {
-          grid-row: 9/10;
-          grid-column: 1/2;
-        }
-
-        &--tenth {
-          grid-row: 9/10;
-          grid-column: 2/3;
-        }
-
-        &--eleventh {
-          grid-row: 11/12;
-          grid-column: 1/2;
-        }
-
-        &--twelfth {
-          grid-row: 11/12;
-          grid-column: 2/3;
-        }
-        &--thirteenth {
-          grid-row: 13/14;
-          grid-column: 1/2;
-        }
-        &--fourteenth {
-          grid-row: 13/14;
-          grid-column: 2/3;
-        }
-        &--fifteenth {
-          grid-row: 15/16;
-          grid-column: 1/2;
-        }
-        &--sixteenth {
-          grid-row: 15/16;
-          grid-column: 2/3;
-        }
-        &--seventeenth {
-          grid-row: 17/18;
-          grid-column: 1/2;
-        }
-        &--eighteenth {
-          grid-row: 17/18;
-          grid-column: 2/3;
-        }
-        &--nineteenth {
-          grid-row: 19/20;
-          grid-column: 1/2;
-        }
-        &--twentyth {
-          grid-row: 19/20;
-          grid-column: 2/3;
-        }
-        &--twentyfirst {
-          grid-row: 20/21;
-          grid-column: 1/2;
-        }
-        &--twentysecond {
-          grid-row: 20/21;
-          grid-column: 2/3;
-        }
-        &--twentythird {
-          grid-row: 21/22;
-          grid-column: 1/2;
-        }
-        &--twentyfourth {
-          grid-row: 21/22;
-          grid-column: 2/3;
-        }
-        &--twentyfifth {
-          grid-row: 22/23;
-          grid-column: 1/3;
-        }
-      }
-    }
-  }
 }
+//   .offers {
+//     &__card {
+//       grid-template-rows: repeat(3, 1fr);
+//       gap: 25px 25px;
 
-@media only screen and (min-width: 2478px) {
-  .header {
-    &__img {
-      &-info {
-        &-text {
-          font-size: 7rem;
-        }
+//       &-img {
+//         &--first {
+//           grid-row: 1/2;
+//           grid-column: 1/2;
+//         }
 
-        &-subtext {
-          font-size: 4.5rem;
-        }
-      }
-    }
-  }
-}
+//         &--second {
+//           width: auto;
+//           grid-row: 1/2;
+//           grid-column: 2/3;
+//         }
+//         &--third {
+//           grid-row: 2/3;
+//           grid-column: 1/2;
+//         }
+
+//         &--fourth {
+//           grid-row: 2/3;
+//           grid-column: 2/3;
+//         }
+
+//         &--fifth {
+//           grid-row: 3/4;
+//           grid-column: 1/2;
+//         }
+
+//         &--sixth {
+//           grid-row: 3/4;
+//           grid-column: 2/3;
+//         }
+
+//         &--seventh {
+//           grid-row: 7/8;
+//           grid-column: 1/2;
+//         }
+
+//         &--eighth {
+//           grid-row: 7/8;
+//           grid-column: 2/3;
+//         }
+//         &--ninth {
+//           grid-row: 9/10;
+//           grid-column: 1/2;
+//         }
+
+//         &--tenth {
+//           grid-row: 9/10;
+//           grid-column: 2/3;
+//         }
+
+//         &--eleventh {
+//           grid-row: 11/12;
+//           grid-column: 1/2;
+//         }
+
+//         &--twelfth {
+//           grid-row: 11/12;
+//           grid-column: 2/3;
+//         }
+//         &--thirteenth {
+//           grid-row: 13/14;
+//           grid-column: 1/2;
+//         }
+//         &--fourteenth {
+//           grid-row: 13/14;
+//           grid-column: 2/3;
+//         }
+//         &--fifteenth {
+//           grid-row: 15/16;
+//           grid-column: 1/2;
+//         }
+//         &--sixteenth {
+//           grid-row: 15/16;
+//           grid-column: 2/3;
+//         }
+//         &--seventeenth {
+//           grid-row: 17/18;
+//           grid-column: 1/2;
+//         }
+//         &--eighteenth {
+//           grid-row: 17/18;
+//           grid-column: 2/3;
+//         }
+//         &--nineteenth {
+//           grid-row: 19/20;
+//           grid-column: 1/2;
+//         }
+//         &--twentyth {
+//           grid-row: 19/20;
+//           grid-column: 2/3;
+//         }
+//         &--twentyfirst {
+//           grid-row: 20/21;
+//           grid-column: 1/2;
+//         }
+//         &--twentysecond {
+//           grid-row: 20/21;
+//           grid-column: 2/3;
+//         }
+//         &--twentythird {
+//           grid-row: 21/22;
+//           grid-column: 1/2;
+//         }
+//         &--twentyfourth {
+//           grid-row: 21/22;
+//           grid-column: 2/3;
+//         }
+//         &--twentyfifth {
+//           grid-row: 22/23;
+//           grid-column: 1/3;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 2478px) {
+//   .header {
+//     &__img {
+//       &-info {
+//         &-text {
+//           font-size: 7rem;
+//         }
+
+//         &-subtext {
+//           font-size: 4.5rem;
+//         }
+//       }
+//     }
+//   }
+// }
