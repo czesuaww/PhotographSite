@@ -9,43 +9,43 @@
 
 @keyframes slidePictureAboutMe {
   0% {
-    background-image: url("../img/kinga1.png");
+    background-image: url("/dist/img/kinga1.png");
   }
 
   25% {
-    background-image: url("../img/kinga3.PNG");
+    background-image: url("/dist/img/kinga3.PNG");
   }
 
   50% {
-    background-image: url("../img/kinga1.png");
+    background-image: url("/dist/img/kinga1.png");
   }
 
   75% {
-    background-image: url("../img/kinga3.PNG");
+    background-image: url("/dist/img/kinga3.PNG");
   }
   100% {
-    background-image: url("../img/kinga1.png");
+    background-image: url("/dist/img/kinga1.png");
   }
 }
 
 @keyframes slidePictureHeader {
   0% {
-    background-image: url("../img/headerHallery.jpg");
+    background-image: url("/dist/img/headerHallery.jpg");
   }
 
   25% {
-    background-image: url("../img/christmasChildBig.jpg");
+    background-image: url("/dist/img/christmasChildBig.jpg");
   }
 
   50% {
-    background-image: url("../img/snowflakeBig.jpg");
+    background-image: url("/dist/img/snowflakeBig.jpg");
   }
 
   75% {
-    background-image: url("../img/christmasBig.jpg");
+    background-image: url("/dist/img/christmasBig.jpg");
   }
   100% {
-    background-image: url("../img/headerHallery.jpg");
+    background-image: url("/dist/img/headerHallery.jpg");
   }
 }
 
