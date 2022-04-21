@@ -14,15 +14,16 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
-  // overflow-x: inherit;
+  overflow-x: inherit;
   color: $pure-white;
 }
+//header section
 
 .welcomeSection {
   padding-bottom: 5em;
@@ -81,6 +82,7 @@ body {
   }
 }
 
+//main gallery
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
@@ -103,6 +105,12 @@ body {
   flex: 1;
 }
 
+@media screen and(min-width: 540px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  }
+}
+
 @media (min-width: 768px) {
   .header {
     &__img {
@@ -119,6 +127,23 @@ body {
   }
 }
 
+@media screen and(min-width: 780px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  }
+}
+
+@media screen and(min-width: 1690px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+  }
+}
+@media screen and(min-width: 2095px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+  }
+}
+
 @media only screen and (min-width: 2478px) {
   .header {
     &__img {
@@ -132,5 +157,21 @@ body {
         }
       }
     }
+  }
+}
+
+@media screen and(min-width: 2500px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(35em, 1fr));
+  }
+}
+@media screen and(min-width: 2900px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
+  }
+}
+@media screen and(min-width: 3300px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(45em, 1fr));
   }
 }
