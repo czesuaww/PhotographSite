@@ -47,7 +47,7 @@ body {
     animation: slidePictureHeader 30s infinite forwards;
 
     &-logo {
-      @include heroImages("/dist/img/LOGO.png");
+      @include heroImages("../../dist/img/LOGO.png");
       background-size: contain;
       background-repeat: no-repeat;
       background-attachment: unset;
