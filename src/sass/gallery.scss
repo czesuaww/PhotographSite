@@ -83,9 +83,9 @@ body {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-  gap: 25px;
-  margin: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  gap: 15px;
+  margin: 0.5em;
 }
 
 .card-item,
