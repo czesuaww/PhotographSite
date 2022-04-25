@@ -1,0 +1,23 @@
+@import "./gallery.scss";
+
+.welcomeSection {
+  &__card {
+    &-img {
+      &--one {
+        @include picturesHeaderSecionsOne("../../dist/img/kasia1.jpg");
+      }
+
+      &--two {
+        @include picturesHeaderSecionsTwo("../../dist/img/ola3.jpg");
+      }
+
+      &--three {
+        @include picturesHeaderSecionsThree("../../dist/img/sysia1.jpg");
+      }
+
+      &--four {
+        @include picturesHeaderSecionsFour("../../dist/img/ktoś1.jpg");
+      }
+    }
+  }
+}
