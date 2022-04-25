@@ -1,0 +1,142 @@
+@import "./colors";
+@import "./mixins";
+
+.navigationD {
+  display: none;
+}
+.navigationM {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: -100%;
+  height: 100vh;
+  width: 50%;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  z-index: 100;
+  transition: 0.5s;
+  font-family: "Raleway", sans-serif;
+
+  &--active {
+    left: 0;
+  }
+
+  &__mobile {
+    .itemM {
+      list-style-type: none;
+
+      font-size: 2rem;
+      :hover {
+        color: $pure-pink;
+      }
+
+      &:hover > ul {
+        display: flex;
+        flex-direction: column;
+      }
+
+      a {
+        text-decoration: none;
+        color: $pure-white;
+        line-height: 2em;
+        transition: 1s;
+      }
+    }
+
+    &-dropdown {
+      display: none;
+    }
+  }
+
+  // position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // text-decoration: none;
+  // font-size: 2.8rem;
+  // color: $pure-white;
+  // padding: 0.5em 2em;
+
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   top: 0;
+  //   left: 0;
+  //   width: 3px;
+  //   height: 100%;
+  //   background-color: $pure-white;
+  //   transform: scaleY(0);
+  //   transition: transform 0.4s;
+  // }
+
+  // &:hover::before {
+  //   transform: scaleY(1);
+  // }
+  // &:hover {
+  //   color: $pure-white;
+  // }
+}
+
+.nav-items-animation {
+  animation: navItemsAnimation 1s both;
+}
+
+.burger-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 1em;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  z-index: 1000;
+
+  &:focus {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+  }
+
+  &:hover {
+    .burger-btn__bars::before,
+    .burger-btn__bars::after {
+      width: 100%;
+    }
+  }
+
+  &__box {
+    position: relative;
+    width: 40px;
+    height: 30px;
+  }
+
+  &__bars,
+  &__bars::before,
+  &__bars::after {
+    @include burgerBtn;
+  }
+
+  &__bars {
+    width: 100%;
+
+    &::after {
+      top: 13px;
+      width: 60%;
+    }
+
+    &::before {
+      top: 27px;
+      width: 30%;
+      transition-delay: 0.1s;
+    }
+  }
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: $dark;
+}
+
+@import "./small";
+@import "./medium";
+@import "./large";
