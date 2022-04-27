@@ -6,6 +6,9 @@ let $allSections;
 let $footerYear;
 let $navD;
 let $sectionOne;
+let $portfolioLi;
+let $dropdownMoblie;
+
 const sectionOneOptions = {
   rootMargin: "-200px 0px 0px 0px",
 };
@@ -19,9 +22,13 @@ const prepareDOMElemets = () => {
   $navBtnBars = document.querySelector(".burger-btn__bars");
   $allSections = document.querySelectorAll(".section");
   $footerYear = document.querySelector(".footer__year");
+  $portfolioLi = document.querySelector(".portfolio");
+  $dropdownMoblie = document.querySelector(".navigationM__mobile-dropdown");
 };
 
 const prepareDOMEvents = () => {
+  const showDropdown = () => $dropdownMoblie.classList.toggle("dropdown-list");
+
   const sectionOneObserver = new IntersectionObserver(function (entries, sectionOneObserver) {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) {
@@ -88,6 +95,7 @@ const prepareDOMEvents = () => {
   handleCurrentYear();
   window.addEventListener("scroll", handleObserver);
   $burgerBtn.addEventListener("click", handleNav);
+  $portfolioLi.addEventListener("click", showDropdown);
   window.addEventListener("load", AOS.refresh);
   // initMap();
 };

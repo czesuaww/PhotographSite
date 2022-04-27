@@ -3,6 +3,9 @@
     display: none;
   }
 
+  .navigationM {
+    display: none;
+  }
   .navigationD {
     display: flex;
     justify-content: center;
@@ -48,7 +51,6 @@
         top: 100%;
         left: 0;
         z-index: -5;
-
         li {
           padding: 0.9em;
         }
@@ -230,12 +232,6 @@
 }
 
 @media only screen and (min-width: 2478px) {
-  .nav {
-    &__item {
-      font-size: 5rem;
-    }
-  }
-
   .burger-btn {
     &__bars {
       &::after {
@@ -289,12 +285,6 @@
 }
 
 @media only screen and (min-width: 3098px) {
-  .nav {
-    &__item {
-      font-size: 6rem;
-    }
-  }
-
   .reviews {
     &__box {
       &-img {

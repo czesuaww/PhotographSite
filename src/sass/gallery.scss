@@ -1,0 +1,152 @@
+@import "./colors";
+@import "./components";
+@import "./mixins";
+@import "./animation";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  overflow-x: inherit;
+  color: $pure-white;
+}
+//header section
+
+.welcomeSection {
+  padding-bottom: 5em;
+  &__card {
+    @include header;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+
+    &-img {
+      position: relative;
+      justify-content: center;
+    }
+    &-heroBg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      width: 100%;
+      height: 100%;
+
+      &--text {
+        text-align: center;
+        font-size: 8rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+//main gallery
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  gap: 15px;
+  margin: 0.5em;
+  padding-bottom: 5em;
+}
+
+.card-item,
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.card,
+.card img {
+  flex: 1;
+}
+
+@media screen and(min-width: 540px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    &__img {
+      &-info {
+        &-text {
+          font-size: 5rem;
+        }
+
+        &-subtext {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 780px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  }
+}
+
+@media screen and(min-width: 1690px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+  }
+}
+@media screen and(min-width: 2095px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+  }
+}
+
+@media only screen and (min-width: 2478px) {
+  .header {
+    &__img {
+      &-info {
+        &-text {
+          font-size: 7rem;
+        }
+
+        &-subtext {
+          font-size: 4.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 2500px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(35em, 1fr));
+  }
+}
+@media screen and(min-width: 2900px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
+  }
+}
+@media screen and(min-width: 3300px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(45em, 1fr));
+  }
+}
