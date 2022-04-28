@@ -5,6 +5,24 @@
   display: none;
 }
 .navigationM {
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   top: 0;
+  //   left: 0;
+  //   width: 3px;
+  //   height: 100%;
+  //   background-color: $pure-white;
+  //   transform: scaleY(0);
+  //   transition: transform 0.4s;
+  // }
+
+  // &:hover::before {
+  //   transform: scaleY(1);
+  // }
+  // &:hover {
+  //   color: $pure-white;
+  // }
   position: fixed;
   display: flex;
   justify-content: center;
@@ -23,64 +41,6 @@
   }
 
   &__mobile {
-    .itemM {
-      list-style-type: none;
-
-      font-size: 2rem;
-      :hover {
-        color: $pure-pink;
-      }
-
-      // &:hover > ul {
-      //   display: flex;
-      //   flex-direction: column;
-      // }
-
-      a {
-        text-decoration: none;
-        color: $pure-white;
-        line-height: 2em;
-        transition: 1s;
-      }
-    }
-
-    &-dropdown {
-      display: none;
-    }
-  }
-
-  // position: relative;
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  font-size: 2.8rem;
-  color: $pure-white;
-  padding: 0.5em 2em;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 3px;
-    height: 100%;
-    background-color: $pure-white;
-    transform: scaleY(0);
-    transition: transform 0.4s;
-  }
-
-  &:hover::before {
-    transform: scaleY(1);
-  }
-  &:hover {
-    color: $pure-white;
-  }
-}
-
-.nav-items-animation {
-  animation: navItemsAnimation 1s both;
-
-  &__item {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -90,29 +50,38 @@
     text-align: center;
     padding: 0.5em 2em;
 
-    &::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: 0;
-      width: 3px;
-      height: 100%;
-      background-color: $pure-white;
-      transform: scaleY(0);
-      transition: transform 0.4s;
+    .itemM {
+      list-style-type: none;
+      // font-size: 2rem;
+
+      :hover {
+        color: $pure-pink;
+      }
+
+      a {
+        text-decoration: none;
+        color: $pure-white;
+        line-height: 2em;
+        transition: 1s;
+        font-size: 3.5rem;
+      }
     }
 
-    &:hover::before {
-      transform: scaleY(1);
-    }
-    &:hover {
-      color: $pure-white;
-    }
-  }
+    &-dropdown {
+      display: none;
 
-  .nav-items-animation {
-    animation: navItemsAnimation 1s both;
+      .itemDrop {
+        list-style-type: none;
+        a {
+          font-size: 2rem;
+        }
+      }
+    }
   }
+}
+
+.nav-items-animation {
+  // animation: navItemsAnimation 1s both;
 }
 
 .burger-btn {
